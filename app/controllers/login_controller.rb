@@ -6,5 +6,9 @@ class LoginController < ApplicationController
   end
 
   def callback
+    puts "params:", params["code"], "end"
+    code = params["code"]
+
+    RestClient.post()
   end 
 end

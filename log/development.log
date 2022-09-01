@@ -655,3 +655,303 @@ Processing by LoginController#callback as HTML
 Completed 200 OK in 3ms (Views: 3.0ms | Allocations: 5527)
 
 
+Started GET "/" for ::1 at 2022-09-01 13:43:33 +0100
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 2 pending migrations:
+
+20220831134432_create_users.rb
+20220831135540_create_games.rb
+
+
+):
+  
+activerecord (6.1.6.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.6.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.6.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.6.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.6.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.6.1) lib/rails/engine.rb:539:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1344049087128799065)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20220831134432)
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (140.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "name" character varying, "image_url" character varying, "total_score" integer, "num_games" integer, "auth_token" character varying, "refresh_token" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (28.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220831134432"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateGames (20220831135540)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "games" ("id" bigserial primary key, "user_id" integer, "artist_id" character varying, "artist_name" character varying, "score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE INDEX "index_games_on_user_id" ON "games" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220831135540"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1344049087128799065)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-09-01 13:44:05 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1843)
+  Rendered layout layouts/application.html.erb (Duration: 194.0ms | Allocations: 55726)
+Completed 200 OK in 223ms (Views: 205.5ms | ActiveRecord: 0.0ms | Allocations: 66249)
+
+
+Started GET "/login/callback?code=AQAoy6nhy4el7w8T3g00JM-siNwkqnZUJf4hb2VULOWHqh-TxbGRpWKlHUSjFgst8EDRq5uULCxqouaOHd3SYhLEblKWJWKdK1mE35C00EY7rWQBs-z3aW6DUetV4BpkTmJTF6y5k6m2DSAZNojV1GKeU3I107An1IcgVCnaKqRaDvSfnbLPjjPcdW_dWiG6nP7BwLakyJ-zycYi6FpYFctL9EYBMUGLR9poiQAFTBNI0x3S" for ::1 at 2022-09-01 13:44:14 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAoy6nhy4el7w8T3g00JM-siNwkqnZUJf4hb2VULOWHqh-TxbGRpWKlHUSjFgst8EDRq5uULCxqouaOHd3SYhLEblKWJWKdK1mE35C00EY7rWQBs-z3aW6DUetV4BpkTmJTF6y5k6m2DSAZNojV1GKeU3I107An1IcgVCnaKqRaDvSfnbLPjjPcdW_dWiG6nP7BwLakyJ-zycYi6FpYFctL9EYBMUGLR9poiQAFTBNI0x3S"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.9ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 5044)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 5504)
+
+
+Started GET "/login/callback?code=AQAoy6nhy4el7w8T3g00JM-siNwkqnZUJf4hb2VULOWHqh-TxbGRpWKlHUSjFgst8EDRq5uULCxqouaOHd3SYhLEblKWJWKdK1mE35C00EY7rWQBs-z3aW6DUetV4BpkTmJTF6y5k6m2DSAZNojV1GKeU3I107An1IcgVCnaKqRaDvSfnbLPjjPcdW_dWiG6nP7BwLakyJ-zycYi6FpYFctL9EYBMUGLR9poiQAFTBNI0x3S" for ::1 at 2022-09-01 14:25:52 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAoy6nhy4el7w8T3g00JM-siNwkqnZUJf4hb2VULOWHqh-TxbGRpWKlHUSjFgst8EDRq5uULCxqouaOHd3SYhLEblKWJWKdK1mE35C00EY7rWQBs-z3aW6DUetV4BpkTmJTF6y5k6m2DSAZNojV1GKeU3I107An1IcgVCnaKqRaDvSfnbLPjjPcdW_dWiG6nP7BwLakyJ-zycYi6FpYFctL9EYBMUGLR9poiQAFTBNI0x3S"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 4932)
+Completed 200 OK in 41ms (Views: 39.0ms | Allocations: 5257)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:25:56 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4885)
+Completed 200 OK in 13ms (Views: 12.8ms | Allocations: 5228)
+
+
+Started GET "/login/callback?code=AQDUVMeKZwbYU5oNmRzJJu-IaLwB0RFhU7h1KhUtQSe1Ntsw9NlCSNT5x8cMtdopQ7jAdysgJ9ASw3T1qrGSYA8bMlb2yATYVixGiHRQTYM7GPw1QsKkSERu1jPajxHqnybJVOTkLNvR2DrbAP1U4ZAkOgsLtjsWqmDJEdZkUC4255Bt99YOaNBZv_K2pXMlOV_0oKbxUjhQrniNw0U_qnuqB8nBZtujYPIsVWo-qQ1dcIpi" for ::1 at 2022-09-01 14:25:58 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDUVMeKZwbYU5oNmRzJJu-IaLwB0RFhU7h1KhUtQSe1Ntsw9NlCSNT5x8cMtdopQ7jAdysgJ9ASw3T1qrGSYA8bMlb2yATYVixGiHRQTYM7GPw1QsKkSERu1jPajxHqnybJVOTkLNvR2DrbAP1U4ZAkOgsLtjsWqmDJEdZkUC4255Bt99YOaNBZv_K2pXMlOV_0oKbxUjhQrniNw0U_qnuqB8nBZtujYPIsVWo-qQ1dcIpi"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4933)
+Completed 200 OK in 11ms (Views: 10.9ms | Allocations: 5258)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:26:13 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3756)
+Completed 200 OK in 13ms (Views: 12.9ms | Allocations: 4096)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:26:41 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 4932)
+Completed 200 OK in 45ms (Views: 40.8ms | Allocations: 5272)
+
+
+Started GET "/login/callback?code=AQAWI4ICyI3YR2K1aD7liU4zoCLRg_1H1nDSXca20EunTeIYd-sS0Wqf4u53JggCf4HctrcOciaGmGJp9WM5dnF5v-utIpc8BHSdU9IYMsWAVFypvQiimTVwW9x0_A4BMJgx3xjur2s1Ph7x70dyVDNwwAn5v4oVSDs1pV4M2d3l9HYhg339eTwtGVq4VpNRiEDPGRo2d1B0gK9yqMHjzTxlIqWxaBQ9ujS9p5WxZ4ShNzJV" for ::1 at 2022-09-01 14:26:42 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAWI4ICyI3YR2K1aD7liU4zoCLRg_1H1nDSXca20EunTeIYd-sS0Wqf4u53JggCf4HctrcOciaGmGJp9WM5dnF5v-utIpc8BHSdU9IYMsWAVFypvQiimTVwW9x0_A4BMJgx3xjur2s1Ph7x70dyVDNwwAn5v4oVSDs1pV4M2d3l9HYhg339eTwtGVq4VpNRiEDPGRo2d1B0gK9yqMHjzTxlIqWxaBQ9ujS9p5WxZ4ShNzJV"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4879)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 5197)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:26:54 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3748)
+Completed 200 OK in 13ms (Views: 12.0ms | Allocations: 4088)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:28:39 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3748)
+Completed 200 OK in 17ms (Views: 16.5ms | Allocations: 4088)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:36:38 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4992)
+Completed 200 OK in 14ms (Views: 13.1ms | Allocations: 5538)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:37:09 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 12144)
+Completed 200 OK in 30ms (Views: 28.9ms | Allocations: 13916)
+
+
+Started GET "/login/callback?code=AQApFIyNUY3xYqjyUnwkcTUvf5hwRyV0ezlt_fUlhaVWUaugRy6diXoptuMGQq27c2eWfr-tKfL79KJUGflxU6eusPTbooch9YrkeosO_lhgwdbX4x6cZLIvluuwCGXkP8CWg5gjziG7Y8m_9ESx22PzFDVrBjiFA-omp9tZBFhP1WxgVbcWPLSXIIktKkuN57evjg5gRzZMtCxFrSnlqPIqokbAe-rUogZRm7481_KZ9h_F" for ::1 at 2022-09-01 14:37:15 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQApFIyNUY3xYqjyUnwkcTUvf5hwRyV0ezlt_fUlhaVWUaugRy6diXoptuMGQq27c2eWfr-tKfL79KJUGflxU6eusPTbooch9YrkeosO_lhgwdbX4x6cZLIvluuwCGXkP8CWg5gjziG7Y8m_9ESx22PzFDVrBjiFA-omp9tZBFhP1WxgVbcWPLSXIIktKkuN57evjg5gRzZMtCxFrSnlqPIqokbAe-rUogZRm7481_KZ9h_F"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4929)
+Completed 200 OK in 29ms (Views: 13.3ms | Allocations: 5320)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:37:57 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 4992)
+Completed 200 OK in 16ms (Views: 14.9ms | Allocations: 5538)
+
+
+Started GET "/login/callback?code=AQDqIn-RVIis_Lqhm02RiEa2WeErzit3n8OlA84LTvmkbnRB9T0W-Y1jAgjVQf159oHL3xh1VY0jGYmZ2eSfG3v_lpV3HcyCxB8uiUDvLkUiunPUm1nRErexSq2bj1uzY8nXhEclw_RY44FZDFNtB36-76S5JY3gsFz6nSbac6jHYbDfYlkddkAe98H8oYZZ8sVaBHUUK4BmJEm_eGBpGPPLNHaLfzbRAnbV8yPQPzipgxjC" for ::1 at 2022-09-01 14:37:59 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDqIn-RVIis_Lqhm02RiEa2WeErzit3n8OlA84LTvmkbnRB9T0W-Y1jAgjVQf159oHL3xh1VY0jGYmZ2eSfG3v_lpV3HcyCxB8uiUDvLkUiunPUm1nRErexSq2bj1uzY8nXhEclw_RY44FZDFNtB36-76S5JY3gsFz6nSbac6jHYbDfYlkddkAe98H8oYZZ8sVaBHUUK4BmJEm_eGBpGPPLNHaLfzbRAnbV8yPQPzipgxjC"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4879)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 5233)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:38:18 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4992)
+Completed 200 OK in 13ms (Views: 12.9ms | Allocations: 5538)
+
+
+Started GET "/login/callback?code=AQAiqIIt2sno8fmkMSxv4l3z8MQvvGXadT8dkEFUyaeCEvBbRVFYn-NO2nJ7_FsjKxEF4DjQW0JS8YB3NBgKY5UdeuF8CmvptlY3f3pazFz5H8CevwAE5GkKNcLxITwFrSukSrfSSnS199SFKO2XxmhoQKOaDVG-5nkaT6VcQiNcmJcRh7b_04bSvOEde5fsDRuKUKTvKVWjd2yiSSl9p7QHukJu-xoLp4iV9tQfk-ppTfql" for ::1 at 2022-09-01 14:38:20 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAiqIIt2sno8fmkMSxv4l3z8MQvvGXadT8dkEFUyaeCEvBbRVFYn-NO2nJ7_FsjKxEF4DjQW0JS8YB3NBgKY5UdeuF8CmvptlY3f3pazFz5H8CevwAE5GkKNcLxITwFrSukSrfSSnS199SFKO2XxmhoQKOaDVG-5nkaT6VcQiNcmJcRh7b_04bSvOEde5fsDRuKUKTvKVWjd2yiSSl9p7QHukJu-xoLp4iV9tQfk-ppTfql"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4879)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 5235)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:38:39 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4992)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 5538)
+
+
+Started GET "/login/callback?code=AQCGByT5WC4QwuooMKvNtXndS0rVXH97YT4pL0b0PHjYni0i4zeA-HD8PQGyB_bjoMbxUNUhnEuiA__WP5nXB71HUWWegFiD2MAI0j7r24vFFh1CI1mubBO3SwWxpUeFK5Inp06IJpiqUNzjqJhgaX-T0EJQ5nDov4KzrDtyLScoaMBR0fku2Bs-VqD19TNsd2eBG7RNysFPBZsgDn1xx_p_w1V6duRJ8ufjgWYa2KDLHJcS" for ::1 at 2022-09-01 14:38:41 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCGByT5WC4QwuooMKvNtXndS0rVXH97YT4pL0b0PHjYni0i4zeA-HD8PQGyB_bjoMbxUNUhnEuiA__WP5nXB71HUWWegFiD2MAI0j7r24vFFh1CI1mubBO3SwWxpUeFK5Inp06IJpiqUNzjqJhgaX-T0EJQ5nDov4KzrDtyLScoaMBR0fku2Bs-VqD19TNsd2eBG7RNysFPBZsgDn1xx_p_w1V6duRJ8ufjgWYa2KDLHJcS"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4929)
+Completed 200 OK in 12ms (Views: 11.6ms | Allocations: 5265)
+
+
+Started GET "/login/callback?code=AQCGByT5WC4QwuooMKvNtXndS0rVXH97YT4pL0b0PHjYni0i4zeA-HD8PQGyB_bjoMbxUNUhnEuiA__WP5nXB71HUWWegFiD2MAI0j7r24vFFh1CI1mubBO3SwWxpUeFK5Inp06IJpiqUNzjqJhgaX-T0EJQ5nDov4KzrDtyLScoaMBR0fku2Bs-VqD19TNsd2eBG7RNysFPBZsgDn1xx_p_w1V6duRJ8ufjgWYa2KDLHJcS" for ::1 at 2022-09-01 15:44:37 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCGByT5WC4QwuooMKvNtXndS0rVXH97YT4pL0b0PHjYni0i4zeA-HD8PQGyB_bjoMbxUNUhnEuiA__WP5nXB71HUWWegFiD2MAI0j7r24vFFh1CI1mubBO3SwWxpUeFK5Inp06IJpiqUNzjqJhgaX-T0EJQ5nDov4KzrDtyLScoaMBR0fku2Bs-VqD19TNsd2eBG7RNysFPBZsgDn1xx_p_w1V6duRJ8ufjgWYa2KDLHJcS"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 4036)
+
+
+  
+NameError (uninitialized constant LoginController::RestClient):
+  
+app/controllers/login_controller.rb:12:in `callback'
+Started GET "/" for ::1 at 2022-09-01 15:44:41 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 197.8ms | Allocations: 45757)
+Completed 200 OK in 204ms (Views: 201.6ms | ActiveRecord: 0.0ms | Allocations: 47027)
+
+
+Started GET "/" for ::1 at 2022-09-01 15:44:53 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 5323)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 6440)
+
+
+Started GET "/scoreboard/index" for ::1 at 2022-09-01 15:51:36 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 5098)
+Completed 200 OK in 28ms (Views: 26.7ms | Allocations: 5979)
+
+
+Started GET "/scoreboard/index" for ::1 at 2022-09-01 15:57:48 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 5274)
+Completed 200 OK in 36ms (Views: 32.3ms | Allocations: 6367)
+
+

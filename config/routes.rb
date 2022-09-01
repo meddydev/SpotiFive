@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'scoreboard/index'
   root 'login#index'
   get 'login/callback'
   resources :games
