@@ -655,3 +655,484 @@ Processing by LoginController#callback as HTML
 Completed 200 OK in 3ms (Views: 3.0ms | Allocations: 5527)
 
 
+Started GET "/" for ::1 at 2022-09-01 13:49:18 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 332)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 10527)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 13825)
+
+
+Started GET "/login/callback?code=AQC85AJyEA8GpE7VGUgfdYk8lB2YPhy_O4cVnHQe8k8srhDNXFKEMDcTlUwhFKERpMqN62kt1xX1ObQh2JzF6jzVZDEafE6VsffOYt8xM5jNziEfUnfEWHNrvz3hq2AAMHslqCJ8xG3Xqz35vleUgjLEMq3Fe59ZkJXx8M9YBPDJvCJyT8ofBOanayE8gQh_nD9ZpuBmclr5YeLbmnA6N2UMDhXcnWGwgnbWkM-S303Zr29H" for ::1 at 2022-09-01 13:49:20 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQC85AJyEA8GpE7VGUgfdYk8lB2YPhy_O4cVnHQe8k8srhDNXFKEMDcTlUwhFKERpMqN62kt1xX1ObQh2JzF6jzVZDEafE6VsffOYt8xM5jNziEfUnfEWHNrvz3hq2AAMHslqCJ8xG3Xqz35vleUgjLEMq3Fe59ZkJXx8M9YBPDJvCJyT8ofBOanayE8gQh_nD9ZpuBmclr5YeLbmnA6N2UMDhXcnWGwgnbWkM-S303Zr29H"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.8ms | Allocations: 70)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4930)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5389)
+
+
+Started GET "/" for ::1 at 2022-09-01 13:49:36 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3753)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4101)
+
+
+Started GET "/login/callback?code=AQAuWq1BxUZ2aHU0RMLJcBndCGxo2sXBjfHoTj_uUW-g0p-TwRAFnUcCxeSWVzG3GAxASRakts00woB7GpE1N1VtdvSk0xiZnm6upertOzfC2glUQnSmX1rP4H2l_YHWK3N5Ioraif70Iqkga8he3-q6ShVHeZB8bov_itzQLlA_Z4xgwE3HWxYn3tnJ-evf7u41ZBiDml1NoyhqjCLxcfAso7do-dVJMznvlZgEBhsEhWLy" for ::1 at 2022-09-01 13:51:53 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAuWq1BxUZ2aHU0RMLJcBndCGxo2sXBjfHoTj_uUW-g0p-TwRAFnUcCxeSWVzG3GAxASRakts00woB7GpE1N1VtdvSk0xiZnm6upertOzfC2glUQnSmX1rP4H2l_YHWK3N5Ioraif70Iqkga8he3-q6ShVHeZB8bov_itzQLlA_Z4xgwE3HWxYn3tnJ-evf7u41ZBiDml1NoyhqjCLxcfAso7do-dVJMznvlZgEBhsEhWLy"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4926)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 5254)
+
+
+Started GET "/login/callback?code=AQDM1EmC97xdVsn8uOCtRdh0pqpPwHnvXbDXvEoh_xEmvcFH8pn3PixvVKInpUnQej0XT2dXfYGDcXG-OY880G66uVqNuqdsjMXMab3cOxRD4Rgnb4FKOjw1YtXjqpxeeg53k-cZR_hJUoUnU_5uuwbvys5zxVH1tT2XvwoM_ymVpb0HJFmqs-tw--S94eB9LYSPcoomJiL2RJqTkvMZ82QkjX2eHFL6LCRQPXMTtVbzEFvU" for ::1 at 2022-09-01 13:53:35 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDM1EmC97xdVsn8uOCtRdh0pqpPwHnvXbDXvEoh_xEmvcFH8pn3PixvVKInpUnQej0XT2dXfYGDcXG-OY880G66uVqNuqdsjMXMab3cOxRD4Rgnb4FKOjw1YtXjqpxeeg53k-cZR_hJUoUnU_5uuwbvys5zxVH1tT2XvwoM_ymVpb0HJFmqs-tw--S94eB9LYSPcoomJiL2RJqTkvMZ82QkjX2eHFL6LCRQPXMTtVbzEFvU"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.6ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 10486)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 13739)
+
+
+Started GET "/login/callback?code=AQCJ1aD98QoIrSAr6BLeEgvqu0tSM3nNzOpmEhganejrkCGpyj5wTWClNUtj6SVekg2ygCkNrZjZI6KKkygfIIu3-D5srviNXaDX6E8suOC42uCrz3K-Ia4sbbYeWchnrGf6sL62_ZHamw0kNaWn1W_fGMwYgSM9MQjDxmwRE21egQWlfKQfvAG4C2ZeLnfnUE9wCstjvwoQAc-n2mwAvvJfddMyCpquK-I_YLymCxvkKW29" for ::1 at 2022-09-01 13:57:27 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCJ1aD98QoIrSAr6BLeEgvqu0tSM3nNzOpmEhganejrkCGpyj5wTWClNUtj6SVekg2ygCkNrZjZI6KKkygfIIu3-D5srviNXaDX6E8suOC42uCrz3K-Ia4sbbYeWchnrGf6sL62_ZHamw0kNaWn1W_fGMwYgSM9MQjDxmwRE21egQWlfKQfvAG4C2ZeLnfnUE9wCstjvwoQAc-n2mwAvvJfddMyCpquK-I_YLymCxvkKW29"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3751)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 4081)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:26:25 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3913)
+Completed 200 OK in 13ms (Views: 11.3ms | Allocations: 5103)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:31:18 +0100
+Processing by LoginController#index as HTML
+Completed 500 Internal Server Error in 0ms (Allocations: 487)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/login_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-09-01 14:32:36 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 4988)
+Completed 200 OK in 4ms (Views: 3.4ms | Allocations: 5541)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:33:07 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 4985)
+Completed 200 OK in 3ms (Views: 3.0ms | Allocations: 5541)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:33:33 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4985)
+Completed 200 OK in 12ms (Views: 11.4ms | Allocations: 5540)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:34:22 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 4985)
+Completed 200 OK in 5ms (Views: 5.0ms | Allocations: 5540)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:34:31 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4926)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 5275)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:34:56 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4925)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 5274)
+
+
+Started GET "/" for ::1 at 2022-09-01 14:39:08 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 333)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 10435)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 14303)
+
+
+Started GET "/login/callback?code=AQCqWUm5Mp1elt7g9aHbHyCgJu2f3jSxNWPCPkYmKzCNdTyoU7uU9mz4HS6Du0v4apRxw8o8wY0ekSaXGOoDQcnCLddJ08qaz6tlXTk3XE9OSh2j32GPxq_wUUsS6B63dIrG8KJSCji0NdcGGWEMjmcE6UX5abh6_vm9ludtTRPU6UZ6u85r9AWxaGCbhxUOAuGhANdlCWKL8kDhDYErzoK2kig_xDKG8QgACzNS_O8Oa3u2" for ::1 at 2022-09-01 14:39:16 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCqWUm5Mp1elt7g9aHbHyCgJu2f3jSxNWPCPkYmKzCNdTyoU7uU9mz4HS6Du0v4apRxw8o8wY0ekSaXGOoDQcnCLddJ08qaz6tlXTk3XE9OSh2j32GPxq_wUUsS6B63dIrG8KJSCji0NdcGGWEMjmcE6UX5abh6_vm9ludtTRPU6UZ6u85r9AWxaGCbhxUOAuGhANdlCWKL8kDhDYErzoK2kig_xDKG8QgACzNS_O8Oa3u2"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2896)
+
+
+  
+NoMethodError (undefined method `post' for #<LoginController:0x0000000001eed8>):
+  
+app/controllers/login_controller.rb:11:in `callback'
+Started GET "/" for ::1 at 2022-09-01 15:53:18 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4989)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 5540)
+
+
+Started GET "/login/callback?code=AQBaXpxktRSco5cBRDMGjOKvjLF5ji5ao4opk8mZUqqSyimjGUZyhFEbAsC8jgVQA79MqRt5WLk2nIE6GqzWQGcxgsNHSSrpajiqhiSVWQGayOx4McUDlgMT_bBp2bo4-jhPkQsWgEmBy9axR1rhVgCnfDWw5_nRxjoOe4ztif338f8qPzUYScOwch8Vg-tKPIdyrv1Fi_yq3IweOAzmvEsEa7ajG7h92bNuJE-pWB0lyyFV" for ::1 at 2022-09-01 15:53:19 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQBaXpxktRSco5cBRDMGjOKvjLF5ji5ao4opk8mZUqqSyimjGUZyhFEbAsC8jgVQA79MqRt5WLk2nIE6GqzWQGcxgsNHSSrpajiqhiSVWQGayOx4McUDlgMT_bBp2bo4-jhPkQsWgEmBy9axR1rhVgCnfDWw5_nRxjoOe4ztif338f8qPzUYScOwch8Vg-tKPIdyrv1Fi_yq3IweOAzmvEsEa7ajG7h92bNuJE-pWB0lyyFV"}
+Completed 500 Internal Server Error in 98ms (Allocations: 4529)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/login_controller.rb:11:in `callback'
+Started POST "/__web_console/repl_sessions/7000bbd212dec3fe65bee3d389346279/trace" for ::1 at 2022-09-01 15:53:51 +0100
+Started GET "/login/callback?code=AQBaXpxktRSco5cBRDMGjOKvjLF5ji5ao4opk8mZUqqSyimjGUZyhFEbAsC8jgVQA79MqRt5WLk2nIE6GqzWQGcxgsNHSSrpajiqhiSVWQGayOx4McUDlgMT_bBp2bo4-jhPkQsWgEmBy9axR1rhVgCnfDWw5_nRxjoOe4ztif338f8qPzUYScOwch8Vg-tKPIdyrv1Fi_yq3IweOAzmvEsEa7ajG7h92bNuJE-pWB0lyyFV" for ::1 at 2022-09-01 15:54:11 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQBaXpxktRSco5cBRDMGjOKvjLF5ji5ao4opk8mZUqqSyimjGUZyhFEbAsC8jgVQA79MqRt5WLk2nIE6GqzWQGcxgsNHSSrpajiqhiSVWQGayOx4McUDlgMT_bBp2bo4-jhPkQsWgEmBy9axR1rhVgCnfDWw5_nRxjoOe4ztif338f8qPzUYScOwch8Vg-tKPIdyrv1Fi_yq3IweOAzmvEsEa7ajG7h92bNuJE-pWB0lyyFV"}
+Completed 500 Internal Server Error in 64ms (Allocations: 3767)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/login_controller.rb:11:in `callback'
+Started GET "/login/callback?code=AQBedvbbpbx0lxD06cUP1xERkQtrG2D8XN8rBB-hpFbB1B9RY-gLlDtc_j78UT-VIHdO45UlGKRDVE68AFYcwiEoKSYIm1jjIPUPCUzd0j9wzOiYjLv0vErR0exCMitgbeZL9w5BiQfVUduvhI6NRXyrrHGUM-AXe4nF6a9pZal_qS02CqwVjQhLgCcidOZ3G3RQiNmu2kpWivrHS9w1fpMtxn7T2ePbrEa6m4kJSpZqs9yc" for ::1 at 2022-09-01 15:54:31 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQBedvbbpbx0lxD06cUP1xERkQtrG2D8XN8rBB-hpFbB1B9RY-gLlDtc_j78UT-VIHdO45UlGKRDVE68AFYcwiEoKSYIm1jjIPUPCUzd0j9wzOiYjLv0vErR0exCMitgbeZL9w5BiQfVUduvhI6NRXyrrHGUM-AXe4nF6a9pZal_qS02CqwVjQhLgCcidOZ3G3RQiNmu2kpWivrHS9w1fpMtxn7T2ePbrEa6m4kJSpZqs9yc"}
+Completed 500 Internal Server Error in 77ms (Allocations: 3782)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/login_controller.rb:11:in `callback'
+Started GET "/login/callback?code=AQDxU0AJSHaRDupM5LITWQGwqdivNMrwa7hZe-LDpYLf1sBZ7nNBbwJYWlwEYjQZh_FcV62lS-xDBKGRW6eV2ZTjze1dnISvPlF0rconZp5Jc2o3uw70AFuUfFlz5AlY4xeJbYHDsPsQOPeiRDnKngqSi1b43vHsReRF0QlVYbjyunn2HCWB7j19ikmfM6PTcNcZPXjbi6d69lRgL91GEUiPuenxelosRQDN8PgSXiJgd3Xj" for ::1 at 2022-09-01 15:55:14 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDxU0AJSHaRDupM5LITWQGwqdivNMrwa7hZe-LDpYLf1sBZ7nNBbwJYWlwEYjQZh_FcV62lS-xDBKGRW6eV2ZTjze1dnISvPlF0rconZp5Jc2o3uw70AFuUfFlz5AlY4xeJbYHDsPsQOPeiRDnKngqSi1b43vHsReRF0QlVYbjyunn2HCWB7j19ikmfM6PTcNcZPXjbi6d69lRgL91GEUiPuenxelosRQDN8PgSXiJgd3Xj"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 1.6ms | Allocations: 77)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3878)
+Completed 200 OK in 93ms (Views: 10.4ms | Allocations: 7657)
+
+
+Started GET "/login/callback?code=AQDxU0AJSHaRDupM5LITWQGwqdivNMrwa7hZe-LDpYLf1sBZ7nNBbwJYWlwEYjQZh_FcV62lS-xDBKGRW6eV2ZTjze1dnISvPlF0rconZp5Jc2o3uw70AFuUfFlz5AlY4xeJbYHDsPsQOPeiRDnKngqSi1b43vHsReRF0QlVYbjyunn2HCWB7j19ikmfM6PTcNcZPXjbi6d69lRgL91GEUiPuenxelosRQDN8PgSXiJgd3Xj" for ::1 at 2022-09-01 15:55:30 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDxU0AJSHaRDupM5LITWQGwqdivNMrwa7hZe-LDpYLf1sBZ7nNBbwJYWlwEYjQZh_FcV62lS-xDBKGRW6eV2ZTjze1dnISvPlF0rconZp5Jc2o3uw70AFuUfFlz5AlY4xeJbYHDsPsQOPeiRDnKngqSi1b43vHsReRF0QlVYbjyunn2HCWB7j19ikmfM6PTcNcZPXjbi6d69lRgL91GEUiPuenxelosRQDN8PgSXiJgd3Xj"}
+Completed 500 Internal Server Error in 68ms (Allocations: 9602)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/login_controller.rb:11:in `callback'
+Started GET "/login/callback?code=AQDxU0AJSHaRDupM5LITWQGwqdivNMrwa7hZe-LDpYLf1sBZ7nNBbwJYWlwEYjQZh_FcV62lS-xDBKGRW6eV2ZTjze1dnISvPlF0rconZp5Jc2o3uw70AFuUfFlz5AlY4xeJbYHDsPsQOPeiRDnKngqSi1b43vHsReRF0QlVYbjyunn2HCWB7j19ikmfM6PTcNcZPXjbi6d69lRgL91GEUiPuenxelosRQDN8PgSXiJgd3Xj" for ::1 at 2022-09-01 15:55:40 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDxU0AJSHaRDupM5LITWQGwqdivNMrwa7hZe-LDpYLf1sBZ7nNBbwJYWlwEYjQZh_FcV62lS-xDBKGRW6eV2ZTjze1dnISvPlF0rconZp5Jc2o3uw70AFuUfFlz5AlY4xeJbYHDsPsQOPeiRDnKngqSi1b43vHsReRF0QlVYbjyunn2HCWB7j19ikmfM6PTcNcZPXjbi6d69lRgL91GEUiPuenxelosRQDN8PgSXiJgd3Xj"}
+Completed 500 Internal Server Error in 129ms (Allocations: 6381)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/login_controller.rb:12:in `callback'
+Started GET "/login/callback?code=AQCCCpBzWssJPqIqcJB-MRs_zbaia4FXLnhCPrCkZ1zZrxtUbA2taghSCJ6cTyYL-yBAhjsHTTtKCN_hPzy-p62HmDG8-TR4GbQG0ApZdMmbM-5yy8pRqm0r_IUysChMail_ke-wwKEuvYN3sEv3H-xa1NgRYQFvzIAy2nmH6gUwxxQFxDhXbq50yZ2GJXDMPnlv8pOJfOac67pL-8HxUkskqPfPlTM0f4XMajMIXeNUuIgS" for ::1 at 2022-09-01 15:55:43 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCCCpBzWssJPqIqcJB-MRs_zbaia4FXLnhCPrCkZ1zZrxtUbA2taghSCJ6cTyYL-yBAhjsHTTtKCN_hPzy-p62HmDG8-TR4GbQG0ApZdMmbM-5yy8pRqm0r_IUysChMail_ke-wwKEuvYN3sEv3H-xa1NgRYQFvzIAy2nmH6gUwxxQFxDhXbq50yZ2GJXDMPnlv8pOJfOac67pL-8HxUkskqPfPlTM0f4XMajMIXeNUuIgS"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4983)
+Completed 200 OK in 103ms (Views: 11.2ms | Allocations: 7736)
+
+
+Started GET "/login/callback?code=AQCCCpBzWssJPqIqcJB-MRs_zbaia4FXLnhCPrCkZ1zZrxtUbA2taghSCJ6cTyYL-yBAhjsHTTtKCN_hPzy-p62HmDG8-TR4GbQG0ApZdMmbM-5yy8pRqm0r_IUysChMail_ke-wwKEuvYN3sEv3H-xa1NgRYQFvzIAy2nmH6gUwxxQFxDhXbq50yZ2GJXDMPnlv8pOJfOac67pL-8HxUkskqPfPlTM0f4XMajMIXeNUuIgS" for ::1 at 2022-09-01 15:56:12 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCCCpBzWssJPqIqcJB-MRs_zbaia4FXLnhCPrCkZ1zZrxtUbA2taghSCJ6cTyYL-yBAhjsHTTtKCN_hPzy-p62HmDG8-TR4GbQG0ApZdMmbM-5yy8pRqm0r_IUysChMail_ke-wwKEuvYN3sEv3H-xa1NgRYQFvzIAy2nmH6gUwxxQFxDhXbq50yZ2GJXDMPnlv8pOJfOac67pL-8HxUkskqPfPlTM0f4XMajMIXeNUuIgS"}
+Completed 500 Internal Server Error in 68ms (Allocations: 3511)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/login_controller.rb:12:in `callback'
+Started GET "/login/callback?code=AQCqJryyBuJwQYr1hwJUuN9L4LCI7xQaBoq1lsfc6wiFCIfOhsf2Xzv9adsrmkqlLLeNYUIZsUdg07CTM-uWMQxLVuWaSDaVV5nDc9plWs9g3JL-WsRp-NcvXDtM2slGZsQubqPivmeUh2z8WBnWNNEpOSavAkVutpUL2tHfuX6j1Kv8VaOGVFoawtrfFQNAMk6itL7_Wq0LY2M92OwfYVg2nc1X_sYl1JFKLPf_6zlOZ-VQ" for ::1 at 2022-09-01 15:56:16 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCqJryyBuJwQYr1hwJUuN9L4LCI7xQaBoq1lsfc6wiFCIfOhsf2Xzv9adsrmkqlLLeNYUIZsUdg07CTM-uWMQxLVuWaSDaVV5nDc9plWs9g3JL-WsRp-NcvXDtM2slGZsQubqPivmeUh2z8WBnWNNEpOSavAkVutpUL2tHfuX6j1Kv8VaOGVFoawtrfFQNAMk6itL7_Wq0LY2M92OwfYVg2nc1X_sYl1JFKLPf_6zlOZ-VQ"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 4983)
+Completed 200 OK in 106ms (Views: 16.3ms | Allocations: 7896)
+
+
+Started GET "/login/callback?code=AQCqJryyBuJwQYr1hwJUuN9L4LCI7xQaBoq1lsfc6wiFCIfOhsf2Xzv9adsrmkqlLLeNYUIZsUdg07CTM-uWMQxLVuWaSDaVV5nDc9plWs9g3JL-WsRp-NcvXDtM2slGZsQubqPivmeUh2z8WBnWNNEpOSavAkVutpUL2tHfuX6j1Kv8VaOGVFoawtrfFQNAMk6itL7_Wq0LY2M92OwfYVg2nc1X_sYl1JFKLPf_6zlOZ-VQ" for ::1 at 2022-09-01 15:56:48 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCqJryyBuJwQYr1hwJUuN9L4LCI7xQaBoq1lsfc6wiFCIfOhsf2Xzv9adsrmkqlLLeNYUIZsUdg07CTM-uWMQxLVuWaSDaVV5nDc9plWs9g3JL-WsRp-NcvXDtM2slGZsQubqPivmeUh2z8WBnWNNEpOSavAkVutpUL2tHfuX6j1Kv8VaOGVFoawtrfFQNAMk6itL7_Wq0LY2M92OwfYVg2nc1X_sYl1JFKLPf_6zlOZ-VQ"}
+Completed 500 Internal Server Error in 74ms (Allocations: 3510)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/login_controller.rb:12:in `callback'
+Started GET "/login/callback?code=AQB_uZIe24_FxDbDT8KEPx-aBU1JKZWXZNZBf9RzwEoDCD6goNM261d2nXCGgISebQVf5pnCbS_-NknAXBMl4Jfw1AFEXGjpSR0fbIAamWtfMWKMlmstIw-SRgHOq1DQ5ziz5UkuNIOSQZCtBVDYL94ncAYbcYzbFYi_7Mglnw_dOH9VtIJuaIovpXXNRjwx_9m1prBUnpTmksc7B0RZ3pfCHPZDJzB7voiCYoedhihgKgV5" for ::1 at 2022-09-01 15:56:53 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQB_uZIe24_FxDbDT8KEPx-aBU1JKZWXZNZBf9RzwEoDCD6goNM261d2nXCGgISebQVf5pnCbS_-NknAXBMl4Jfw1AFEXGjpSR0fbIAamWtfMWKMlmstIw-SRgHOq1DQ5ziz5UkuNIOSQZCtBVDYL94ncAYbcYzbFYi_7Mglnw_dOH9VtIJuaIovpXXNRjwx_9m1prBUnpTmksc7B0RZ3pfCHPZDJzB7voiCYoedhihgKgV5"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4984)
+Completed 200 OK in 94ms (Views: 14.2ms | Allocations: 7775)
+
+
+Started GET "/login/callback?code=AQCNFHfZdx3VzrP2-Iq3jIyv1-ZO2jCfwLa0DrkLkcddF_Jvn_-anI_ED-AkajOqVM2XJNr0IyNuZ0NHoxqIliPSev993iY6uPM5UPgB2gGFeIMbNdLvbiIdGXn55grGi-KylAGQtUJ6UE7xufHldAp6HaEf_3GKkkEHwxDyoO2xO19FUq7HHLabX6mJcmInd5xMBPabhjzk3D3Ngf4R87tFlbaUazVYyx4OV0-6p2PHnQbZ" for ::1 at 2022-09-01 15:57:15 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCNFHfZdx3VzrP2-Iq3jIyv1-ZO2jCfwLa0DrkLkcddF_Jvn_-anI_ED-AkajOqVM2XJNr0IyNuZ0NHoxqIliPSev993iY6uPM5UPgB2gGFeIMbNdLvbiIdGXn55grGi-KylAGQtUJ6UE7xufHldAp6HaEf_3GKkkEHwxDyoO2xO19FUq7HHLabX6mJcmInd5xMBPabhjzk3D3Ngf4R87tFlbaUazVYyx4OV0-6p2PHnQbZ"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 5877)
+Completed 200 OK in 79ms (Views: 8.5ms | Allocations: 10689)
+
+
+Started GET "/login/callback?code=AQBSbG65mqiSRCjqwlEwDSvIGAoluxu-_v8a80yPCCEaayMDsC_5YBlAYzqTcqK2YYA0ju0k-iR_negTm6rmjUExD-WERLbNxLET5zhgYuPBQnr22MhGdYs8_K8XazOpfaCQHzJVzQoniUqD3YCrHNcZLjnR9fn3R7KwoeEcPbie69GM-NBHr7Wpwz9Xz5Iox3uPRWojJMdf0-kIYbIvV41_xnG9CKFEkUsSftgERNNBazSz" for ::1 at 2022-09-01 15:58:08 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQBSbG65mqiSRCjqwlEwDSvIGAoluxu-_v8a80yPCCEaayMDsC_5YBlAYzqTcqK2YYA0ju0k-iR_negTm6rmjUExD-WERLbNxLET5zhgYuPBQnr22MhGdYs8_K8XazOpfaCQHzJVzQoniUqD3YCrHNcZLjnR9fn3R7KwoeEcPbie69GM-NBHr7Wpwz9Xz5Iox3uPRWojJMdf0-kIYbIvV41_xnG9CKFEkUsSftgERNNBazSz"}
+Completed 500 Internal Server Error in 5ms (Allocations: 2808)
+
+
+  
+NoMethodError (undefined method `login_path' for #<LoginController:0x0000000002c768>):
+  
+app/controllers/login_controller.rb:9:in `callback'
+Started GET "/login/callback?code=AQCMcZ_PdGZj_dXPK2rn78ajO6OmTRvWAh7GnbcO7SWcIBLjcwAK9wd8RjBGMmKP-y1o42Kb9i3N_dozmR7NAbuoXnVGEdMRfCKfITGMXY-mkkcRIFB98z-fSGJnJHUtKqJ4ywUeCWgVH8xC9WaeVg-dpms4aI_9O353gdmw08K6qMPAGa1GxW5XaxaTE9_AOIX1hB4tRi3bw9y329Aa17qyujT7aEC8cyoDvxScOaM7zyZs" for ::1 at 2022-09-01 15:58:49 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCMcZ_PdGZj_dXPK2rn78ajO6OmTRvWAh7GnbcO7SWcIBLjcwAK9wd8RjBGMmKP-y1o42Kb9i3N_dozmR7NAbuoXnVGEdMRfCKfITGMXY-mkkcRIFB98z-fSGJnJHUtKqJ4ywUeCWgVH8xC9WaeVg-dpms4aI_9O353gdmw08K6qMPAGa1GxW5XaxaTE9_AOIX1hB4tRi3bw9y329Aa17qyujT7aEC8cyoDvxScOaM7zyZs"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4983)
+Completed 200 OK in 99ms (Views: 10.3ms | Allocations: 7720)
+
+
+Started GET "/login/callback?code=AQAv0da-j6x6jDj_kctF8xsVOTkBi8sG9D03bg4884I2ugd45tWnTzvk7D5hnOoU1M4BZMGR1UXXnFUr2GO_rCg5iiklzc3JKrLW4rMDiKllV4ERhLXZ-4xvMdDZfd7aLKMWu6KCQlFLsl1qCGCKyvlzHjqstFttWOUwaRlVBUpFZiYALJv-Hd7ea4bXb780T6wxo_8lpYFPKMfoDmMKupTOpDkIr_o8p9k7WPgb7hqhKzaa" for ::1 at 2022-09-01 15:59:27 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAv0da-j6x6jDj_kctF8xsVOTkBi8sG9D03bg4884I2ugd45tWnTzvk7D5hnOoU1M4BZMGR1UXXnFUr2GO_rCg5iiklzc3JKrLW4rMDiKllV4ERhLXZ-4xvMdDZfd7aLKMWu6KCQlFLsl1qCGCKyvlzHjqstFttWOUwaRlVBUpFZiYALJv-Hd7ea4bXb780T6wxo_8lpYFPKMfoDmMKupTOpDkIr_o8p9k7WPgb7hqhKzaa"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4984)
+Completed 200 OK in 89ms (Views: 9.2ms | Allocations: 7868)
+
+
+Started GET "/login/callback?code=AQCXBLTAnZ4Ih9LLyejGqN26ntSqTgas3eqYMI6iklQa05sVOl4wAs27KDR1VWK8dHsnbXI5Pf19N83VGTwwcjalj0Qc1qYGpOzfMGzHqnepRcoWAMwpLc5v2e5GM3AKL81ufUOzP21kE2gBJmuCYDTpniH5NjdC8GoTClJOfgJma-MfnuPx6_tHJN0RGevrPj28MIYhIDB6JSjWpjrNpNXS0LyEncftFRtQAN3mOilEEq3x" for ::1 at 2022-09-01 15:59:59 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCXBLTAnZ4Ih9LLyejGqN26ntSqTgas3eqYMI6iklQa05sVOl4wAs27KDR1VWK8dHsnbXI5Pf19N83VGTwwcjalj0Qc1qYGpOzfMGzHqnepRcoWAMwpLc5v2e5GM3AKL81ufUOzP21kE2gBJmuCYDTpniH5NjdC8GoTClJOfgJma-MfnuPx6_tHJN0RGevrPj28MIYhIDB6JSjWpjrNpNXS0LyEncftFRtQAN3mOilEEq3x"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4983)
+Completed 200 OK in 103ms (Views: 11.5ms | Allocations: 7823)
+
+
+Started GET "/login/callback?code=AQD5d5QpRxEFeE-ENjp1t6eDd-bYDztCly56OFBJykUQ1iyjJF2LFmfOQvycqSZfMIgacPgqghIjhAwDN36y4FMqtWvQc1fFyTpwCAlz-_ZtXpq9T5beBMuIJpdrvFm-RWiiSoeJZYJBEeVbWq6ze6U88n86ezNutOcofGwBC6PGdFUfG3uEOUSeCffai8wwVtMaJhgV5uO1TQdAowkneNrvkZMCNBjrBNNjwfz-7dYFSy5k" for ::1 at 2022-09-01 16:01:12 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQD5d5QpRxEFeE-ENjp1t6eDd-bYDztCly56OFBJykUQ1iyjJF2LFmfOQvycqSZfMIgacPgqghIjhAwDN36y4FMqtWvQc1fFyTpwCAlz-_ZtXpq9T5beBMuIJpdrvFm-RWiiSoeJZYJBEeVbWq6ze6U88n86ezNutOcofGwBC6PGdFUfG3uEOUSeCffai8wwVtMaJhgV5uO1TQdAowkneNrvkZMCNBjrBNNjwfz-7dYFSy5k"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.2ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4983)
+Completed 200 OK in 154ms (Views: 16.2ms | Allocations: 15908)
+
+
+Started GET "/login/callback?code=AQDyq4h92wLEGPMFojnz5KrgTENqREH18b_JSqwq5WT4TVDto4MbptpHmPvCmY2zYi1AfLIDjnfo8uYZSOMHJa1zLDrC_zWl4yWGNVrd1ccdumUS_ogkT9xPpgBnSAgkmZFd9vCzcmHTn0zwkuFrxHArlhopN4fIs54aGrDwx6cKNty7G73fXNxnwQqejK6JbxMGOqh-QnvLxk3y1H2BN3HmbyguWvzV568pjIe-rI3Ijxw8" for ::1 at 2022-09-01 16:03:11 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDyq4h92wLEGPMFojnz5KrgTENqREH18b_JSqwq5WT4TVDto4MbptpHmPvCmY2zYi1AfLIDjnfo8uYZSOMHJa1zLDrC_zWl4yWGNVrd1ccdumUS_ogkT9xPpgBnSAgkmZFd9vCzcmHTn0zwkuFrxHArlhopN4fIs54aGrDwx6cKNty7G73fXNxnwQqejK6JbxMGOqh-QnvLxk3y1H2BN3HmbyguWvzV568pjIe-rI3Ijxw8"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 4984)
+Completed 200 OK in 1243ms (Views: 21.2ms | Allocations: 25467)
+
+
+Started GET "/login/callback?code=AQDxp5Myv0zRrwcMZ8e9uCMw5LW9F4WpofehalzFElyHNZJMZSVRWUpQXuinuWExDErhunhjnSOlvITidetuYFBes5nheVHqM6HJVw3clUJ7s18ivmXDDeHVpy1AR8uyFIs066l0kCjYayvnY4LeYvRMc3Bh-48yYFewK4LOu8K6zZSG7Vo-LtjXgmLdCzoCeanFWot5ql2Mfm2XzCTcuGfJfF2xvYkgEa97FCGQa1Whgb_a" for ::1 at 2022-09-01 16:03:43 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDxp5Myv0zRrwcMZ8e9uCMw5LW9F4WpofehalzFElyHNZJMZSVRWUpQXuinuWExDErhunhjnSOlvITidetuYFBes5nheVHqM6HJVw3clUJ7s18ivmXDDeHVpy1AR8uyFIs066l0kCjYayvnY4LeYvRMc3Bh-48yYFewK4LOu8K6zZSG7Vo-LtjXgmLdCzoCeanFWot5ql2Mfm2XzCTcuGfJfF2xvYkgEa97FCGQa1Whgb_a"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4984)
+Completed 200 OK in 85ms (Views: 8.0ms | Allocations: 7627)
+
+
+Started GET "/login/callback?code=AQAZHK3Ri5CZ97nkeyMDS56BuX34fl5PSadcHSy3PrruIhgDraY9DGTtJNWSgs6jSnHxIkbUJIFgkEpM0CeZRLJF516S_7TJQEfFIU8eO9I8gQDxB_AIb8-jXKe7peTg2OfZk4w0hCcipToTYoOspndrjaSiwR1jMmiadp20CbhQsXYEANmwkovjFHDEgP_VJ-WYTdUu7aw-wBprj3t4aL8buOvvTaSwB8urB5HFsne7r7Wo" for ::1 at 2022-09-01 16:04:16 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAZHK3Ri5CZ97nkeyMDS56BuX34fl5PSadcHSy3PrruIhgDraY9DGTtJNWSgs6jSnHxIkbUJIFgkEpM0CeZRLJF516S_7TJQEfFIU8eO9I8gQDxB_AIb8-jXKe7peTg2OfZk4w0hCcipToTYoOspndrjaSiwR1jMmiadp20CbhQsXYEANmwkovjFHDEgP_VJ-WYTdUu7aw-wBprj3t4aL8buOvvTaSwB8urB5HFsne7r7Wo"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 4983)
+Completed 200 OK in 81ms (Views: 7.3ms | Allocations: 7783)
+
+
+Started GET "/login/callback?code=AQBiU8z0h01Ieidhg25miXlvlOJFFnX7-CIgOCUV_oG5aboVcSUhikyH-dYH9fWWe5HZTb74S6wcEYnXvPKK5zyWHmMc847mftQSfMqnCPEoNU71KRGUQe2jmAWlxXhtItNVB88SZAZ8cE95l-5ZiLjxoqWg87cHHs-PDzVfs-NlIVPyxyNHrZEjvbGqB2SGILBuML30eewRUD7Ka1CAg7r51SXyR0VByb5oC1cgdbR9td6f" for ::1 at 2022-09-01 16:04:50 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQBiU8z0h01Ieidhg25miXlvlOJFFnX7-CIgOCUV_oG5aboVcSUhikyH-dYH9fWWe5HZTb74S6wcEYnXvPKK5zyWHmMc847mftQSfMqnCPEoNU71KRGUQe2jmAWlxXhtItNVB88SZAZ8cE95l-5ZiLjxoqWg87cHHs-PDzVfs-NlIVPyxyNHrZEjvbGqB2SGILBuML30eewRUD7Ka1CAg7r51SXyR0VByb5oC1cgdbR9td6f"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4984)
+Completed 200 OK in 82ms (Views: 9.0ms | Allocations: 7748)
+
+
+Started GET "/login/callback?code=AQCSbsjGgzueA91HZgUH6rcy2w9IDjYwpKqNhSkymiNQ7ylUseHjUPChmnuefIRRn70tN_1sgEDycrBmzz1dkmJ9GMsb6Tq1Z4DR74g3jsL-QkfwTwO8wnazvPVbvPGMOzJgtiYbL5wOdjKUj97IHbqHNdgWtpd3cfHYZB0DntwcszZ0WuGLZC6Bewp-WpDjFryr_Q3LxJYbVDE5VTlV7EebD9-FvnLfxJgm6nclN5mBZAYK" for ::1 at 2022-09-01 16:05:17 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCSbsjGgzueA91HZgUH6rcy2w9IDjYwpKqNhSkymiNQ7ylUseHjUPChmnuefIRRn70tN_1sgEDycrBmzz1dkmJ9GMsb6Tq1Z4DR74g3jsL-QkfwTwO8wnazvPVbvPGMOzJgtiYbL5wOdjKUj97IHbqHNdgWtpd3cfHYZB0DntwcszZ0WuGLZC6Bewp-WpDjFryr_Q3LxJYbVDE5VTlV7EebD9-FvnLfxJgm6nclN5mBZAYK"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4983)
+Completed 200 OK in 90ms (Views: 7.8ms | Allocations: 7648)
+
+
+Started GET "/login/callback?code=AQAHS50cMkQAB9-cOPCXWlp82koiYqT4uziwPzWub2TKZjeTuK7MO2MSvwXSoD9NLY1L44U_UCfQYUfNRdvLgDl5zlOGH2vz45XZJn1GEMCbsifdnplaXD0UaPTjyiPejyv55BQKWZrMfHBFZF6kz9do4x8tcY0tLYXi7NCpswGdmKtKixygT8egCZSdILMNy0VGnDQZrLzADknZoKJxqhMIC2EHJZhUb_-U6yp51PGXqAMq" for ::1 at 2022-09-01 16:11:28 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAHS50cMkQAB9-cOPCXWlp82koiYqT4uziwPzWub2TKZjeTuK7MO2MSvwXSoD9NLY1L44U_UCfQYUfNRdvLgDl5zlOGH2vz45XZJn1GEMCbsifdnplaXD0UaPTjyiPejyv55BQKWZrMfHBFZF6kz9do4x8tcY0tLYXi7NCpswGdmKtKixygT8egCZSdILMNy0VGnDQZrLzADknZoKJxqhMIC2EHJZhUb_-U6yp51PGXqAMq"}
+Completed 500 Internal Server Error in 150ms (Allocations: 5145)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/controllers/login_controller.rb:15:in `callback'
+Started GET "/login/callback?code=AQDqOpndygyscJ3bvfe_yU0oCdU2HwO5YiNvImVyzvjSQK-0U4YQMeS4wnAsxUTajLxG5nB_7sCiYWXupmVU3z71uDds0yGmJa73d3YtJxdNzAsMJokKu7gFNd-xNJRFwrtnaOVcrWYH385cuXlc_A3HmAGEppG39gAcIvxxIc1E9FN9lIAKMV-Gd0P-Tsfq0jmcBo_c0SL-aICRqropiQZRNY2-Y9tfM5Ih1Ifpi770X3yK" for ::1 at 2022-09-01 16:12:51 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDqOpndygyscJ3bvfe_yU0oCdU2HwO5YiNvImVyzvjSQK-0U4YQMeS4wnAsxUTajLxG5nB_7sCiYWXupmVU3z71uDds0yGmJa73d3YtJxdNzAsMJokKu7gFNd-xNJRFwrtnaOVcrWYH385cuXlc_A3HmAGEppG39gAcIvxxIc1E9FN9lIAKMV-Gd0P-Tsfq0jmcBo_c0SL-aICRqropiQZRNY2-Y9tfM5Ih1Ifpi770X3yK"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 4983)
+Completed 200 OK in 205ms (Views: 21.7ms | Allocations: 10282)
+
+
+Started GET "/login/callback?code=AQCgxx1nD0ExZpuLS1X1-Rb2N7piwZffjsjVrVtsAMoaeJw39qXXSd1ojj2q20_wDiVdzrcTdPVG2lg87a-2a5oW7u9ywM5F-l4TkQ93BzMYxDNFkJQnVNc7xtD3uOlZ1JW9F4VqR4LuubEUqvvO01SrLEaYLUEITzAG4lmb_ozkog6ozQNBH0unJS5zGdLSfiNY964fH2Mjq1H-__YF3Cw7l_q7M5Dc-E2URxVcF8-o3ks_" for ::1 at 2022-09-01 16:16:41 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCgxx1nD0ExZpuLS1X1-Rb2N7piwZffjsjVrVtsAMoaeJw39qXXSd1ojj2q20_wDiVdzrcTdPVG2lg87a-2a5oW7u9ywM5F-l4TkQ93BzMYxDNFkJQnVNc7xtD3uOlZ1JW9F4VqR4LuubEUqvvO01SrLEaYLUEITzAG4lmb_ozkog6ozQNBH0unJS5zGdLSfiNY964fH2Mjq1H-__YF3Cw7l_q7M5Dc-E2URxVcF8-o3ks_"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 4983)
+Completed 200 OK in 157ms (Views: 14.5ms | Allocations: 10921)
+
+
+Started GET "/login/callback?code=AQA3erduaj-ttN41E0b2-H2byAWWeX_S0JAOXT7Mf3wmeCR4sYGIoik0eonHvuxkqUettkkD8t1BM3XO4p2C8vecgUJK-XzZGrgeyyBzUqAj7yyFFUkELoeunuacgmf-1qDf_IVPBPq21U6bjEXY6jWh1it2rsZBKp9E-jHGIcOuzjAsJT4bLPQ6d6ZeS0Gllcgagb5db1C02GOvYqXulEP8ZmuSP_M3EOsnVSK-5Jyevjl7" for ::1 at 2022-09-01 16:17:08 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQA3erduaj-ttN41E0b2-H2byAWWeX_S0JAOXT7Mf3wmeCR4sYGIoik0eonHvuxkqUettkkD8t1BM3XO4p2C8vecgUJK-XzZGrgeyyBzUqAj7yyFFUkELoeunuacgmf-1qDf_IVPBPq21U6bjEXY6jWh1it2rsZBKp9E-jHGIcOuzjAsJT4bLPQ6d6ZeS0Gllcgagb5db1C02GOvYqXulEP8ZmuSP_M3EOsnVSK-5Jyevjl7"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4983)
+Completed 200 OK in 156ms (Views: 15.0ms | Allocations: 10134)
+
+
+Started GET "/login/callback?code=AQAUxVZwpb5o6kZWSCEbPlEEAMdtxgcxx1INOvIVFtIIKmtQ3ccmP91F3beieKkvkMEuKDO7dqLUuvxUmAv_16ypZlkhRC7ZAIzJfZ7TCz9h88U3VuWquIIe-kN-RlXEzQMpS7JRsWB59p47DZ5_PJr4z5nQbdUKrIFw1D98J8vhcJDwGXZSI6rO4sppDopocY8WWf6eaQnSjmdk9AvvpAPhxHsg0DwilvvSCogTXYFrgscd" for ::1 at 2022-09-01 16:17:22 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAUxVZwpb5o6kZWSCEbPlEEAMdtxgcxx1INOvIVFtIIKmtQ3ccmP91F3beieKkvkMEuKDO7dqLUuvxUmAv_16ypZlkhRC7ZAIzJfZ7TCz9h88U3VuWquIIe-kN-RlXEzQMpS7JRsWB59p47DZ5_PJr4z5nQbdUKrIFw1D98J8vhcJDwGXZSI6rO4sppDopocY8WWf6eaQnSjmdk9AvvpAPhxHsg0DwilvvSCogTXYFrgscd"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4983)
+Completed 200 OK in 250ms (Views: 13.2ms | Allocations: 10846)
+
+
+Started GET "/login/callback?code=AQBewFin3Tr6WLqlWLVfosd9Er3Y3Z087Uqc4ltBCqe1rhGrNzSfRlqU0cYAx0b8XsqbX2anVujZ0k-J9rNoWD-95uxRT6PHc7UI5h37UieZ2HK1XnY2ANA6ObZ8Tb1af2gdBmoOrrhnqdwc270cpXqh5Bho7XWTU5DuQTXKMzhZMzx0XsRpyuBttpLJJnFmqLblAAGY5G0gXyTwyxvGrNvGkVMPq-YMWQCyimQ35cGQZ98H" for ::1 at 2022-09-01 16:23:01 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQBewFin3Tr6WLqlWLVfosd9Er3Y3Z087Uqc4ltBCqe1rhGrNzSfRlqU0cYAx0b8XsqbX2anVujZ0k-J9rNoWD-95uxRT6PHc7UI5h37UieZ2HK1XnY2ANA6ObZ8Tb1af2gdBmoOrrhnqdwc270cpXqh5Bho7XWTU5DuQTXKMzhZMzx0XsRpyuBttpLJJnFmqLblAAGY5G0gXyTwyxvGrNvGkVMPq-YMWQCyimQ35cGQZ98H"}
+Completed 500 Internal Server Error in 87ms (Allocations: 5179)
+
+
+  
+NameError (undefined local variable or method `access_token' for #<LoginController:0x00000000043238>):
+  
+app/controllers/login_controller.rb:15:in `callback'
+Started GET "/login/callback?code=AQA0gdslstmcjDpmF6XbuhqsRSD8gdd218no04W6JoIn5O8XaXcNt3L_Shc9V8839LBgZbUclCye-zzDL5kpUcIX8tqkO7R0ofmYAfKH5h25lfSdDFr184AlubJFn7ketVCUIaZ0t6yh2PTXB6olxY9TFE8uGCQfr9MmP5o8AtLfcpv2J_kZ_pXEo9_ixmHCpOU7h8HjckzefmU_QmWcQMvrMJ6-IL2TlUhKnwWE0Qeq0ImR" for ::1 at 2022-09-01 16:23:15 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQA0gdslstmcjDpmF6XbuhqsRSD8gdd218no04W6JoIn5O8XaXcNt3L_Shc9V8839LBgZbUclCye-zzDL5kpUcIX8tqkO7R0ofmYAfKH5h25lfSdDFr184AlubJFn7ketVCUIaZ0t6yh2PTXB6olxY9TFE8uGCQfr9MmP5o8AtLfcpv2J_kZ_pXEo9_ixmHCpOU7h8HjckzefmU_QmWcQMvrMJ6-IL2TlUhKnwWE0Qeq0ImR"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (8.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "image_url", "auth_token", "refresh_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "shaunhohoho@gmail.com"], ["name", "Shaun Ho"], ["image_url", "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=10152417245178793&height=300&width=300&ext=1664622021&hash=AeQkmahbtVNnkDRILJo"], ["auth_token", "BQAolPGIVT9bdnMqAsiustoWUkcXKzyiFBfOsCF7olpHNKQd0FFYpV9TmrRlReznykCVFPlhIlT0e4G6_WoiQrZD-iHuoZNIdOD3vMGfWdelMCmkCks_jvtSX3odglLTEBaHxHzl09oViB3MX-lIrr3I6LM_wizaPkhMvulgH86IuiM_zz_52DBd2ftVEoz2AtMN8eAHFFi-LXMOCg"], ["refresh_token", "AQCeiA0u6rwjwb1jUfGA7nHZPeTVtESqGs1knlZzVyrn3u5r9-wZwh3HRXuFdmgHs5_8xPeRw4nNka7XoICkRQivh7UazM6GQcbRpTXhcEHUzwhK3LNEsZfL1ft3-DgnGCM"], ["created_at", "2022-09-01 15:23:16.065257"], ["updated_at", "2022-09-01 15:23:16.065257"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 4983)
+Completed 200 OK in 272ms (Views: 3.9ms | ActiveRecord: 33.8ms | Allocations: 39158)
+
+
+Started GET "/login/callback?code=AQAvkNDTnGuydUuybzC0NAm2iEWAieum2rh2FBeSZhhxxlOw-wh-uQpyl22uGZdMSFkbgD2YUwKoqUButK1hYp5-0AKmHHNt6Dll_cCDDMd0f6-CePMMU_dNAc48spSuYgZkCDpAARBlLzw4z-qLPYTPje6gw7-Z1wtmO6c6HOzHvHUA7ZQ3mjXNE-rhZ7--sQ78pPrnjgzk7ZkPT5AOVPPhs2P0g8X7HIZkjK7F7-K_h3ld" for ::1 at 2022-09-01 16:23:55 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQAvkNDTnGuydUuybzC0NAm2iEWAieum2rh2FBeSZhhxxlOw-wh-uQpyl22uGZdMSFkbgD2YUwKoqUButK1hYp5-0AKmHHNt6Dll_cCDDMd0f6-CePMMU_dNAc48spSuYgZkCDpAARBlLzw4z-qLPYTPje6gw7-Z1wtmO6c6HOzHvHUA7ZQ3mjXNE-rhZ7--sQ78pPrnjgzk7ZkPT5AOVPPhs2P0g8X7HIZkjK7F7-K_h3ld"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "image_url", "auth_token", "refresh_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "shaunhohoho@gmail.com"], ["name", "Shaun Ho"], ["image_url", "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=10152417245178793&height=300&width=300&ext=1664622021&hash=AeQkmahbtVNnkDRILJo"], ["auth_token", "BQBUjsZVR-Kd4_m_bUVXeE80XhOzxB6C_O8Uh4J-_VIgtkdrQzs96Me1OsxZMDtPYozr4QZ---vDFP6cAuJ6qTPd4Ek5UcvlFqmnNzJzWF_xmVWcLpcMcVyzqW34kQK4ogOqMDt9ggv7M_O82EOE6Oz9jhLj3mJt0V3Nkertn39PUmlk_5OF1knL2S_z3hZdX-y3YeDBwhlEM6A5hA"], ["refresh_token", "AQC1kUQPuz-nZza1uv33OicWwFdVefCd9aWBirOIyadYInCmswP8GG2lcf4f7sRwcJclAhGiY3CUa1xpUx6m5Nsbu8KMknYA2TSJNSWYEuyYq4fje1IRqHDBbNdcJeAyiZQ"], ["created_at", "2022-09-01 15:23:55.286768"], ["updated_at", "2022-09-01 15:23:55.286768"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4923)
+Completed 200 OK in 192ms (Views: 12.9ms | ActiveRecord: 3.4ms | Allocations: 10839)
+
+
+Started GET "/login/callback?code=AQCmMy38japI5wyLqYaF9IZyyCSlLboUbuKjOhNPim7l2FPPk90qO3zyRHhJjUgr9i9LeGsG1KPunod7W77Fa6DmfSWLGwPDKkhlBKO2e2_mzDu4pvjAK9_4hMDUV0qh15F8DHqoFhFRGn-PsEuq2elCUtSy4sc8ePU0dvih3rsvKzyV2wd2GyBnKmLY52MTEPQrIpfwOknja8DKwVazMBfM7Rub0-WuK4Me8rJJj__5Tu6M" for ::1 at 2022-09-01 16:25:27 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCmMy38japI5wyLqYaF9IZyyCSlLboUbuKjOhNPim7l2FPPk90qO3zyRHhJjUgr9i9LeGsG1KPunod7W77Fa6DmfSWLGwPDKkhlBKO2e2_mzDu4pvjAK9_4hMDUV0qh15F8DHqoFhFRGn-PsEuq2elCUtSy4sc8ePU0dvih3rsvKzyV2wd2GyBnKmLY52MTEPQrIpfwOknja8DKwVazMBfM7Rub0-WuK4Me8rJJj__5Tu6M"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 4983)
+Completed 200 OK in 232ms (Views: 5.7ms | ActiveRecord: 6.5ms | Allocations: 24586)
+
+
