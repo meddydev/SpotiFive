@@ -1045,3 +1045,263 @@ Processing by ScoreboardController#index as HTML
 Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 6389)
 
 
+Started GET "/scoreboard" for ::1 at 2022-09-01 17:03:13 +0100
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 689)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 11255)
+Completed 200 OK in 93ms (Views: 58.2ms | ActiveRecord: 10.6ms | Allocations: 16530)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 17:03:34 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5047)
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 6970)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 17:03:40 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4986)
+Completed 200 OK in 45ms (Views: 15.4ms | ActiveRecord: 6.6ms | Allocations: 5457)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 17:07:13 +0100
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 422)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 10987)
+Completed 200 OK in 98ms (Views: 69.1ms | ActiveRecord: 0.9ms | Allocations: 16533)
+
+
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (23.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2022-09-01 17:00:26.349576"], ["updated_at", "2022-09-01 17:00:26.349576"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "irina@gmail.com"], ["created_at", "2022-09-01 17:01:55.859830"], ["updated_at", "2022-09-01 17:01:55.859830"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "image_url", "total_score", "num_games", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test@gmail.com"], ["name", "test"], ["image_url", "hhgfkfl.com"], ["total_score", 150], ["num_games", 10], ["created_at", "2022-09-01 17:03:59.000509"], ["updated_at", "2022-09-01 17:03:59.000509"]]
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:04:42 +0100
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1791)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1871)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 4.2ms | Allocations: 12223)
+
+
+  
+ActionView::Template::Error (divided by 0):
+    18:             <td><% user.name %></td>
+    19:             <td><% user.num_games %></td>
+    20:             <td><% user.total_score %></td>
+    21:             <td><% user.total_score.to_i / user.num_games.to_i %></td>
+    22:             </tr>
+    23:         <% end %>
+    24:     </tbody>
+  
+app/views/scoreboard/index.html.erb:21:in `/'
+app/views/scoreboard/index.html.erb:21
+app/views/scoreboard/index.html.erb:15
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:05:23 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 10599)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 0.6ms | Allocations: 11911)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:05:59 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 5051)
+Completed 200 OK in 41ms (Views: 16.4ms | ActiveRecord: 6.2ms | Allocations: 11445)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:06:01 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4924)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 5426)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:06:44 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 213)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 5402)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 1.3ms | Allocations: 6672)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:07:17 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.1ms | Allocations: 1061)
+
+
+  
+NoMethodError (undefined method `total_score' for nil:NilClass):
+  
+app/controllers/scoreboard_controller.rb:4:in `index'
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:07:27 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 4641)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 9678)
+Completed 200 OK in 40ms (Views: 27.0ms | ActiveRecord: 6.9ms | Allocations: 12357)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:08:03 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 335)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 7372)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.9ms | Allocations: 8471)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:08:20 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 4628)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 9815)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.6ms | Allocations: 14735)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:08:22 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5058)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.7ms | Allocations: 5392)
+
+
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGame Create (70.6ms)[0m  [1m[32mINSERT INTO "games" ("user_id", "artist_id", "artist_name", "score", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 3], ["artist_id", "sfdsfdsf"], ["artist_name", "The Doors"], ["score", 8], ["created_at", "2022-09-01 17:11:41.921805"], ["updated_at", "2022-09-01 17:11:41.921805"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGame Create (0.6ms)[0m  [1m[32mINSERT INTO "games" ("user_id", "artist_id", "artist_name", "score", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 3], ["artist_id", "sfdsdfdg44"], ["artist_name", "The Chemical Brothers"], ["score", 4], ["created_at", "2022-09-01 17:12:23.035364"], ["updated_at", "2022-09-01 17:12:23.035364"]]
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGame Create (0.5ms)[0m  [1m[32mINSERT INTO "games" ("user_id", "artist_id", "artist_name", "score", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 3], ["artist_id", "sfdsdfggh55f"], ["artist_name", "Bananarama"], ["score", 7], ["created_at", "2022-09-01 17:12:56.790539"], ["updated_at", "2022-09-01 17:12:56.790539"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:14:30 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 31.0ms | Allocations: 9573)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 20129)
+Completed 200 OK in 121ms (Views: 44.8ms | ActiveRecord: 11.1ms | Allocations: 26525)
+
+
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["user_id", 3], ["LIMIT", 11]]
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:21:05 +0100
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 65.9ms | Allocations: 6116)
+  Rendered layout layouts/application.html.erb (Duration: 87.9ms | Allocations: 16673)
+Completed 200 OK in 114ms (Views: 38.7ms | ActiveRecord: 54.0ms | Allocations: 23067)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:21:10 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5097)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.7ms | Allocations: 5454)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:21:38 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["user_id", 3], ["LIMIT", 11]]
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 37.6ms | Allocations: 7286)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 7356)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 12.5ms | Allocations: 8459)
+
+
+  
+ActionView::Template::Error (undefined method `score' for #<ActiveRecord::Relation [#<Game id: 1, user_id: 3, artist_id: "sfdsfdsf", artist_name: "The Doors", score: 8, created_at: "2022-09-01 17:11:41.921805000 +0000", updated_at: "2022-09-01 17:11:41.921805000 +0000">, #<Game id: 2, user_id: 3, artist_id: "sfdsdfdg44", artist_name: "The Chemical Brothers", score: 4, created_at: "2022-09-01 17:12:23.035364000 +0000", updated_at: "2022-09-01 17:12:23.035364000 +0000">, #<Game id: 3, user_id: 3, artist_id: "sfdsdfggh55f", artist_name: "Bananarama", score: 7, created_at: "2022-09-01 17:12:56.790539000 +0000", updated_at: "2022-09-01 17:12:56.790539000 +0000">]>):
+    19:             <td><%= user.num_games %></td>
+    20:             <td><%= user.total_score %></td>
+    21:             <td><%= user.total_score.to_i/user.num_games.to_i %></td>
+    22:             USER ID<%= @games.where('user_id': user.id).score%>
+    23:             </tr>
+    24:         <% end %>
+    25:     </tbody>
+  
+app/views/scoreboard/index.html.erb:22
+app/views/scoreboard/index.html.erb:15
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:22:55 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 3]]
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 790)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 7214)
+Completed 200 OK in 35ms (Views: 27.2ms | ActiveRecord: 5.7ms | Allocations: 8339)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-01 18:31:31 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 5545)
+  Rendered layout layouts/application.html.erb (Duration: 91.3ms | Allocations: 16103)
+Completed 200 OK in 120ms (Views: 92.3ms | ActiveRecord: 5.1ms | Allocations: 22496)
+
+
