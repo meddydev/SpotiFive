@@ -12,14 +12,15 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>55</td>
-        <td>150</td>
-        <td>8.5</td>
-        </tr>
-        <tr>
+        <% @users.each do | user | %>
+            <tr>
+            <th scope="row">1</th>
+            <td><% user.name %></td>
+            <td><% user.num_games %></td>
+            <td><% user.total_score %></td>
+            <td><% user.total_score.to_i / user.num_games.to_i %></td>
+            </tr>
+        <% end %>
     </tbody>
 </table>
 <a class="btn btn-dark" role="button" href="" >Return to Home Page</a>
