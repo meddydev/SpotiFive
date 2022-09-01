@@ -1136,3 +1136,91 @@ Processing by LoginController#callback as HTML
 Completed 200 OK in 232ms (Views: 5.7ms | ActiveRecord: 6.5ms | Allocations: 24586)
 
 
+Started GET "/login/callback?code=AQBuYXO_9_VqfmLEPsUQdRkD_T31hZnjtMXq8LlPRav1a9VR8aBWzKjSQVzwVSR9gOaDYB6AiWezY8sLrz-eFo1QFlDLUaxcA_zvf5qwwEFn1jAhtAs64kX8-lS3AS-Lg7mGG9egCRLuXwbeTbZ60BrqDEuzKBJp0ogirYK_R8A6W9NIqIgkgIrkWvC-MrjB-uiUp1zLxuRNfELwybm5IqlXXe-KiufnHE-2_dXmbr5SWrNt" for ::1 at 2022-09-01 16:54:37 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQBuYXO_9_VqfmLEPsUQdRkD_T31hZnjtMXq8LlPRav1a9VR8aBWzKjSQVzwVSR9gOaDYB6AiWezY8sLrz-eFo1QFlDLUaxcA_zvf5qwwEFn1jAhtAs64kX8-lS3AS-Lg7mGG9egCRLuXwbeTbZ60BrqDEuzKBJp0ogirYK_R8A6W9NIqIgkgIrkWvC-MrjB-uiUp1zLxuRNfELwybm5IqlXXe-KiufnHE-2_dXmbr5SWrNt"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3725)
+Completed 200 OK in 219ms (Views: 7.9ms | ActiveRecord: 13.4ms | Allocations: 19384)
+
+
+Started GET "/" for ::1 at 2022-09-01 17:00:09 +0100
+Processing by SessionsController#index as HTML
+Completed 500 Internal Server Error in 11ms (Allocations: 3050)
+
+
+  
+NameError (undefined local variable or method `session_callback_url' for #<SessionsController:0x00000000049890>
+Did you mean?  sessions_callback_url
+               sessions_callback_path):
+  
+app/controllers/sessions_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-09-01 17:00:49 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 34041)
+Completed 200 OK in 63ms (Views: 61.6ms | Allocations: 35223)
+
+
+Started GET "/sessions/callback?code=AQBWevaYvU9JiH7ilkQaL2ixTvb06UL4-0qnWtUdduQ-id1688KOyTPZSg31WRpwGrBe_pAYFBvJsW2OLTQeF090cjP3Voro7CFpyixUzvp3lly4lId4SdqEbl4EfL9Ux9PCB7uXiFdx1wXKCHOYCDSllIsoT0u_K_IVwBKLNxsrolG8wSUF7paDHoAwo7LCfL20IdYiq3ucVj7NEI41xw2lnrTybmZnZHeWSehiHPT-qXXaBkSO" for ::1 at 2022-09-01 17:01:35 +0100
+Processing by SessionsController#callback as HTML
+  Parameters: {"code"=>"AQBWevaYvU9JiH7ilkQaL2ixTvb06UL4-0qnWtUdduQ-id1688KOyTPZSg31WRpwGrBe_pAYFBvJsW2OLTQeF090cjP3Voro7CFpyixUzvp3lly4lId4SdqEbl4EfL9Ux9PCB7uXiFdx1wXKCHOYCDSllIsoT0u_K_IVwBKLNxsrolG8wSUF7paDHoAwo7LCfL20IdYiq3ucVj7NEI41xw2lnrTybmZnZHeWSehiHPT-qXXaBkSO"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/callback.html.erb within layouts/application
+  Rendered sessions/callback.html.erb within layouts/application (Duration: 0.5ms | Allocations: 74)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3763)
+Completed 200 OK in 311ms (Views: 4.0ms | ActiveRecord: 8.8ms | Allocations: 20276)
+
+
+Started GET "/sessions/callback?code=AQA_ds-3IxOLOvs3yJcYVn2IiV8fhqvUrXQ0XeLEbdx6EXI6CaG20M3AYm-HioXC3Owp9j-ScCkPyZAaFSc_Na2podNHX1phVp71EZgRJuJ_ygIEDTbZkp72iLT8YdBxhS8HM5GBvwe1utO2hq3DtV-CdCD7DdfjRp2HBBFP5TXhvRtE_Ct9wMYNumNfhwrF1QOPX4tC8zlJ0VChyYVft8T-zJJqK-hmOnGWiICqgzUygz2B_3iW" for ::1 at 2022-09-01 17:03:31 +0100
+Processing by SessionsController#callback as HTML
+  Parameters: {"code"=>"AQA_ds-3IxOLOvs3yJcYVn2IiV8fhqvUrXQ0XeLEbdx6EXI6CaG20M3AYm-HioXC3Owp9j-ScCkPyZAaFSc_Na2podNHX1phVp71EZgRJuJ_ygIEDTbZkp72iLT8YdBxhS8HM5GBvwe1utO2hq3DtV-CdCD7DdfjRp2HBBFP5TXhvRtE_Ct9wMYNumNfhwrF1QOPX4tC8zlJ0VChyYVft8T-zJJqK-hmOnGWiICqgzUygz2B_3iW"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 369ms (ActiveRecord: 34.8ms | Allocations: 16244)
+
+
+  
+NameError (undefined local variable or method `sessions_session_check_url' for #<SessionsController:0x0000000004cd60>
+Did you mean?  sessions_callback_url):
+  
+app/controllers/sessions_controller.rb:26:in `callback'
+Started GET "/sessions/callback?code=AQA4ChFpDey0Vc_KEQO9dGMIauBqvHKG-ez0bTG5nYLC0AxMV7b2TV7odzUa-BsKFB-DgYIuB573gy3QfbN7d6-2sKq6RdsquIkDKl0PBTWv4nVdb3WZpkzLsMZUAYC2wfcin1qQpqEsBU-vRy_2vG4rnmE2hswyRLBuohJLLvD0AuDBwDSZ1dAOc4p22LcAwN-f7fQ-XoG2c2ne7GL66xoisr67Bcm4f5ZG2pu4xkLGLe6iHRXt" for ::1 at 2022-09-01 17:05:10 +0100
+Processing by SessionsController#callback as HTML
+  Parameters: {"code"=>"AQA4ChFpDey0Vc_KEQO9dGMIauBqvHKG-ez0bTG5nYLC0AxMV7b2TV7odzUa-BsKFB-DgYIuB573gy3QfbN7d6-2sKq6RdsquIkDKl0PBTWv4nVdb3WZpkzLsMZUAYC2wfcin1qQpqEsBU-vRy_2vG4rnmE2hswyRLBuohJLLvD0AuDBwDSZ1dAOc4p22LcAwN-f7fQ-XoG2c2ne7GL66xoisr67Bcm4f5ZG2pu4xkLGLe6iHRXt"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 210ms (ActiveRecord: 7.4ms | Allocations: 11751)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-01 17:05:10 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.6ms | Allocations: 77)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 5238)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 6334)
+
+
+Started GET "/sessions/callback?code=AQCVNlbwVcjX-ZIJwPFN1PEVhwRcxwVTRKpqZCECvatZ3j62C-0900zdqLF8tGXz-dpeK5VTAZYGQO7Qx3dI2aPgvbdt5AuJ9zcGZTJIQvm6WmBWima3wdbba5zM0y_IW3Bnc0OF6vbYs42QYySDOmxF95eNPZyXmCiLf49et_xvF5UF0yshz5RI1VHF2sjiApRuTM3vUYb-PKdNdQeSoI7u1GIOG5jwWyt6hVF9AQtDg-CbeAIB" for ::1 at 2022-09-01 17:05:31 +0100
+Processing by SessionsController#callback as HTML
+  Parameters: {"code"=>"AQCVNlbwVcjX-ZIJwPFN1PEVhwRcxwVTRKpqZCECvatZ3j62C-0900zdqLF8tGXz-dpeK5VTAZYGQO7Qx3dI2aPgvbdt5AuJ9zcGZTJIQvm6WmBWima3wdbba5zM0y_IW3Bnc0OF6vbYs42QYySDOmxF95eNPZyXmCiLf49et_xvF5UF0yshz5RI1VHF2sjiApRuTM3vUYb-PKdNdQeSoI7u1GIOG5jwWyt6hVF9AQtDg-CbeAIB"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 154ms (ActiveRecord: 4.7ms | Allocations: 11639)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-01 17:05:31 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3710)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 5234)
+
+
