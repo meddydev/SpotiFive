@@ -379,3 +379,279 @@ Migrating to CreateGames (20220831135540)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1344049087128799065)[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-09-01 12:10:18 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 2 pending migrations:
+
+20220831134432_create_users.rb
+20220831135540_create_games.rb
+
+
+):
+  
+activerecord (6.1.6.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.6.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.6.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.6.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.6.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.6.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6.1) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.6.1) lib/rails/engine.rb:539:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2022-09-01 12:10:31 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1344049087128799065)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20220831134432)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (26.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "name" character varying, "image_url" character varying, "total_score" integer, "num_games" integer, "auth_token" character varying, "refresh_token" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220831134432"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateGames (20220831135540)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "games" ("id" bigserial primary key, "user_id" integer, "artist_id" character varying, "artist_name" character varying, "score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE INDEX "index_games_on_user_id" ON "games" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220831135540"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1344049087128799065)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-09-01 12:10:31 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shaun/.rvm/gems/ruby-3.0.0/gems/railties-6.1.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shaun/.rvm/gems/ruby-3.0.0/gems/railties-6.1.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 190)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2074)
+
+
+Started GET "/login" for ::1 at 2022-09-01 12:10:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/index" for ::1 at 2022-09-01 12:10:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/login/index" for ::1 at 2022-09-01 12:10:54 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1183)
+  Rendered layout layouts/application.html.erb (Duration: 88.9ms | Allocations: 51571)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.0ms | Allocations: 54535)
+
+
+Started GET "/" for ::1 at 2022-09-01 12:12:23 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shaun/.rvm/gems/ruby-3.0.0/gems/railties-6.1.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shaun/.rvm/gems/ruby-3.0.0/gems/railties-6.1.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.7ms | Allocations: 184)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 798)
+
+
+Started GET "/login/index" for ::1 at 2022-09-01 12:12:27 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4959)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 5303)
+
+
+Started GET "/callback/spotify?code=AQC-HLex2EhXlbTOYke8dB8vaKAhvifqBV1tJnV86HSg889dCsZHkvvlZABv6Q0UPf3ZsxL2-WMAT_uLmMDsFXF1O5rJLOuJC7SPPs4JQxz2JmWSNCXaaz3Wq-byQmBK_KmyNse8Jm480pBBj-p_qRn1x1dJ3U1kGuNNTEuICqeQTeluHESy2VeVikMKoKfr5i57_YsHKRRbvxJ6y1VYI2q8gZKVUpAUadQyzvt9cmfvv4B8ijg" for ::1 at 2022-09-01 12:12:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/callback/spotify"):
+  
+Started GET "/" for ::1 at 2022-09-01 12:13:05 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shaun/.rvm/gems/ruby-3.0.0/gems/railties-6.1.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shaun/.rvm/gems/ruby-3.0.0/gems/railties-6.1.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 274)
+
+
+Started GET "/login/index" for ::1 at 2022-09-01 12:13:25 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 332)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 10539)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 13849)
+
+
+Started GET "/login/index" for ::1 at 2022-09-01 12:13:55 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 4999)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 5566)
+
+
+Started GET "/callback/spotify?code=AQDbeHStP7Qx-ai7whz7hS5S9QHk5Zmae1G-VS71OodSXEExmWAU5LGMYQADmjLpMCBmPB46GgRoGTR683D1t4FRwT5E_HrI1au9YJbU0ZN8QQB3zLfkASo6rMsiMlIXNSvSf7W2PCl-mfwso5UYv8qn9tYzMrJ5128Cgbudxrsm1lqRQQdwfETJNyz1GpwL0ej1LxihHcQSgf0HHQkCcJenOh6eM3duWzkUNDCiQ6_davKMA9g" for ::1 at 2022-09-01 12:14:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/callback/spotify"):
+  
+Started GET "/callback/spotify?code=AQAluFhZ1m4nqyL4lWEhjUSg68Zlt0XSVQFISSqjCeUXIvqpreuKxnmpLZK9xwkCx6OSZuzOPSrL7E65HSCqWboUfCkTBqSOzGwWzpM6RzYXB2Zi4lY3yfvILGYI53Qy0xskAWx6KujHcomNqfnH7o3gg8FQaoInxmMcLjMZJr34sPeajuodq7MGnV2nez5xnUyxHHH9zbykAjJHysZaeGvltjims-hW4pKrU0nh8KaUhL7jowM" for ::1 at 2022-09-01 12:14:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/callback/spotify"):
+  
+Started GET "/login/index" for ::1 at 2022-09-01 12:18:50 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4063)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5222)
+
+
+Started GET "/login/index" for ::1 at 2022-09-01 12:19:16 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4927)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 5270)
+
+
+Started GET "/login/callback" for ::1 at 2022-09-01 12:19:19 +0100
+Processing by LoginController#callback as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 1.4ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4996)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5454)
+
+
+Started GET "/login/callback?code=AQDl1mSbZ0ma2fmlRr21tXPR8u4kOsI_QF6ClTsHSd8fb5BuDRgjRIJ6t6hUc0mg2FUi1UYHEy9yO4P3yoJ0AuugpCgzOBKJLw1m7AJwHkIrYn4MnTINCiNl_Doo_g63XEGW4XDk-2wfIzBO9St8gs1cbo7YqF3j3nDOSHDg-oow1HiA51xXrXMbSSVa2kXNI7RkI5rwkCpckKQRdF5B_AFMD4v8A6cNTV0-3J3aM7jOSS7g" for ::1 at 2022-09-01 12:20:02 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDl1mSbZ0ma2fmlRr21tXPR8u4kOsI_QF6ClTsHSd8fb5BuDRgjRIJ6t6hUc0mg2FUi1UYHEy9yO4P3yoJ0AuugpCgzOBKJLw1m7AJwHkIrYn4MnTINCiNl_Doo_g63XEGW4XDk-2wfIzBO9St8gs1cbo7YqF3j3nDOSHDg-oow1HiA51xXrXMbSSVa2kXNI7RkI5rwkCpckKQRdF5B_AFMD4v8A6cNTV0-3J3aM7jOSS7g"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 4923)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 5246)
+
+
+Started GET "/login/callback?code=AQBDq02LSHHj9eZU95ga6qBOkOcmenmvLftiXcHcgcaiL8DMa1SKxLeuMptn0ueZUb9E99Pya1IXp3xEm6m_orORx1lzjOo86KXDH9MCPFPLk7PNSN94nxSPDtvG9SBDMgh7WuEQ9y5eaX_wAVaPN5J7sO8QleatCsNP44Ukrp044C7U3Y_gQPvp1a3p-JS6-sZ462wSE-tvESaxx4ra-MIenxkH6LZLVnxcEJ_ai1YD23nm" for ::1 at 2022-09-01 12:20:06 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQBDq02LSHHj9eZU95ga6qBOkOcmenmvLftiXcHcgcaiL8DMa1SKxLeuMptn0ueZUb9E99Pya1IXp3xEm6m_orORx1lzjOo86KXDH9MCPFPLk7PNSN94nxSPDtvG9SBDMgh7WuEQ9y5eaX_wAVaPN5J7sO8QleatCsNP44Ukrp044C7U3Y_gQPvp1a3p-JS6-sZ462wSE-tvESaxx4ra-MIenxkH6LZLVnxcEJ_ai1YD23nm"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4862)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5183)
+
+
+Started GET "/" for ::1 at 2022-09-01 12:23:17 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4987)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5536)
+
+
+Started GET "/login/callback?code=AQDAarIT3ebvBG4uEerEqajOYSUhlhAEx6RNRD3963UhBCYzu5aD04IXyMyRsWp252E1QoUnCIGZkLwa61lvPyZUOZT4Q7M36guXhhgctnTioyNf7b-hfigbAnPG90sZiVp5ZLveqTw1aoztI5Ji_q54hSid05bPCwTnJPJzbSRteESUH9V8be91-jLAfAxi5M4MhgYEDrxpy-EazOhSO9qhwswgYJDV5eacP0i8M_eSInb4" for ::1 at 2022-09-01 12:23:24 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQDAarIT3ebvBG4uEerEqajOYSUhlhAEx6RNRD3963UhBCYzu5aD04IXyMyRsWp252E1QoUnCIGZkLwa61lvPyZUOZT4Q7M36guXhhgctnTioyNf7b-hfigbAnPG90sZiVp5ZLveqTw1aoztI5Ji_q54hSid05bPCwTnJPJzbSRteESUH9V8be91-jLAfAxi5M4MhgYEDrxpy-EazOhSO9qhwswgYJDV5eacP0i8M_eSInb4"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 4923)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 5246)
+
+
+Started GET "/login/callback?code=AQD9fKYIvDJ6j47f9WqETfmmncojJpot7WT16ekXBExviMertZHzi4CA2v_iIOPkFoV7T7HCqNwEskP51WzC0RXJKgvyLv-2MMzH7KPGH7Xdc2PPpq0N8f0Iw08EO_yOrpntUNQ-vMSg4BAlhgbHmDoh1g58R_4BB8T-cBQ0grzYb_DXnvLt5z1HeqlxPJ0OMKN_g_BNM9hKhl4oyIQm2QKVfwNxFUwYeRnk84AmsP89jaTv" for ::1 at 2022-09-01 13:28:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login/callback"):
+  
+Started GET "/login/callback?code=AQD9fKYIvDJ6j47f9WqETfmmncojJpot7WT16ekXBExviMertZHzi4CA2v_iIOPkFoV7T7HCqNwEskP51WzC0RXJKgvyLv-2MMzH7KPGH7Xdc2PPpq0N8f0Iw08EO_yOrpntUNQ-vMSg4BAlhgbHmDoh1g58R_4BB8T-cBQ0grzYb_DXnvLt5z1HeqlxPJ0OMKN_g_BNM9hKhl4oyIQm2QKVfwNxFUwYeRnk84AmsP89jaTv" for ::1 at 2022-09-01 13:28:51 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQD9fKYIvDJ6j47f9WqETfmmncojJpot7WT16ekXBExviMertZHzi4CA2v_iIOPkFoV7T7HCqNwEskP51WzC0RXJKgvyLv-2MMzH7KPGH7Xdc2PPpq0N8f0Iw08EO_yOrpntUNQ-vMSg4BAlhgbHmDoh1g58R_4BB8T-cBQ0grzYb_DXnvLt5z1HeqlxPJ0OMKN_g_BNM9hKhl4oyIQm2QKVfwNxFUwYeRnk84AmsP89jaTv"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 4983)
+Completed 200 OK in 5ms (Views: 4.3ms | Allocations: 5533)
+
+
+Started GET "/login/callback?code=AQD9fKYIvDJ6j47f9WqETfmmncojJpot7WT16ekXBExviMertZHzi4CA2v_iIOPkFoV7T7HCqNwEskP51WzC0RXJKgvyLv-2MMzH7KPGH7Xdc2PPpq0N8f0Iw08EO_yOrpntUNQ-vMSg4BAlhgbHmDoh1g58R_4BB8T-cBQ0grzYb_DXnvLt5z1HeqlxPJ0OMKN_g_BNM9hKhl4oyIQm2QKVfwNxFUwYeRnk84AmsP89jaTv" for ::1 at 2022-09-01 13:29:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login/callback"):
+  
+Started GET "/login/index" for ::1 at 2022-09-01 13:29:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login/index"):
+  
+Started GET "/login/callback?code=AQDq8YwNIhMOZr7ZSP1VIHmH3rnM3SZdcpveoRveBlBkzYi8qcuP6y0YiymP9Jy2ahnDRaeC-r_rcM3cowhbDMuhG0f8JfVhIMfD6pUaFrTWuksGU9IdKVPAzmsCfQr8ZJLL49ad53a1pnbKHAh0lsirP2xATGXJn2mTWwZRSpwMn6dYxDj6Dj_W8lW8hqUL_VkXV9g5jUZc8A9x8bN5kP1RUTEKcXXlTvZ6Biog5xtPdTY5" for ::1 at 2022-09-01 13:29:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login/callback"):
+  
+Started GET "/login/index" for ::1 at 2022-09-01 13:29:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login/index"):
+  
+Started GET "/login/index" for ::1 at 2022-09-01 13:29:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login/index"):
+  
+Started GET "/" for ::1 at 2022-09-01 13:29:46 +0100
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 4986)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 5532)
+
+
+Started GET "/login/callback?code=AQCvDnj8IQ1HbxvQptRteZKhKus4MWvyNfcWi5Ith3vZX2qXB9yd-NnUJJr7wDxvNQ4hT8pehSkvgX8pVLQEUw0I3hGvNJPlu8KllSlS8utfqMnHVrcFpN7fSlx6cRCTdJp-zlMlbzm8WcUNGJW41kt0BqSV_Akwk5z15E9FfNBeCl_u_rdoKuNuAnuFCCEpg2ojiLIlpkS6wOwuSH2imC0W2TeWhwc-MXiuKH2fR1bAyHo8" for ::1 at 2022-09-01 13:29:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login/callback"):
+  
+Started GET "/login/callback?code=AQCvDnj8IQ1HbxvQptRteZKhKus4MWvyNfcWi5Ith3vZX2qXB9yd-NnUJJr7wDxvNQ4hT8pehSkvgX8pVLQEUw0I3hGvNJPlu8KllSlS8utfqMnHVrcFpN7fSlx6cRCTdJp-zlMlbzm8WcUNGJW41kt0BqSV_Akwk5z15E9FfNBeCl_u_rdoKuNuAnuFCCEpg2ojiLIlpkS6wOwuSH2imC0W2TeWhwc-MXiuKH2fR1bAyHo8" for ::1 at 2022-09-01 13:29:56 +0100
+Processing by LoginController#callback as HTML
+  Parameters: {"code"=>"AQCvDnj8IQ1HbxvQptRteZKhKus4MWvyNfcWi5Ith3vZX2qXB9yd-NnUJJr7wDxvNQ4hT8pehSkvgX8pVLQEUw0I3hGvNJPlu8KllSlS8utfqMnHVrcFpN7fSlx6cRCTdJp-zlMlbzm8WcUNGJW41kt0BqSV_Akwk5z15E9FfNBeCl_u_rdoKuNuAnuFCCEpg2ojiLIlpkS6wOwuSH2imC0W2TeWhwc-MXiuKH2fR1bAyHo8"}
+  Rendering layout layouts/application.html.erb
+  Rendering login/callback.html.erb within layouts/application
+  Rendered login/callback.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 4983)
+Completed 200 OK in 3ms (Views: 3.0ms | Allocations: 5527)
+
+
