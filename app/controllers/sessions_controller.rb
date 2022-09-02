@@ -2,14 +2,14 @@ class SessionsController < ApplicationController
 
   def index
     @client_id = Rails.application.credentials.spotifive[:client_id]
-    @redirect_uri = sessions_callback_url
+    @redirect_uri = sessions_login_url
 
   end
 
-  def callback
+  def login
     code = params[:code]
     grant = Base64.strict_encode64("#{Rails.application.credentials.spotifive[:client_id]}:#{Rails.application.credentials.spotifive[:client_secret]}")
-    token = RestClient.post("https://accounts.spotify.com/api/token", {'grant_type': 'authorization_code', 'code': code, "redirect_uri": sessions_callback_url},{ 'Authorization': "Basic #{grant}"})
+    token = RestClient.post("https://accounts.spotify.com/api/token", {'grant_type': 'authorization_code', 'code': code, "redirect_uri": sessions_login_url},{ 'Authorization': "Basic #{grant}"})
     token_json = JSON.parse(token)
     auth_token = token_json['access_token']
     refresh_token = token_json['refresh_token']
@@ -31,7 +31,10 @@ class SessionsController < ApplicationController
   end 
 
   def logout
-    
+    reset_session
+    print(sessions_index)
+    redirect_to sessions_index
+
   end 
 
 end
