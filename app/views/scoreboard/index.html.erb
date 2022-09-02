@@ -1,29 +1,38 @@
-<h1>Scoreboard</h1>
+<% if @users %>
+    <h1>Scoreboard</h1>
 
-<div>
-<table class="table table-dark table-striped table-hover">
-    <thead>
-        <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Number of Games</th>
-        <th scope="col">Total Score</th>
-        <th scope="col">Average Score</th>
-        </tr>
-    </thead>
-    <tbody>
-        <% @users.each do | user | %>
-            <tr>
-            <th scope="row">1</th>
-            <td><%= user.name %></td>
-            <td><%= user.num_games %></td>
-            <td><%= user.total_score %></td>
-            <td><%= user.total_score.to_i/user.num_games.to_i %></td>
-            </tr>
-        <% end %>
-    </tbody>
-</table>
-<a class="btn btn-dark" role="button" href='/home' >Return to Home Page</a>
+    <div>
+        <table class="table table-dark table-striped table-hover">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Number of Games</th>
+                <th scope="col">Total Score</th>
+                <th scope="col">Average Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @users.each do | user | %>
+                    <% if user.num_games.to_i > 0 %>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td><%= user.name %></td>
+                        <td><%= user.num_games %></td>
+                        <td><%= user.total_score %></td>
+                        <td><%= user.total_score.to_i/user.num_games.to_i %></td>
+                        </tr>
+                    <% end %>
+                <% end %>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <a class="btn btn-dark" role="button" href='/home' >Return to Home Page</a>
 
 
-</div>
+    </div>
+<% else %>
+<h1> Forbidden </h1>
+<% end %>
+    
