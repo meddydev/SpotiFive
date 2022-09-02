@@ -5,7 +5,7 @@ RSpec.feature "Game Page", type: :feature do
     visit "/game"
 
     click_button "Create User"
-    expect(page).to havecontent("")
+    expect(page).to havecontent("User	Artist	Artist name	Score")
   end
 
   scenario "use fields to input game data" do
