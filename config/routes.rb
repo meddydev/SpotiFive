@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   get '/scoreboard', to: 'scoreboard#index'
-  root 'login#index'
-  get 'login/callback'
-  resources :games
-  resources :users
+  root 'sessions#index'
+  get 'sessions/login'
+  get 'sessions/session_check'
+  get 'sessions/logout'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :posts
+  get 'home', to: 'home#index'
 end
