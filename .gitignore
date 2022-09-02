@@ -1,7 +1,8 @@
 config/master.key
-tmp/cache
-tmp
-log
+config/credentials.yml.enc
+/tmp/cache
+/tmp
+/log
 
 
 

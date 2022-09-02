@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
   def index
-    print
     @client_id = Rails.application.credentials.spotifive[:client_id]
     @redirect_uri = sessions_login_url
   end
