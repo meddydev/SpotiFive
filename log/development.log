@@ -92,3 +92,29 @@ Processing by GamesController#index as HTML
 Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 5969)
 
 
+Started GET "/" for ::1 at 2022-09-02 13:09:41 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 773)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 9908)
+Completed 200 OK in 24ms (Views: 20.5ms | Allocations: 14371)
+
+
+Started GET "/sessions/login?code=AQBMJVX5eWClVMJx9iWnBGsWr2oO_Dkafbqq0ezKK8zD17vGyZvUuXydVBvBWFHf5b971Ej7n67r530xK4iuzFg-WusOZVJSYAhMpiER3xYDBpROwkY5-z_ilnpQ3MZF9erV9Ph-SdhuSnjIzulVkGMMXbNJpltYzC1GNcRo2HPrbK7Hm2g0HMkAnKZAmjIhX0bwJXZJt7HLJNJ_ya2vZ7BZ06ehnFx7bDNxREmSlBLJxPH6" for ::1 at 2022-09-02 13:09:42 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQBMJVX5eWClVMJx9iWnBGsWr2oO_Dkafbqq0ezKK8zD17vGyZvUuXydVBvBWFHf5b971Ej7n67r530xK4iuzFg-WusOZVJSYAhMpiER3xYDBpROwkY5-z_ilnpQ3MZF9erV9Ph-SdhuSnjIzulVkGMMXbNJpltYzC1GNcRo2HPrbK7Hm2g0HMkAnKZAmjIhX0bwJXZJt7HLJNJ_ya2vZ7BZ06ehnFx7bDNxREmSlBLJxPH6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 354ms (ActiveRecord: 26.8ms | Allocations: 9978)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 13:09:43 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.6ms | Allocations: 70)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3688)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5175)
+
+
