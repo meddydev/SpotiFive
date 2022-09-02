@@ -762,3 +762,20 @@ Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1485)
   Rendering scoreboard/index.html.erb
   Rendered scoreboard/index.html.erb (Duration: 3.4ms | Allocations: 450)
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (17.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/scoreboard/index" for 127.0.0.1 at 2022-09-02 09:06:48 +0100
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (17.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/scoreboard" for 127.0.0.1 at 2022-09-02 09:07:04 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (21.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 46.4ms | Allocations: 5537)
+  Rendered layout layouts/application.html.erb (Duration: 213.2ms | Allocations: 34720)
+Completed 200 OK in 240ms (Views: 192.3ms | ActiveRecord: 28.3ms | Allocations: 39883)
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[31mROLLBACK[0m
