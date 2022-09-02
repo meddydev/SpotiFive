@@ -1,5 +1,9 @@
 class ScoreboardController < ApplicationController
   def index
-    @users = User.all
+    if session[:user]
+      @users = User.all
+    else 
+      redirect_to "/"
+    end
   end
 end
