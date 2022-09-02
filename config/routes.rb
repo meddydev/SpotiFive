@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get 'sessions/session_check'
   get 'sessions/logout'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
+  get 'game', to: 'games#index'
   get 'home', to: 'home#index'
 end

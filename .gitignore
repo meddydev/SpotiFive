@@ -1,8 +1,1 @@
-config/master.key
-tmp/cache
-tmp
-log
-
-
-
-/config/master.key
+.gitignore_2

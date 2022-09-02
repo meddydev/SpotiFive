@@ -1,33 +1,18 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Games</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Artist</th>
-      <th>Artist name</th>
-      <th>Score</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<form method="post", action="scoreboard">
+  <ol>
+  <lh> Guess song by <%=@artist_name%>  </lh>
+    <li> <input type="text" name="song1" </li>
+    <li> <input type="text" name="song2" </li>
+    <li> <input type="text" name="song3" </li>
+    <li> <input type="text" name="song4" </li>
+    <li> <input type="text" name="song5" </li>
+  </ol>
+  <input type ="submit"> 
+</form>
 
-  <tbody>
-    <% @games.each do |game| %>
-      <tr>
-        <td><%= game.user_id %></td>
-        <td><%= game.artist_id %></td>
-        <td><%= game.artist_name %></td>
-        <td><%= game.score %></td>
-        <td><%= link_to 'Show', game %></td>
-        <td><%= link_to 'Edit', edit_game_path(game) %></td>
-        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Game', new_game_path %>
+<% @top_five_tracks.each do |tracks| %>
+  <p> <%=tracks%> </p>
+<% end %>
