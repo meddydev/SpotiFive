@@ -1,24 +1,27 @@
+require "rails_helper"
+
 RSpec.feature "home", type: :feature do
-    # scenario "User can click Play" do
-    #   visit "/home"
-    #   click_link "Play"
-    #   fill_in "Message", with: "Hello, world!"
-    #   click_button "Play"
-    #   expect(page).to have_content("Hello, world!")
-    # end
+  scenario "Correct homepage scaffold is displayed" do
+    visit "/home"
 
-    scenario "User can click Play" do
-        visit "/home"
+    expect(page).to have_content("Welcome back")
+    expect(page.has_button?("Play")).to equal(true)
+    expect(page.has_button?("Scoreboard")).to equal(true)
+    expect(page).to have_content("Your recent scores")
+  end
 
-        expect(page).to have_content("Home")
-      end
+  # following tests will fail until other routes are merged
+  scenario "clicking 'Play' redirects to /game page" do
+    visit "/home"
 
-    #   scenario "User can click Play" do
-    #     visit "/home"
-    #     click_link "Play"
+    click_button("Play")
+    expect(page).to have_current_path("/game")
+  end
 
-    #     expect(page).to have_content("Play")
-    #   end
+  scenario "clicking 'Scoreboard' redirects to /scoreboard page" do
+    visit "/home"
 
-    
+    click_button("Scoreboard")
+    expect(page).to have_current_path("/scoreboard")
+  end
 end
