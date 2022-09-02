@@ -1562,3 +1562,296 @@ NameError (undefined local variable or method `sessions_root' for #<SessionsCont
 Did you mean?  sessions_logout_url):
   
 app/controllers/sessions_controller.rb:35:in `logout'
+Started GET "/" for ::1 at 2022-09-02 10:30:34 +0100
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 333)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 10490)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 14395)
+
+
+Started GET "/sessions/login?code=AQAKMgT7KPdCtmc77cwpEe1qud5wRCuCihIrLY1hOMcvp72HJkj6WoDSJkoR0PLdu3rxWC6P-eCNQl-hgZYM-x4pULmWIMFuu2ehxu1uJ6fNUi6mEBmvrJqJSF_lcbQZ0b7ehc91Zad2aIDnyqb_kkyOLQ9H9ZeaYJUUJwaIGZZ_EcObwJxzQfQaTKF0zRaIFi36-ksQixM8DzWGAKcQ4jhYz5FSk_YBBc0rQawaaxdK-36z" for ::1 at 2022-09-02 10:30:38 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQAKMgT7KPdCtmc77cwpEe1qud5wRCuCihIrLY1hOMcvp72HJkj6WoDSJkoR0PLdu3rxWC6P-eCNQl-hgZYM-x4pULmWIMFuu2ehxu1uJ6fNUi6mEBmvrJqJSF_lcbQZ0b7ehc91Zad2aIDnyqb_kkyOLQ9H9ZeaYJUUJwaIGZZ_EcObwJxzQfQaTKF0zRaIFi36-ksQixM8DzWGAKcQ4jhYz5FSk_YBBc0rQawaaxdK-36z"}
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 368ms (ActiveRecord: 21.6ms | Allocations: 23806)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:30:39 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.6ms | Allocations: 74)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3742)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 5234)
+
+
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:30:46 +0100
+Processing by SessionsController#logout as HTML
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.0ms | Allocations: 20116)
+
+
+  
+NameError (undefined local variable or method `sessions_index_url' for #<SessionsController:0x0000000001f3d8>
+Did you mean?  sessions_login_url):
+  
+app/controllers/sessions_controller.rb:36:in `logout'
+Started GET "/sessions/login?code=AQA-xpL3YdmR5nukwzgHO0M6855Ia2lii5U6xWry0yFWpXON-TsGoY3BAbUasG4eYPMX5tHIEEZhrrJCaZ6F0YgQeHb30hbnxV-6OKMl0ZRcgsj3_ugQY7pWro4RpqMAid2ZOQ6REbDXS3RQAgWvyviREvLO14VxMcs0NuHq_vQnewx13kwanJ-tkitBniRn5SR7Xd-CQjH7kvbnLv9M7Z1vRl6nX9aAUOndOIlVVYVbOhq7" for ::1 at 2022-09-02 10:30:58 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQA-xpL3YdmR5nukwzgHO0M6855Ia2lii5U6xWry0yFWpXON-TsGoY3BAbUasG4eYPMX5tHIEEZhrrJCaZ6F0YgQeHb30hbnxV-6OKMl0ZRcgsj3_ugQY7pWro4RpqMAid2ZOQ6REbDXS3RQAgWvyviREvLO14VxMcs0NuHq_vQnewx13kwanJ-tkitBniRn5SR7Xd-CQjH7kvbnLv9M7Z1vRl6nX9aAUOndOIlVVYVbOhq7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 260ms (ActiveRecord: 0.5ms | Allocations: 14249)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:30:59 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3672)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5033)
+
+
+Started GET "/" for ::1 at 2022-09-02 10:31:04 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4985)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 5352)
+
+
+Started GET "/sessions/login?code=AQA2m8-791UjGS2osfip_012cWRDycgTt3Z1WniK5uqzAdtYOunjIu5QlfWM1vPxjEfOpp_K6wLCBu0La1HR-JASUmSCWuHitDkhSlBqJPBi5-Qt7LbvUnzNcDioIC8YKHnKHyirizOH7i8l4x8VrxljYuKIkKHWys_DhWbQoi6xH5EMoxyg7iU4IsyBGjAYKDnyGa4DavKWaP9W_tlJzwZQae3KOm8rUl0TADlQTNk94Ub1" for ::1 at 2022-09-02 10:31:05 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQA2m8-791UjGS2osfip_012cWRDycgTt3Z1WniK5uqzAdtYOunjIu5QlfWM1vPxjEfOpp_K6wLCBu0La1HR-JASUmSCWuHitDkhSlBqJPBi5-Qt7LbvUnzNcDioIC8YKHnKHyirizOH7i8l4x8VrxljYuKIkKHWys_DhWbQoi6xH5EMoxyg7iU4IsyBGjAYKDnyGa4DavKWaP9W_tlJzwZQae3KOm8rUl0TADlQTNk94Ub1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 236ms (ActiveRecord: 0.3ms | Allocations: 5981)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:31:05 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 3619)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 4979)
+
+
+Started GET "/sessions/login?code=AQB49k_BsIBC_GbP_kFLFx3gJ5pPHCuewRA6HlDphD0Gj8KF7MPrfO8epjwON-P6VsK0Vle5pwpPPwvdCG4Gkn98E_1SJP-Z5DQzLkYhGbEMmHOHyThjvXU89AeVo8yF_amsqYlkt5lKD95d3zBYPs-FsJeAh0hHuKq0x1S0XNWGzTHSioedimAd-X-VETrgOQ4JZ11_S4MmtrnM52w0bmHfjaAUfMTf7CKOLFgOfvRIMpt2" for ::1 at 2022-09-02 10:31:16 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQB49k_BsIBC_GbP_kFLFx3gJ5pPHCuewRA6HlDphD0Gj8KF7MPrfO8epjwON-P6VsK0Vle5pwpPPwvdCG4Gkn98E_1SJP-Z5DQzLkYhGbEMmHOHyThjvXU89AeVo8yF_amsqYlkt5lKD95d3zBYPs-FsJeAh0hHuKq0x1S0XNWGzTHSioedimAd-X-VETrgOQ4JZ11_S4MmtrnM52w0bmHfjaAUfMTf7CKOLFgOfvRIMpt2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 263ms (ActiveRecord: 0.5ms | Allocations: 13835)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:31:16 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3671)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 5031)
+
+
+Started GET "/sessions/login?code=AQBUgbKPqkPwe5sELQmouLagsEAHTc5ewqyy4Cz3NnER1jdbFHnxwRKqZT2qPBT9wT6uGWqpqP_WXIcnGiOFZbjmfDDlb9zJIvbX9eREi6gHjWpMVIY5Vcl5q0uRgCyY9yL5zJwKRfADqkIFBM46iHAhSs7gpAWI6US_gSwob_pi-s94-bssQpelvpFOx8FE5w5lymqpcYho3KghZotlT_FFqDO-Sen5-dOPE2TLbz40FWUD" for ::1 at 2022-09-02 10:31:45 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQBUgbKPqkPwe5sELQmouLagsEAHTc5ewqyy4Cz3NnER1jdbFHnxwRKqZT2qPBT9wT6uGWqpqP_WXIcnGiOFZbjmfDDlb9zJIvbX9eREi6gHjWpMVIY5Vcl5q0uRgCyY9yL5zJwKRfADqkIFBM46iHAhSs7gpAWI6US_gSwob_pi-s94-bssQpelvpFOx8FE5w5lymqpcYho3KghZotlT_FFqDO-Sen5-dOPE2TLbz40FWUD"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 339ms (ActiveRecord: 6.6ms | Allocations: 11911)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:31:46 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3730)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 5254)
+
+
+Started GET "/sessions/login?code=AQCZ7zpp71JDvlL-AhTukFFDBVKxtp7yqAqTLypUAh2TKf4rgsvoHFnmrB-_YHuGU-aTSrTeOsCi89QfGfCdgysgqI7YxDiTFQgdVWaLMTEi5bmb9Hwn3k0cZZ1hCbjqJvOOG-KyYN1HRQHoUdIJNrGn0vn85Tav172edp1y9GLWWYRabUHvPndO8RQT-LA3JlD6JZuAD_c5rOaOakCFOkGAtxZ25acvz0maDOfoJ5x-utP0" for ::1 at 2022-09-02 10:32:28 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQCZ7zpp71JDvlL-AhTukFFDBVKxtp7yqAqTLypUAh2TKf4rgsvoHFnmrB-_YHuGU-aTSrTeOsCi89QfGfCdgysgqI7YxDiTFQgdVWaLMTEi5bmb9Hwn3k0cZZ1hCbjqJvOOG-KyYN1HRQHoUdIJNrGn0vn85Tav172edp1y9GLWWYRabUHvPndO8RQT-LA3JlD6JZuAD_c5rOaOakCFOkGAtxZ25acvz0maDOfoJ5x-utP0"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 257ms (ActiveRecord: 0.5ms | Allocations: 14306)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:32:28 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3678)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5032)
+
+
+Started GET "/logout" for ::1 at 2022-09-02 10:32:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:32:41 +0100
+Processing by SessionsController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 289ms (ActiveRecord: 0.0ms | Allocations: 16278)
+
+
+Started GET "/" for ::1 at 2022-09-02 10:32:41 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4927)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5293)
+
+
+Started GET "/sessions/login?code=AQDmShjdeVb3hmm1IhIQYk5I2I092w4KPj1iJU66ErQV3SVBNq8eQDQFXC4V-NvR9JSjyS0a_IJUNsJf0hdlT8hyn5bSmv_Ta1exZnIaBFFYqYGMg_RGPPFSmLNIC2mUtMYZcPbhxDjnh6B3NxglXYMX4HBmmnuvrYF19a5TVxSwQvUgbzFyPl_nDp3daVLM2PqjThQSDGSsRs1Uzdx-zP9YBdobNBLSNOf-A9UrNSLKpHiB" for ::1 at 2022-09-02 10:32:43 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQDmShjdeVb3hmm1IhIQYk5I2I092w4KPj1iJU66ErQV3SVBNq8eQDQFXC4V-NvR9JSjyS0a_IJUNsJf0hdlT8hyn5bSmv_Ta1exZnIaBFFYqYGMg_RGPPFSmLNIC2mUtMYZcPbhxDjnh6B3NxglXYMX4HBmmnuvrYF19a5TVxSwQvUgbzFyPl_nDp3daVLM2PqjThQSDGSsRs1Uzdx-zP9YBdobNBLSNOf-A9UrNSLKpHiB"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 280ms (ActiveRecord: 0.3ms | Allocations: 6103)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:32:43 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3670)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5031)
+
+
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:33:11 +0100
+Processing by SessionsController#logout as HTML
+Redirected to http://localhost:3000accounts.spotify.com/logout
+Completed 302 Found in 305ms (ActiveRecord: 0.0ms | Allocations: 16356)
+
+
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:33:12 +0100
+Processing by SessionsController#logout as HTML
+Redirected to http://localhost:3000accounts.spotify.com/logout
+Completed 302 Found in 274ms (ActiveRecord: 0.0ms | Allocations: 16983)
+
+
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:33:17 +0100
+Processing by SessionsController#logout as HTML
+Redirected to http://localhost:3000accounts.spotify.com/logout
+Completed 302 Found in 252ms (ActiveRecord: 0.0ms | Allocations: 7640)
+
+
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:33:48 +0100
+Processing by SessionsController#logout as HTML
+Redirected to http://localhost:3000accounts.spotify.com/logout
+Completed 302 Found in 268ms (ActiveRecord: 0.0ms | Allocations: 7994)
+
+
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:34:06 +0100
+Processing by SessionsController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 235ms (ActiveRecord: 0.0ms | Allocations: 6663)
+
+
+Started GET "/" for ::1 at 2022-09-02 10:34:06 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4987)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5521)
+
+
+Started GET "/sessions/login?code=AQD2EoPLJEVHjxggpD10lXHp5538I-sbTCmnoOmo8y_T9NNHmol9Zk3PLFJxSCLzKhVh0sLqKYTQy_Kgp1uYbw6J3fp5YxYEstO61UR1nFWoWg_I9bLLovROYqcIFzbTEhhtdcxCXXyW9rvbBSrdNOwugJDMEi7CjdmomlCQ3k9Kw13ZCre5c0JBnZ3FF96v37eQG_No2uo_-GLPHZ3_h0LkUFeeXomFDaJmxdZtKdQmGjKQ" for ::1 at 2022-09-02 10:34:08 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQD2EoPLJEVHjxggpD10lXHp5538I-sbTCmnoOmo8y_T9NNHmol9Zk3PLFJxSCLzKhVh0sLqKYTQy_Kgp1uYbw6J3fp5YxYEstO61UR1nFWoWg_I9bLLovROYqcIFzbTEhhtdcxCXXyW9rvbBSrdNOwugJDMEi7CjdmomlCQ3k9Kw13ZCre5c0JBnZ3FF96v37eQG_No2uo_-GLPHZ3_h0LkUFeeXomFDaJmxdZtKdQmGjKQ"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 308ms (ActiveRecord: 15.3ms | Allocations: 28349)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:34:08 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3670)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 5031)
+
+
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:34:15 +0100
+Processing by SessionsController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 235ms (ActiveRecord: 0.0ms | Allocations: 6573)
+
+
+Started GET "/" for ::1 at 2022-09-02 10:34:15 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4927)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 5293)
+
+
+Started GET "/sessions/login?code=AQBhyXCIS_3ewhs6wD__G3fLeCsaXVBIKym9cT0YiWSRCEzYzI59_Cf3qjpTRMv9vyS-3OHFhQqIslJ9TeO_asyRrDmfNO4rIpoCwyX82IlRvdHDRfR7osejvTin2K02gdTmBPPvm8xQMwSfRmowG_0TRfm34ah1Zt7U9gFlI2OFZzRcxg7AbWrfB6ub-rkuIFGlwvYH8Tpvp7YcfkUtvfukB52LxvP7lRJ9F8DBf2kLXfPI" for ::1 at 2022-09-02 10:34:16 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQBhyXCIS_3ewhs6wD__G3fLeCsaXVBIKym9cT0YiWSRCEzYzI59_Cf3qjpTRMv9vyS-3OHFhQqIslJ9TeO_asyRrDmfNO4rIpoCwyX82IlRvdHDRfR7osejvTin2K02gdTmBPPvm8xQMwSfRmowG_0TRfm34ah1Zt7U9gFlI2OFZzRcxg7AbWrfB6ub-rkuIFGlwvYH8Tpvp7YcfkUtvfukB52LxvP7lRJ9F8DBf2kLXfPI"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 250ms (ActiveRecord: 0.3ms | Allocations: 22711)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:34:16 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3671)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 5031)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:34:34 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3730)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5297)
+
+
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:34:37 +0100
+Processing by SessionsController#logout as HTML
+Redirected to https://accounts.spotify.com/logout
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 1124)
+
+
+Started GET "/sessions/login?code=AQAnK0C72bRvXC0pxAK9_CDB-RiK3a1pyYezGzKuC2klB9KY1Cq5Q0cDzNcy73tSgPgSBe53Mgk4FKSzBo2VSfs2pd_F12UnLN8rQeWwmg9FqBaqwlBVz3G6B9XEGnsaXKuUNWHX5eEWSEM4uqkEJ2VBObm1TOXSoRSlwTuPlso60uVyVP4jW-juht2p8uJ335hA2X5sHzs02SY9hSUVWm9gu1fD_RpRMYCQD45nzJYVA_HP" for ::1 at 2022-09-02 10:34:47 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQAnK0C72bRvXC0pxAK9_CDB-RiK3a1pyYezGzKuC2klB9KY1Cq5Q0cDzNcy73tSgPgSBe53Mgk4FKSzBo2VSfs2pd_F12UnLN8rQeWwmg9FqBaqwlBVz3G6B9XEGnsaXKuUNWHX5eEWSEM4uqkEJ2VBObm1TOXSoRSlwTuPlso60uVyVP4jW-juht2p8uJ335hA2X5sHzs02SY9hSUVWm9gu1fD_RpRMYCQD45nzJYVA_HP"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 282ms (ActiveRecord: 11.6ms | Allocations: 20056)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 10:34:48 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3675)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 5029)
+
+
+Started GET "/sessions/logout" for ::1 at 2022-09-02 10:34:52 +0100
+Processing by SessionsController#logout as HTML
+Redirected to https://accounts.spotify.com/logout
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 1123)
+
+

@@ -32,8 +32,8 @@ class SessionsController < ApplicationController
 
   def logout
     reset_session
-    print(sessions_index)
-    redirect_to sessions_index
+    # RestClient.get("https://accounts.spotify.com/logout")
+    redirect_to "https://accounts.spotify.com/logout"
 
   end 
 
