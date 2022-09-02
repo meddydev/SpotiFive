@@ -3,7 +3,7 @@ class ScoreboardController < ApplicationController
     if session[:user]
       @users = User.all
     else 
-      render status: 403
+      redirect_to "/"
     end
   end
 end

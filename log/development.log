@@ -654,3 +654,44 @@ Processing by ScoreboardController#index as HTML
 Completed 200 OK in 123ms (Views: 119.1ms | ActiveRecord: 1.6ms | Allocations: 21577)
 
 
+Started GET "/scoreboard" for ::1 at 2022-09-02 13:04:16 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms | Allocations: 1490)
+
+
+Started GET "/" for ::1 at 2022-09-02 13:04:17 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 328)
+  Rendered layout layouts/application.html.erb (Duration: 286.0ms | Allocations: 19982)
+Completed 200 OK in 334ms (Views: 307.7ms | ActiveRecord: 0.0ms | Allocations: 22724)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-02 13:47:15 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 383.7ms | Allocations: 29516)
+  Rendered layout layouts/application.html.erb (Duration: 398.0ms | Allocations: 33421)
+Completed 200 OK in 521ms (Views: 406.0ms | ActiveRecord: 275.6ms | Allocations: 37582)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-02 13:47:25 +0100
+Processing by ScoreboardController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 193)
+
+
+Started GET "/" for ::1 at 2022-09-02 13:47:25 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 3944)
+Completed 200 OK in 54ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 4854)
+
+
