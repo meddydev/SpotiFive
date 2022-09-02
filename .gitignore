@@ -1,9 +1,1 @@
-config/master.key
-config/credentials.yml.enc
-/tmp/cache
-/tmp
-/log
-
-
-
-/config/master.key
+.gitignore_2
