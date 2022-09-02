@@ -1,120 +1,416 @@
-Started GET "/" for ::1 at 2022-09-02 12:28:31 +0100
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-09-02 14:07:59 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by SessionsController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering sessions/index.html.erb within layouts/application
   Rendered sessions/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 333)
-  Rendered layout layouts/application.html.erb (Duration: 81.6ms | Allocations: 41797)
-Completed 200 OK in 93ms (Views: 89.4ms | ActiveRecord: 0.0ms | Allocations: 45714)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 12142)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 16061)
 
 
-Started GET "/sessions/login?code=AQDMKARDG_78t_PP7mSzMHz4M0omiAgLiYCkXeqhUdft2TBgKcrZw-xL0e5-52vXrfwwyZNcooEjTIzJqUG4P84Yl8DV243WxT94erdEVjUx1MWIUpZ3QadU-qM07RKnCE0kJD4jSGqbdN9KEe6IvlG4VIQUQOvzd5n_u0hVDJvd-KPBrIL-9SLOTpCKQjWmSA-lFGBfiSmL3tnUjAl2KD8Ei2gvewWDrzyBVFfcCX8z5wxZ" for ::1 at 2022-09-02 12:28:33 +0100
+Started GET "/sessions/login?code=AQBxmyLnSlciPMtak71Qcv2GhmZsMN5xqPcA4jMsRoCpOdaqyHpuf-5v-XgYyLUWDcetlgF7jwq6bK7K0sAifQpMiu5tX-3HNrpP4oAGAMZtOt8kJxC69lyE8OZwB-H_OYIeTMcnVgqatt9LNQGTx2TKmdAe3LVJa6eGU5NWW7dUULK10l47aVjhPkED3udHKVqHQQU5XEOl7YjX9NDESk2aHY2RAy158vk7KBCCgeFMZUVq" for ::1 at 2022-09-02 14:08:06 +0100
 Processing by SessionsController#login as HTML
-  Parameters: {"code"=>"AQDMKARDG_78t_PP7mSzMHz4M0omiAgLiYCkXeqhUdft2TBgKcrZw-xL0e5-52vXrfwwyZNcooEjTIzJqUG4P84Yl8DV243WxT94erdEVjUx1MWIUpZ3QadU-qM07RKnCE0kJD4jSGqbdN9KEe6IvlG4VIQUQOvzd5n_u0hVDJvd-KPBrIL-9SLOTpCKQjWmSA-lFGBfiSmL3tnUjAl2KD8Ei2gvewWDrzyBVFfcCX8z5wxZ"}
-  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
-Redirected to http://localhost:3000/sessions/session_check
-Completed 302 Found in 323ms (ActiveRecord: 8.9ms | Allocations: 24489)
-
-
-Started GET "/sessions/session_check" for ::1 at 2022-09-02 12:28:33 +0100
-Processing by SessionsController#session_check as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering sessions/session_check.html.erb within layouts/application
-  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.2ms | Allocations: 74)
-  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3766)
-Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 5259)
-
-
-Started GET "/game" for ::1 at 2022-09-02 12:28:36 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/game"):
-  
-Started GET "/game" for ::1 at 2022-09-02 12:29:37 +0100
-Processing by GamesController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering games/index.html.erb within layouts/application
-  [1m[36mGame Load (11.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
-  Rendered games/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 5746)
-  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 5816)
-Completed 500 Internal Server Error in 30ms (ActiveRecord: 11.8ms | Allocations: 8091)
+  Parameters: {"code"=>"AQBxmyLnSlciPMtak71Qcv2GhmZsMN5xqPcA4jMsRoCpOdaqyHpuf-5v-XgYyLUWDcetlgF7jwq6bK7K0sAifQpMiu5tX-3HNrpP4oAGAMZtOt8kJxC69lyE8OZwB-H_OYIeTMcnVgqatt9LNQGTx2TKmdAe3LVJa6eGU5NWW7dUULK10l47aVjhPkED3udHKVqHQQU5XEOl7YjX9NDESk2aHY2RAy158vk7KBCCgeFMZUVq"}
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 0.0ms | Allocations: 17004)
 
 
   
-ActionView::Template::Error (undefined local variable or method `new_game_path' for #<ActionView::Base:0x00000000020eb8>
-Did you mean?  new_user_path):
-    30: 
-    31: <br>
-    32: 
-    33: <%= link_to 'New Game', new_game_path %>
+RestClient::Forbidden (403 Forbidden):
   
-app/views/games/index.html.erb:33
-Started GET "/game" for ::1 at 2022-09-02 12:30:08 +0100
-Processing by GamesController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering games/index.html.erb within layouts/application
-  Rendered games/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 78)
-  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 5213)
-Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 6697)
+app/controllers/sessions_controller.rb:15:in `login'
+Started GET "/" for ::1 at 2022-09-02 14:10:05 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2517)
 
 
-Started GET "/" for ::1 at 2022-09-02 12:38:38 +0100
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2022-09-02 14:10:29 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2022-09-02 14:11:02 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by SessionsController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering sessions/index.html.erb within layouts/application
-  Rendered sessions/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 116)
-  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 5250)
-Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 6432)
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 10485)
+Completed 200 OK in 18ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 14407)
 
 
-Started GET "/sessions/login?code=AQA0QqqLbxc387e5K0sKl4CROAWOcCbg544vkpX188I_Mv5CVo55KBROuvl6hWx8Ufmqcq7ppaTagzeMVT32J3c5tmbFYJ3Wkb7cxRBkn3xpw_PhRaZ71KmvySDkCmqhGq2vFhM-6GhAxiDZp50xRshHjSY0gN-6R_BM6_nBBcIPFXjeSt2GG-DfdBevHtCfZMOJMgYtcf0OwFM0e7QQdsguNfBXhjeNum9Anm7JPZfMiXdC" for ::1 at 2022-09-02 12:38:40 +0100
+Started GET "/" for ::1 at 2022-09-02 14:11:54 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4981)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5356)
+
+
+Started GET "/" for ::1 at 2022-09-02 14:13:09 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 333)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 10486)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 14405)
+
+
+Started GET "/sessions/login?code=AQDxTQgDB9yTTYdXCuSDDp8BRhPXTdfEtpfQ01CtU85lXVewCSUuxbMlthwAicRAe9euL6UYME_wwcI9jDVBZEF1cVtG_9hyC7MM-EUa8Rj_CaSUHpP5NXoOq5RqBKUQ33FmL1SuoMRtKxPUMCsebdm3rC8_eYudG_wLIqU9Y2mQDWDxRCgupB2pGhWPtizVaHPdtt69mLyhnWDU8TayrKWGXNa8TQwiuHC03N2sdEdTgBXj" for ::1 at 2022-09-02 14:13:10 +0100
 Processing by SessionsController#login as HTML
-  Parameters: {"code"=>"AQA0QqqLbxc387e5K0sKl4CROAWOcCbg544vkpX188I_Mv5CVo55KBROuvl6hWx8Ufmqcq7ppaTagzeMVT32J3c5tmbFYJ3Wkb7cxRBkn3xpw_PhRaZ71KmvySDkCmqhGq2vFhM-6GhAxiDZp50xRshHjSY0gN-6R_BM6_nBBcIPFXjeSt2GG-DfdBevHtCfZMOJMgYtcf0OwFM0e7QQdsguNfBXhjeNum9Anm7JPZfMiXdC"}
-  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+  Parameters: {"code"=>"AQDxTQgDB9yTTYdXCuSDDp8BRhPXTdfEtpfQ01CtU85lXVewCSUuxbMlthwAicRAe9euL6UYME_wwcI9jDVBZEF1cVtG_9hyC7MM-EUa8Rj_CaSUHpP5NXoOq5RqBKUQ33FmL1SuoMRtKxPUMCsebdm3rC8_eYudG_wLIqU9Y2mQDWDxRCgupB2pGhWPtizVaHPdtt69mLyhnWDU8TayrKWGXNa8TQwiuHC03N2sdEdTgBXj"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
 Redirected to http://localhost:3000/sessions/session_check
-Completed 302 Found in 426ms (ActiveRecord: 20.7ms | Allocations: 15958)
+Completed 302 Found in 334ms (ActiveRecord: 15.5ms | Allocations: 25633)
 
 
-Started GET "/sessions/session_check" for ::1 at 2022-09-02 12:38:40 +0100
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 14:13:10 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.5ms | Allocations: 72)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3734)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5225)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:13:19 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.0ms | Allocations: 3894)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:8:in `index'
+Started GET "/game" for ::1 at 2022-09-02 14:14:13 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.0ms | Allocations: 3892)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:8:in `index'
+Started GET "/game" for ::1 at 2022-09-02 14:14:53 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms | Allocations: 3542)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2022-09-02 14:16:43 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5042)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 5625)
+
+
+Started GET "/sessions/login?code=AQAU9pImPpT-SX97kjA6R-CGVTNccevongbQD4yf_foYLVVKtl0YaGG7CYrK21mtIx1vb6PdQIhisa822uNZoOA1h7-rte4sKZ3ZmA2biaKC5x0-FH6XTa_QDX96E18nDF8lE_qmk1itLM1JMMrYR4u_LWuvJETVQ4BcM1Ipm9J0fTd7nSZsBW9KFAVVk6TePLVBxOL-vi0_o5wwRzDCPU6gXHokFkCted5gygSkPIPOC1Z7" for ::1 at 2022-09-02 14:16:44 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQAU9pImPpT-SX97kjA6R-CGVTNccevongbQD4yf_foYLVVKtl0YaGG7CYrK21mtIx1vb6PdQIhisa822uNZoOA1h7-rte4sKZ3ZmA2biaKC5x0-FH6XTa_QDX96E18nDF8lE_qmk1itLM1JMMrYR4u_LWuvJETVQ4BcM1Ipm9J0fTd7nSZsBW9KFAVVk6TePLVBxOL-vi0_o5wwRzDCPU6gXHokFkCted5gygSkPIPOC1Z7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 367ms (ActiveRecord: 14.4ms | Allocations: 20502)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 14:16:45 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3664)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 5024)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:16:48 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.0ms | Allocations: 3771)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2022-09-02 14:18:55 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 5040)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 5619)
+
+
+Started GET "/sessions/login?code=AQAY1kddR0B_HLR2jQ8EmZ-U7ErHZ-NpbX2CflnDfHPOtc0hd0gPAKc1Tvf2xgeekgbpEomqp-4_-4Tdh9ADraLX_VvJLo-AHSAbunNX8PhwekahczgCU_ppSrXJQF3y_wLTCUuyxITEVM3QogLTxtpj6T6I-Z5yVBz0CUjtIJ3k0SzDWZrVbLrAO0PCUQGrIhadwm5IKFXPtlGaY18cJOpf5yxYirlyx8DxoG_Q7duX85T9" for ::1 at 2022-09-02 14:18:56 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQAY1kddR0B_HLR2jQ8EmZ-U7ErHZ-NpbX2CflnDfHPOtc0hd0gPAKc1Tvf2xgeekgbpEomqp-4_-4Tdh9ADraLX_VvJLo-AHSAbunNX8PhwekahczgCU_ppSrXJQF3y_wLTCUuyxITEVM3QogLTxtpj6T6I-Z5yVBz0CUjtIJ3k0SzDWZrVbLrAO0PCUQGrIhadwm5IKFXPtlGaY18cJOpf5yxYirlyx8DxoG_Q7duX85T9"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 298ms (ActiveRecord: 10.2ms | Allocations: 21802)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 14:18:56 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3664)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 5024)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:18:58 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms | Allocations: 3651)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:9:in `index'
+Started GET "/game" for ::1 at 2022-09-02 14:19:42 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms | Allocations: 13548)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:9:in `index'
+Started GET "/sessions/login?code=AQCXQ0g3y6n_bB_EoxCFghQGfRs2M3qwYrHEXx5e4wmxB7WJtPlLb4vvDh-q9F5xGIJ4uf_HnivWNJTzaVRI_yiomkhoYJblhXahkb07ISzs985dzRdVTqJ6OLQ1opuVVayfoOopVFxbZGjuR4znexn_AX1qoE3LP_0U14w45X_rQi1V9eoczOfO7ole-mF_XxTX1Y1o32ROnpU79WfyPGJlUgC9ITIXWDDnPrDwvELVJbnX" for ::1 at 2022-09-02 14:20:22 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQCXQ0g3y6n_bB_EoxCFghQGfRs2M3qwYrHEXx5e4wmxB7WJtPlLb4vvDh-q9F5xGIJ4uf_HnivWNJTzaVRI_yiomkhoYJblhXahkb07ISzs985dzRdVTqJ6OLQ1opuVVayfoOopVFxbZGjuR4znexn_AX1qoE3LP_0U14w45X_rQi1V9eoczOfO7ole-mF_XxTX1Y1o32ROnpU79WfyPGJlUgC9ITIXWDDnPrDwvELVJbnX"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 302ms (ActiveRecord: 11.8ms | Allocations: 28070)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 14:20:22 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3733)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 5252)
+
+
+Started GET "/sessions/login?code=AQDeYZFGj9nIRGLGvk2hxvsew4xKaXJysnjRIgmZ5d44mqGtlBOveKqBuV__whXHOCEPdyAd4oFyQMopjT6FlKHaoyB8Z-xx2THY7K1fyVt0Twun0BaYKNZjzF1g9I63SUQtdkcrjJGcYkt_t25HYwJpvCVXtNKphkw8GS_xbxMbu81BOm66T21HjhH7ms5qoW4asJuAacZsA6XgSpFLdcEDS9A3bgm0oavdz7ZSSj06VM3J" for ::1 at 2022-09-02 14:21:24 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQDeYZFGj9nIRGLGvk2hxvsew4xKaXJysnjRIgmZ5d44mqGtlBOveKqBuV__whXHOCEPdyAd4oFyQMopjT6FlKHaoyB8Z-xx2THY7K1fyVt0Twun0BaYKNZjzF1g9I63SUQtdkcrjJGcYkt_t25HYwJpvCVXtNKphkw8GS_xbxMbu81BOm66T21HjhH7ms5qoW4asJuAacZsA6XgSpFLdcEDS9A3bgm0oavdz7ZSSj06VM3J"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (4.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "auth_token", "refresh_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "shaunhohoho@gmail.com"], ["name", "Shaun Ho"], ["auth_token", "BQARgwRfeaYATi4WYsSvIC5syWal0lJGZikCWbj_wxVLRp7H98vFqOJ7caU68Di-Gs1VJViU4TB7gh4bhuvlZk_Ps_vooE8zAIn61YExNUff520y2WOYvYrtWGp839vRT9-z1-x6qnfr7GdYSn46nDZ-aH5ZhgPsf6cV7p-BjSWfB7XBiQegJUPI2jEszpAUSZIKO_cYo_NCGwunTw"], ["refresh_token", "AQCy8hS1Mdv3YsUlYycSLEmqnJBQyS4ZbgJq8EjD3ig2LmGPYvDvESoeD8UYSwwoNgaXAFBPmPXjcPUtHDKRiN7CB2j4IrHjhGVnIa_5k49KfQhUq6FVMJ5MoxL1M8h4Y7U"], ["created_at", "2022-09-02 13:21:24.783040"], ["updated_at", "2022-09-02 13:21:24.783040"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 314ms (ActiveRecord: 6.7ms | Allocations: 6286)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 14:21:24 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3669)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 5020)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:21:27 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3811)
+Completed 200 OK in 320ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 57649)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:22:11 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3975)
+Completed 200 OK in 277ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 68992)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:22:43 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3726)
+Completed 200 OK in 761ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 80220)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:23:00 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3726)
+Completed 200 OK in 479ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 61092)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:23:14 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3726)
+Completed 200 OK in 425ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 62672)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:23:37 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3726)
+Completed 200 OK in 1113ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 81179)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:24:10 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3726)
+Completed 200 OK in 424ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 70903)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:27:03 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3726)
+Completed 200 OK in 449ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 71918)
+
+
+Started GET "/sessions/login?code=AQDz0DycEEQmcSpc6MLskIeUG9vs6TP3Dk96PrSHZ_ClaBbkD7ri_ulv3_wctKml7xXKkl1tv2lABerdbBRaKdBhsHXiFXTrYdYlXFU92deESigndQks5daoU1ckhRRNNX655EbmmF3AU9a62X3IHcdQ2_a5Hw1iCPkC2mKYKBLK8yXVCLLCX-6mZbLitY0RjruUjPGy2Z_oC9rqZGM8CvCV2RN-P7A4xpdi2v6YQRXWQXt7" for ::1 at 2022-09-02 14:29:02 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQDz0DycEEQmcSpc6MLskIeUG9vs6TP3Dk96PrSHZ_ClaBbkD7ri_ulv3_wctKml7xXKkl1tv2lABerdbBRaKdBhsHXiFXTrYdYlXFU92deESigndQks5daoU1ckhRRNNX655EbmmF3AU9a62X3IHcdQ2_a5Hw1iCPkC2mKYKBLK8yXVCLLCX-6mZbLitY0RjruUjPGy2Z_oC9rqZGM8CvCV2RN-P7A4xpdi2v6YQRXWQXt7"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 299ms (ActiveRecord: 12.2ms | Allocations: 21092)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 14:29:03 +0100
+Processing by SessionsController#session_check as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/session_check.html.erb within layouts/application
+  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.6ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3793)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 5706)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:29:06 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3726)
+Completed 200 OK in 480ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 69502)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:32:31 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4009)
+Completed 200 OK in 640ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 63052)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:32:46 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 143)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4008)
+Completed 200 OK in 399ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 62136)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:33:17 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4025)
+Completed 200 OK in 616ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 71644)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:33:27 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3731)
+Completed 200 OK in 456ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 71524)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:33:59 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3734)
+Completed 200 OK in 486ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 70373)
+
+
+Started GET "/game" for ::1 at 2022-09-02 14:37:48 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4033)
+Completed 200 OK in 440ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 69208)
+
+
+Started GET "/" for ::1 at 2022-09-02 14:44:14 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 5146)
+Completed 200 OK in 18ms (Views: 14.0ms | Allocations: 6101)
+
+
+Started GET "/sessions/login?code=AQC9l20zWHQ-dAAJzkhn-z-PNa2G3q6cMgo0L2JSEPDU4HWMR_EBwbiUlp2RCQSVbfbTgCAcRaW01oyD7lzJAILTqOHHwK2RUfOpTyMVesBqnd-2X_VU-TScI4Ug8g4DMuwc_CXjB-PGf9x3nW2x0oh4qLum6II0aAYnq2REHV40VExL3wrPUUm_e_YI6d9LrmyPan-4i-LhYTkgmbWROs22EJxb3HXXbcVCdvVYJ0Y4Hqp5" for ::1 at 2022-09-02 14:44:15 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQC9l20zWHQ-dAAJzkhn-z-PNa2G3q6cMgo0L2JSEPDU4HWMR_EBwbiUlp2RCQSVbfbTgCAcRaW01oyD7lzJAILTqOHHwK2RUfOpTyMVesBqnd-2X_VU-TScI4Ug8g4DMuwc_CXjB-PGf9x3nW2x0oh4qLum6II0aAYnq2REHV40VExL3wrPUUm_e_YI6d9LrmyPan-4i-LhYTkgmbWROs22EJxb3HXXbcVCdvVYJ0Y4Hqp5"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sessions/session_check
+Completed 302 Found in 392ms (ActiveRecord: 39.9ms | Allocations: 24650)
+
+
+Started GET "/sessions/session_check" for ::1 at 2022-09-02 14:44:16 +0100
 Processing by SessionsController#session_check as HTML
   Rendering layout layouts/application.html.erb
   Rendering sessions/session_check.html.erb within layouts/application
   Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.7ms | Allocations: 70)
-  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3688)
-Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5174)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3730)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5218)
 
 
-Started GET "/game" for ::1 at 2022-09-02 12:38:44 +0100
+Started GET "/game" for ::1 at 2022-09-02 14:44:35 +0100
 Processing by GamesController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering games/index.html.erb within layouts/application
-  Rendered games/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 91)
-  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 5080)
-Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 5969)
-
-
-Started GET "/" for ::1 at 2022-09-02 13:09:41 +0100
-Processing by SessionsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering sessions/index.html.erb within layouts/application
-  Rendered sessions/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 773)
-  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 9908)
-Completed 200 OK in 24ms (Views: 20.5ms | Allocations: 14371)
-
-
-Started GET "/sessions/login?code=AQBMJVX5eWClVMJx9iWnBGsWr2oO_Dkafbqq0ezKK8zD17vGyZvUuXydVBvBWFHf5b971Ej7n67r530xK4iuzFg-WusOZVJSYAhMpiER3xYDBpROwkY5-z_ilnpQ3MZF9erV9Ph-SdhuSnjIzulVkGMMXbNJpltYzC1GNcRo2HPrbK7Hm2g0HMkAnKZAmjIhX0bwJXZJt7HLJNJ_ya2vZ7BZ06ehnFx7bDNxREmSlBLJxPH6" for ::1 at 2022-09-02 13:09:42 +0100
-Processing by SessionsController#login as HTML
-  Parameters: {"code"=>"AQBMJVX5eWClVMJx9iWnBGsWr2oO_Dkafbqq0ezKK8zD17vGyZvUuXydVBvBWFHf5b971Ej7n67r530xK4iuzFg-WusOZVJSYAhMpiER3xYDBpROwkY5-z_ilnpQ3MZF9erV9Ph-SdhuSnjIzulVkGMMXbNJpltYzC1GNcRo2HPrbK7Hm2g0HMkAnKZAmjIhX0bwJXZJt7HLJNJ_ya2vZ7BZ06ehnFx7bDNxREmSlBLJxPH6"}
-  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shaunhohoho@gmail.com"], ["LIMIT", 1]]
-Redirected to http://localhost:3000/sessions/session_check
-Completed 302 Found in 354ms (ActiveRecord: 26.8ms | Allocations: 9978)
-
-
-Started GET "/sessions/session_check" for ::1 at 2022-09-02 13:09:43 +0100
-Processing by SessionsController#session_check as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering sessions/session_check.html.erb within layouts/application
-  Rendered sessions/session_check.html.erb within layouts/application (Duration: 0.6ms | Allocations: 70)
-  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3688)
-Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5175)
+  Rendered games/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3672)
+Completed 200 OK in 424ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 69543)
 
 

@@ -1,14 +1,18 @@
-<h1> Hello World </h1>
 
-<form action="/game/new" method="post">
-<ul> 
-  <lh> Guess the Songs by Drake </lh>
-  <li> <input type="text" name="song1"> </li>
-  <li> <input type="text" name="song2"> </li>
-  <li> <input type="text" name="song3"> </li>
-  <li> <input type="text" name="song4"> </li>
-  <li> <input type="text" name="song5"> </li>
-</ul>
+<h1>Games</h1>
 
-<input type = "submit">
+<form method="post", action="scoreboard">
+  <ol>
+  <lh> Guess song by <%=@artist_name%>  </lh>
+    <li> <input type="text" name="song1" </li>
+    <li> <input type="text" name="song2" </li>
+    <li> <input type="text" name="song3" </li>
+    <li> <input type="text" name="song4" </li>
+    <li> <input type="text" name="song5" </li>
+  </ol>
+  <input type ="submit"> 
 </form>
+
+<% @top_five_tracks.each do |tracks| %>
+  <p> <%=tracks%> </p>
+<% end %>
