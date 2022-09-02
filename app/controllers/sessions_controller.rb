@@ -23,7 +23,7 @@ class SessionsController < ApplicationController
       user = User.create(email: user_email, name: user_name, image_url: user_img_url, auth_token: auth_token, refresh_token: refresh_token)
     end
     session[:user] = user
-    redirect_to sessions_session_check_url
+    redirect_to "/home"
   end 
 
   def session_check
