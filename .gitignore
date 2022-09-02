@@ -1,4 +1,6 @@
 config/master.key
 tmp/cache
 tmp
+log
+
 
