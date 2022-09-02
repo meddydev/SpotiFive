@@ -1,0 +1,884 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
+            },
+            "href": "https://api.spotify.com/v1/artists/6qqNVTkY8uBg9cP3Jd7DAH",
+            "id": "6qqNVTkY8uBg9cP3Jd7DAH",
+            "name": "Billie Eilish",
+            "type": "artist",
+            "uri": "spotify:artist:6qqNVTkY8uBg9cP3Jd7DAH"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+            },
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
+            "type": "artist",
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2sBB17RXTamvj7Ncps15AK"
+        },
+        "href": "https://api.spotify.com/v1/albums/2sBB17RXTamvj7Ncps15AK",
+        "id": "2sBB17RXTamvj7Ncps15AK",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2738a3f0a3ca7929dea23cd274c",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e028a3f0a3ca7929dea23cd274c",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048518a3f0a3ca7929dea23cd274c",
+            "width": 64
+          }
+        ],
+        "name": "lovely (with Khalid)",
+        "release_date": "2018-04-19",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:2sBB17RXTamvj7Ncps15AK"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
+          },
+          "href": "https://api.spotify.com/v1/artists/6qqNVTkY8uBg9cP3Jd7DAH",
+          "id": "6qqNVTkY8uBg9cP3Jd7DAH",
+          "name": "Billie Eilish",
+          "type": "artist",
+          "uri": "spotify:artist:6qqNVTkY8uBg9cP3Jd7DAH"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 200185,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM71804190"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0u2P5u6lvoDfwTYjAADbn4"
+      },
+      "href": "https://api.spotify.com/v1/tracks/0u2P5u6lvoDfwTYjAADbn4",
+      "id": "0u2P5u6lvoDfwTYjAADbn4",
+      "is_local": false,
+      "is_playable": true,
+      "name": "lovely (with Khalid)",
+      "popularity": 87,
+      "preview_url": "https://p.scdn.co/mp3-preview/3ebe867688f8f3c20f550fa2308e06b42791824f?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:0u2P5u6lvoDfwTYjAADbn4"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/64KEffDW9EtZ1y2vBYgq8T"
+            },
+            "href": "https://api.spotify.com/v1/artists/64KEffDW9EtZ1y2vBYgq8T",
+            "id": "64KEffDW9EtZ1y2vBYgq8T",
+            "name": "Marshmello",
+            "type": "artist",
+            "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+            },
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
+            "type": "artist",
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3SBeYxkc3Ce7lanK0f3epk"
+        },
+        "href": "https://api.spotify.com/v1/albums/3SBeYxkc3Ce7lanK0f3epk",
+        "id": "3SBeYxkc3Ce7lanK0f3epk",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2732ff34dbc50313f8cea7b5db5",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e022ff34dbc50313f8cea7b5db5",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048512ff34dbc50313f8cea7b5db5",
+            "width": 64
+          }
+        ],
+        "name": "Numb",
+        "release_date": "2022-06-10",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:3SBeYxkc3Ce7lanK0f3epk"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/64KEffDW9EtZ1y2vBYgq8T"
+          },
+          "href": "https://api.spotify.com/v1/artists/64KEffDW9EtZ1y2vBYgq8T",
+          "id": "64KEffDW9EtZ1y2vBYgq8T",
+          "name": "Marshmello",
+          "type": "artist",
+          "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 155588,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRC12202117"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/10xV5l9nhLvFpR8mqzs0bL"
+      },
+      "href": "https://api.spotify.com/v1/tracks/10xV5l9nhLvFpR8mqzs0bL",
+      "id": "10xV5l9nhLvFpR8mqzs0bL",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Numb",
+      "popularity": 87,
+      "preview_url": "https://p.scdn.co/mp3-preview/04b902e5249b1acc3eb548d97bd3bdd73aef15b8?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:10xV5l9nhLvFpR8mqzs0bL"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/64KEffDW9EtZ1y2vBYgq8T"
+            },
+            "href": "https://api.spotify.com/v1/artists/64KEffDW9EtZ1y2vBYgq8T",
+            "id": "64KEffDW9EtZ1y2vBYgq8T",
+            "name": "Marshmello",
+            "type": "artist",
+            "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+            },
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
+            "type": "artist",
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2bw00gRKNKbTFOqCkohbSh"
+        },
+        "href": "https://api.spotify.com/v1/albums/2bw00gRKNKbTFOqCkohbSh",
+        "id": "2bw00gRKNKbTFOqCkohbSh",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273f33ba583059dc2f7d08bf2b8",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02f33ba583059dc2f7d08bf2b8",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851f33ba583059dc2f7d08bf2b8",
+            "width": 64
+          }
+        ],
+        "name": "Silence",
+        "release_date": "2017-08-11",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:2bw00gRKNKbTFOqCkohbSh"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/64KEffDW9EtZ1y2vBYgq8T"
+          },
+          "href": "https://api.spotify.com/v1/artists/64KEffDW9EtZ1y2vBYgq8T",
+          "id": "64KEffDW9EtZ1y2vBYgq8T",
+          "name": "Marshmello",
+          "type": "artist",
+          "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 180822,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRC11701901"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7vGuf3Y35N4wmASOKLUVVU"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7vGuf3Y35N4wmASOKLUVVU",
+      "id": "7vGuf3Y35N4wmASOKLUVVU",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Silence",
+      "popularity": 80,
+      "preview_url": "https://p.scdn.co/mp3-preview/b264763af5a2cd0203103949fdd88f34fa9a155b?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:7vGuf3Y35N4wmASOKLUVVU"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+            },
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
+            "type": "artist",
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6kf46HbnYCZzP6rjvQHYzg"
+        },
+        "href": "https://api.spotify.com/v1/albums/6kf46HbnYCZzP6rjvQHYzg",
+        "id": "6kf46HbnYCZzP6rjvQHYzg",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273988ede5e1276e758b5f9e577",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02988ede5e1276e758b5f9e577",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851988ede5e1276e758b5f9e577",
+            "width": 64
+          }
+        ],
+        "name": "American Teen",
+        "release_date": "2017-04-27",
+        "release_date_precision": "day",
+        "total_tracks": 15,
+        "type": "album",
+        "uri": "spotify:album:6kf46HbnYCZzP6rjvQHYzg"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 202546,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRC11700144"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5Z3GHaZ6ec9bsiI5BenrbY"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5Z3GHaZ6ec9bsiI5BenrbY",
+      "id": "5Z3GHaZ6ec9bsiI5BenrbY",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Young Dumb & Broke",
+      "popularity": 80,
+      "preview_url": "https://p.scdn.co/mp3-preview/7f85d7814c5ff276d0ad416cd3f4c1cf88ece7af?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:5Z3GHaZ6ec9bsiI5BenrbY"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+            },
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
+            "type": "artist",
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6kf46HbnYCZzP6rjvQHYzg"
+        },
+        "href": "https://api.spotify.com/v1/albums/6kf46HbnYCZzP6rjvQHYzg",
+        "id": "6kf46HbnYCZzP6rjvQHYzg",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273988ede5e1276e758b5f9e577",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02988ede5e1276e758b5f9e577",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851988ede5e1276e758b5f9e577",
+            "width": 64
+          }
+        ],
+        "name": "American Teen",
+        "release_date": "2017-04-27",
+        "release_date_precision": "day",
+        "total_tracks": 15,
+        "type": "album",
+        "uri": "spotify:album:6kf46HbnYCZzP6rjvQHYzg"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 219080,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "TCACO1662934"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/152lZdxL1OR0ZMW6KquMif"
+      },
+      "href": "https://api.spotify.com/v1/tracks/152lZdxL1OR0ZMW6KquMif",
+      "id": "152lZdxL1OR0ZMW6KquMif",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Location",
+      "popularity": 78,
+      "preview_url": "https://p.scdn.co/mp3-preview/1065b6697badb1177e2b61de78fe7cc3902c5e8a?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:152lZdxL1OR0ZMW6KquMif"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+            },
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
+            "type": "artist",
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/7CrDnyaqZVhO6UupmkQiHe"
+        },
+        "href": "https://api.spotify.com/v1/albums/7CrDnyaqZVhO6UupmkQiHe",
+        "id": "7CrDnyaqZVhO6UupmkQiHe",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273b25a6f8bac702391f3e59129",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02b25a6f8bac702391f3e59129",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851b25a6f8bac702391f3e59129",
+            "width": 64
+          }
+        ],
+        "name": "Skyline",
+        "release_date": "2022-04-28",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:7CrDnyaqZVhO6UupmkQiHe"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 182895,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRC12200673"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1QxIFMs4M8qd5cbJJu80v4"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1QxIFMs4M8qd5cbJJu80v4",
+      "id": "1QxIFMs4M8qd5cbJJu80v4",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Skyline",
+      "popularity": 77,
+      "preview_url": "https://p.scdn.co/mp3-preview/e8d9d7acbc842b4515dfbe478edf0f2b1dfea848?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:1QxIFMs4M8qd5cbJJu80v4"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+            },
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
+            "type": "artist",
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6kf46HbnYCZzP6rjvQHYzg"
+        },
+        "href": "https://api.spotify.com/v1/albums/6kf46HbnYCZzP6rjvQHYzg",
+        "id": "6kf46HbnYCZzP6rjvQHYzg",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273988ede5e1276e758b5f9e577",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02988ede5e1276e758b5f9e577",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851988ede5e1276e758b5f9e577",
+            "width": 64
+          }
+        ],
+        "name": "American Teen",
+        "release_date": "2017-04-27",
+        "release_date_precision": "day",
+        "total_tracks": 15,
+        "type": "album",
+        "uri": "spotify:album:6kf46HbnYCZzP6rjvQHYzg"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 228600,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRC11700146"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5bgwqaRSS3M8WHWruHgSL5"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5bgwqaRSS3M8WHWruHgSL5",
+      "id": "5bgwqaRSS3M8WHWruHgSL5",
+      "is_local": false,
+      "is_playable": true,
+      "name": "8TEEN",
+      "popularity": 77,
+      "preview_url": "https://p.scdn.co/mp3-preview/97d7c1904b2610b9b60942ab37a92bbd1aa7921f?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 7,
+      "type": "track",
+      "uri": "spotify:track:5bgwqaRSS3M8WHWruHgSL5"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+            },
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
+            "type": "artist",
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2Qxc2NJ7yPKVFRWi3llRr2"
+        },
+        "href": "https://api.spotify.com/v1/albums/2Qxc2NJ7yPKVFRWi3llRr2",
+        "id": "2Qxc2NJ7yPKVFRWi3llRr2",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27360624c0781fd787c9aa4699c",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e0260624c0781fd787c9aa4699c",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d0000485160624c0781fd787c9aa4699c",
+            "width": 64
+          }
+        ],
+        "name": "Suncity",
+        "release_date": "2018-10-18",
+        "release_date_precision": "day",
+        "total_tracks": 7,
+        "type": "album",
+        "uri": "spotify:album:2Qxc2NJ7yPKVFRWi3llRr2"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 229320,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRC11803180"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6zeeWid2sgw4lap2jV61PZ"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6zeeWid2sgw4lap2jV61PZ",
+      "id": "6zeeWid2sgw4lap2jV61PZ",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Better",
+      "popularity": 77,
+      "preview_url": "https://p.scdn.co/mp3-preview/c990623b002c46824cbedb9fbf6111581896ac1c?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 6,
+      "type": "track",
+      "uri": "spotify:track:6zeeWid2sgw4lap2jV61PZ"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5CiGnKThu5ctn9pBxv7DGa"
+            },
+            "href": "https://api.spotify.com/v1/artists/5CiGnKThu5ctn9pBxv7DGa",
+            "id": "5CiGnKThu5ctn9pBxv7DGa",
+            "name": "benny blanco",
+            "type": "artist",
+            "uri": "spotify:artist:5CiGnKThu5ctn9pBxv7DGa"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/7dQ734EW0iLvQfF6vBFNiZ"
+        },
+        "href": "https://api.spotify.com/v1/albums/7dQ734EW0iLvQfF6vBFNiZ",
+        "id": "7dQ734EW0iLvQfF6vBFNiZ",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273693dbf001d5b2d06ad9e5f4d",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02693dbf001d5b2d06ad9e5f4d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851693dbf001d5b2d06ad9e5f4d",
+            "width": 64
+          }
+        ],
+        "name": "FRIENDS KEEP SECRETS",
+        "release_date": "2018-12-07",
+        "release_date_precision": "day",
+        "total_tracks": 7,
+        "type": "album",
+        "uri": "spotify:album:7dQ734EW0iLvQfF6vBFNiZ"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5CiGnKThu5ctn9pBxv7DGa"
+          },
+          "href": "https://api.spotify.com/v1/artists/5CiGnKThu5ctn9pBxv7DGa",
+          "id": "5CiGnKThu5ctn9pBxv7DGa",
+          "name": "benny blanco",
+          "type": "artist",
+          "uri": "spotify:artist:5CiGnKThu5ctn9pBxv7DGa"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/26VFTg2z8YR0cCuwLzESi2"
+          },
+          "href": "https://api.spotify.com/v1/artists/26VFTg2z8YR0cCuwLzESi2",
+          "id": "26VFTg2z8YR0cCuwLzESi2",
+          "name": "Halsey",
+          "type": "artist",
+          "uri": "spotify:artist:26VFTg2z8YR0cCuwLzESi2"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 170769,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USUM71809132"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7FGq80cy8juXBCD2nrqdWU"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7FGq80cy8juXBCD2nrqdWU",
+      "id": "7FGq80cy8juXBCD2nrqdWU",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Eastside (with Halsey & Khalid)",
+      "popularity": 76,
+      "preview_url": "https://p.scdn.co/mp3-preview/29ea9ce48fd5ccc50e8a371bdbedecbbd6b5c489?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:7FGq80cy8juXBCD2nrqdWU"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3oSJ7TBVCWMDMiYjXNiCKE"
+            },
+            "href": "https://api.spotify.com/v1/artists/3oSJ7TBVCWMDMiYjXNiCKE",
+            "id": "3oSJ7TBVCWMDMiYjXNiCKE",
+            "name": "Kane Brown",
+            "type": "artist",
+            "uri": "spotify:artist:3oSJ7TBVCWMDMiYjXNiCKE"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1zNqQNIdeOUZHb8zbZRFMX"
+            },
+            "href": "https://api.spotify.com/v1/artists/1zNqQNIdeOUZHb8zbZRFMX",
+            "id": "1zNqQNIdeOUZHb8zbZRFMX",
+            "name": "Swae Lee",
+            "type": "artist",
+            "uri": "spotify:artist:1zNqQNIdeOUZHb8zbZRFMX"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+            },
+            "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+            "id": "6LuN9FCkKOj5PcnpouEgny",
+            "name": "Khalid",
+            "type": "artist",
+            "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/7MKfE4IRGdrH5bMkqaZ2Tp"
+        },
+        "href": "https://api.spotify.com/v1/albums/7MKfE4IRGdrH5bMkqaZ2Tp",
+        "id": "7MKfE4IRGdrH5bMkqaZ2Tp",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273b670be86ddfa9d49caa56971",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02b670be86ddfa9d49caa56971",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851b670be86ddfa9d49caa56971",
+            "width": 64
+          }
+        ],
+        "name": "Be Like That (feat. Swae Lee & Khalid)",
+        "release_date": "2020-07-10",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:7MKfE4IRGdrH5bMkqaZ2Tp"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3oSJ7TBVCWMDMiYjXNiCKE"
+          },
+          "href": "https://api.spotify.com/v1/artists/3oSJ7TBVCWMDMiYjXNiCKE",
+          "id": "3oSJ7TBVCWMDMiYjXNiCKE",
+          "name": "Kane Brown",
+          "type": "artist",
+          "uri": "spotify:artist:3oSJ7TBVCWMDMiYjXNiCKE"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1zNqQNIdeOUZHb8zbZRFMX"
+          },
+          "href": "https://api.spotify.com/v1/artists/1zNqQNIdeOUZHb8zbZRFMX",
+          "id": "1zNqQNIdeOUZHb8zbZRFMX",
+          "name": "Swae Lee",
+          "type": "artist",
+          "uri": "spotify:artist:1zNqQNIdeOUZHb8zbZRFMX"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+          },
+          "href": "https://api.spotify.com/v1/artists/6LuN9FCkKOj5PcnpouEgny",
+          "id": "6LuN9FCkKOj5PcnpouEgny",
+          "name": "Khalid",
+          "type": "artist",
+          "uri": "spotify:artist:6LuN9FCkKOj5PcnpouEgny"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 191406,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USRN11900133"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5f1joOtoMeyppIcJGZQvqJ"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5f1joOtoMeyppIcJGZQvqJ",
+      "id": "5f1joOtoMeyppIcJGZQvqJ",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Be Like That - feat. Swae Lee & Khalid",
+      "popularity": 75,
+      "preview_url": "https://p.scdn.co/mp3-preview/b988024d4b7d4621461f88d09f2dfed49b786c33?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:5f1joOtoMeyppIcJGZQvqJ"
+    }
+  ]
+}
