@@ -5,14 +5,19 @@ RSpec.feature "Game Page", type: :feature do
     visit "/game"
     # click_link "New post"
     # fill_in "Message", with: "Hello, world!"
-    expect page.has_field? ("1").to equal (true)
+    expect(page).has_field? ("1").to equal (true)
   end
 
-  # scenario "Can submit button directing to results" do
-  #   visit "/game"
-  #   # click_link "New post"
-  #   # fill_in "Message", with: "Hello, world!"
-  #   click_button "Submit"
-  #   expect(page).to have_content("Hello, world!")
-  # end
+  scenario "has name in field" do
+    visit "/game"
+    # click_link "New post"
+    # fill_in "Message", with: "Hello, world!"
+    expect(page).has_field?("Name", with: "Drake"))
+  end
+
+  scenario "Can submit button directing to results" do
+    visit "/game"
+
+    expect(page).has_button?("Submit")
+  end
 end
