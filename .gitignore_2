@@ -4,3 +4,6 @@ config/credentials.yml.enc
 /tmp
 /log
 
+
+
+/config/master.key
