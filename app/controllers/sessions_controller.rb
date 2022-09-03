@@ -15,10 +15,14 @@ class SessionsController < ApplicationController
     user_data_json = JSON.parse(user_data)
     user_name = user_data_json["display_name"]
     user_email = user_data_json["email"]
-    # user_img_url = user_data_json["images"][0]["url"]
+    if user_data_json["images"][0]["url"] != nil
+      user_img_url = user_data_json["images"][0]["url"]
+    else
+      user_img_url = "../../assets/stock_pp.jpeg"
+    end
     user = User.find_by(email: user_email)
     if !user
-      user = User.create(email: user_email, name: user_name, auth_token: auth_token, refresh_token: refresh_token)
+      user = User.create(email: user_email, name: user_name, image_url: user_img_url, auth_token: auth_token, refresh_token: refresh_token)
     end
     session[:user] = user
 
