@@ -1266,3 +1266,1053 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 22ms (Views: 6.7ms | ActiveRecord: 6.7ms | Allocations: 20304)
 
 
+Started GET "/" for ::1 at 2022-09-03 22:26:26 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 2348)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-09-03 22:28:36 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 332)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 27909)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 31840)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:29:29 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 14137)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 14670)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:30:10 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 14175)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 14546)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:30:34 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 14583)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 14954)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:30:57 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 14240)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 14611)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:31:13 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4990)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 5357)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:31:19 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 15895)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms | Allocations: 16261)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:31:23 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 5419)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 5786)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:31:54 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 14588)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 14954)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:32:05 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 13674)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 14040)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:32:15 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 13771)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 14137)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:33:05 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 14651)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 15017)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:33:09 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 4950)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 5317)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:33:16 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 332)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 19604)
+Completed 200 OK in 35ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 23535)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:33:32 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 15634)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 16007)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:34:05 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 14662)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 15033)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:34:32 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 15960)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 16331)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:34:57 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 14224)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 14595)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:35:16 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 15990)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 16356)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:35:18 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4952)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5319)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:35:23 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 12792)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 13158)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:36:05 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 14623)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 14989)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:36:36 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 15040)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 15406)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:37:46 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 13749)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 14115)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:38:42 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 13719)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 14085)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:38:54 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 16369)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 16735)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:39:03 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 49834)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 50932)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:39:39 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 14872)
+Completed 200 OK in 25ms (Views: 24.7ms | Allocations: 15235)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:39:45 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4950)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 5314)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:40:19 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 29306)
+Completed 200 OK in 21ms (Views: 20.8ms | Allocations: 30060)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:40:30 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 15947)
+Completed 200 OK in 28ms (Views: 27.9ms | Allocations: 16310)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:40:40 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 13686)
+Completed 200 OK in 29ms (Views: 28.2ms | Allocations: 14049)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:40:47 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 14537)
+Completed 200 OK in 25ms (Views: 23.8ms | Allocations: 14900)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:41:00 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 14585)
+Completed 200 OK in 27ms (Views: 26.6ms | Allocations: 14948)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:42:02 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 15911)
+Completed 200 OK in 27ms (Views: 26.4ms | Allocations: 16274)
+
+
+Started GET "/sessions/login?code=AQA0N592QucD4b4mx1kSUbaC6bGrnIbN_eZP_MGl1cV_nWqXknecaItG_SrXODrUpa2QE26EkCHhni1u9q1PrlumQ8IH7e8xDH0wzW742NePb9diYf4EzkEtAJ8R99Z5fkyMhgWSBwKHb6MgF6vgsG7PtRCCof7ju3JY2xUg46CIrN4Fp2YbBk2c_F1bZrnjy77DpgemmiAiMg-MrJX6hiQmGJTayTM4RXofwLdYRrHlUwxc" for ::1 at 2022-09-03 22:42:05 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQA0N592QucD4b4mx1kSUbaC6bGrnIbN_eZP_MGl1cV_nWqXknecaItG_SrXODrUpa2QE26EkCHhni1u9q1PrlumQ8IH7e8xDH0wzW742NePb9diYf4EzkEtAJ8R99Z5fkyMhgWSBwKHb6MgF6vgsG7PtRCCof7ju3JY2xUg46CIrN4Fp2YbBk2c_F1bZrnjy77DpgemmiAiMg-MrJX6hiQmGJTayTM4RXofwLdYRrHlUwxc"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demhak123@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/home
+Completed 302 Found in 336ms (ActiveRecord: 15.0ms | Allocations: 29960)
+
+
+Started GET "/home" for ::1 at 2022-09-03 22:42:05 +0100
+Processing by HomeController#index as HTML
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 13]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3922)
+Completed 200 OK in 18ms (Views: 3.8ms | ActiveRecord: 3.7ms | Allocations: 7681)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:42:46 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 14207)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 14574)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:43:26 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3779)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 4917)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:43:33 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 5273)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 6412)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:43:45 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5290)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 6427)
+
+
+Started GET "/sessions/login?code=AQDyxFvFa7PPuu5cbCHCOvrJRzNRlcIkweecWV8JN60oHutpMFoYDk1milT-ojNNbOcSrelwgp_qzjHu8ynTlMFE5iXtkPMdxInz7LIqeAzXRhSudn_rrFJ5bmfxv6Ee2X8DQ80hWyyic6_diKoUAAzdVwkb35ZoOnnEfIBlxX8YDGmKDKNBCAdQfUSWE8tNFVHzjQgncugyxfHefS6r2mhDiClyG36pd7UQWq0wfs3q6Rpa" for ::1 at 2022-09-03 22:43:53 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQDyxFvFa7PPuu5cbCHCOvrJRzNRlcIkweecWV8JN60oHutpMFoYDk1milT-ojNNbOcSrelwgp_qzjHu8ynTlMFE5iXtkPMdxInz7LIqeAzXRhSudn_rrFJ5bmfxv6Ee2X8DQ80hWyyic6_diKoUAAzdVwkb35ZoOnnEfIBlxX8YDGmKDKNBCAdQfUSWE8tNFVHzjQgncugyxfHefS6r2mhDiClyG36pd7UQWq0wfs3q6Rpa"}
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.0ms | Allocations: 2616)
+
+
+  
+RestClient::ServiceUnavailable (503 Service Unavailable):
+  
+app/controllers/sessions_controller.rb:10:in `login'
+Started GET "/" for ::1 at 2022-09-03 22:44:20 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4950)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 5318)
+
+
+Started GET "/sessions/login?code=AQCETr31oIFW2zAze5llgTSt1RsUxsNWmElVMN5zi1vz_eXxZ-EZ_BndTGhHtJVIHkTfoEtw9gMuqc6-pqeyrxN_JlW3VIUfLRF8iBnSQkP6TKxkdfdNS9r_VTGVNCHzT7lV1FFR6VyR70ung1B4xrh6lHOf03ytj5HYYDES1t52FTR2VfSplCctHLzADRbIR2xICw7sYtmM6DXT7-G4R6Y2-V8Sc9zb0o7Gl157zfGBc5U0" for ::1 at 2022-09-03 22:44:21 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQCETr31oIFW2zAze5llgTSt1RsUxsNWmElVMN5zi1vz_eXxZ-EZ_BndTGhHtJVIHkTfoEtw9gMuqc6-pqeyrxN_JlW3VIUfLRF8iBnSQkP6TKxkdfdNS9r_VTGVNCHzT7lV1FFR6VyR70ung1B4xrh6lHOf03ytj5HYYDES1t52FTR2VfSplCctHLzADRbIR2xICw7sYtmM6DXT7-G4R6Y2-V8Sc9zb0o7Gl157zfGBc5U0"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demhak123@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "image_url", "auth_token", "refresh_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "demhak123@gmail.com"], ["name", "Ahmed Hallajian"], ["image_url", "https://scontent-cdt1-1.xx.fbcdn.net/v/t1.6435-1/36737951_2092011394348455_807664592808312832_n.jpg?stp=c0.0.320.320a_dst-jpg_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=0c64ff&_nc_ohc=mPpqrpZhRdIAX9vw2VS&_nc_ht=scontent-cdt1-1.xx&edm=AP4hL3IEAAAA&oh=00_AT8Li3dRLwjiSSL2fsENvYwbtBvLB13aYFzXCb3Nf-ISug&oe=6338819B"], ["auth_token", "BQD8J-lGkt9cejbJGY3PKQowt8wLg8Sg8YMshZOmIf0pW8zyxfjDaK-HlkElTIL_A9JJsxhocnL0hsZicd3cN_QIsD9zf2fXBQz0cDaiojFHjl8XryM4pj32XbBT5yc2QM76ab9zYU0S4zCnHeeGkILNfB7jFVLgAkgjTyt83WRd643Sh6njthz8Nvo"], ["refresh_token", "AQDWh6fkv-Vn1K8ONMSf36yARz98hpYrAu9BzTvcFDDCESZhKkwDojwJLuQ65hps1XslX1Aed7tO7rI72hS4NbcDcIclxv08rN4t1VDJ9kG8YGotvGPeyqTTNyMbsjEuDpY"], ["created_at", "2022-09-03 21:44:21.500158"], ["updated_at", "2022-09-03 21:44:21.500158"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 183ms (ActiveRecord: 4.1ms | Allocations: 6855)
+
+
+Started GET "/home" for ::1 at 2022-09-03 22:44:21 +0100
+Processing by HomeController#index as HTML
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 14]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3910)
+Completed 200 OK in 19ms (Views: 13.6ms | ActiveRecord: 0.5ms | Allocations: 6344)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 22:44:23 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 390)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4078)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 5992)
+
+
+Started GET "/sessions/login?code=AQB2Y2qol66-8Fcjt4nvakouYLerpd4eJoC1Da1yHJ5w_uC2H65QxOfx9p7LI1vsZ3GeOwQOgFaY9innZVqhuOAx5L0sQImuotARasxRSfUeifHL5N4D8R3pN7-uYeTsB3uWSJU96kr_88AOykg5lImw0RTkDsIHbvBB2vTYahcU8iPn62EfFn11UyKbAogj8DJlDXceFx-ecS_WFU-o-oatL_5p14Nunkt3TJPZKJW79cv0" for ::1 at 2022-09-03 22:45:01 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQB2Y2qol66-8Fcjt4nvakouYLerpd4eJoC1Da1yHJ5w_uC2H65QxOfx9p7LI1vsZ3GeOwQOgFaY9innZVqhuOAx5L0sQImuotARasxRSfUeifHL5N4D8R3pN7-uYeTsB3uWSJU96kr_88AOykg5lImw0RTkDsIHbvBB2vTYahcU8iPn62EfFn11UyKbAogj8DJlDXceFx-ecS_WFU-o-oatL_5p14Nunkt3TJPZKJW79cv0"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demhak123@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/home
+Completed 302 Found in 370ms (ActiveRecord: 0.3ms | Allocations: 6050)
+
+
+Started GET "/home" for ::1 at 2022-09-03 22:45:02 +0100
+Processing by HomeController#index as HTML
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 14]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3637)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.5ms | Allocations: 5172)
+
+
+Started GET "/game" for ::1 at 2022-09-03 22:45:03 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3852)
+Completed 200 OK in 490ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 71961)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:45:48 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 15126)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 15493)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:46:22 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 15879)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 16245)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:46:54 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 18564)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 18930)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:47:12 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 15889)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 16255)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:47:22 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 15895)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 16261)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:47:46 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 16667)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 17033)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:48:18 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5276)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 6414)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:48:38 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 19323)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms | Allocations: 19690)
+
+
+Started GET "/sessions/login?code=AQCRK3ErBkshS9x6Gqn5HGyAtR3NUQRhUYrrg9tuBpbjEzdgtbDjv4OqszF4CRLHW-BmJvZixtMLw7_q9OmgDzXDfN5r2ggo4VEqtMNAh_6x5wwcu4wv1Mi7_gXt9YvEczCHT9JccmDv2TL6pWhD--5i3YtDLzcEvkRRVWvS1PdxrMgirGhhQ0gl-_WPaBBxJVw3_xLfTVDxe2GYqacPJ2tfMCqZxzR2kuB56P85HPg-JIKi" for ::1 at 2022-09-03 22:49:09 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQCRK3ErBkshS9x6Gqn5HGyAtR3NUQRhUYrrg9tuBpbjEzdgtbDjv4OqszF4CRLHW-BmJvZixtMLw7_q9OmgDzXDfN5r2ggo4VEqtMNAh_6x5wwcu4wv1Mi7_gXt9YvEczCHT9JccmDv2TL6pWhD--5i3YtDLzcEvkRRVWvS1PdxrMgirGhhQ0gl-_WPaBBxJVw3_xLfTVDxe2GYqacPJ2tfMCqZxzR2kuB56P85HPg-JIKi"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demhak123@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/home
+Completed 302 Found in 192ms (ActiveRecord: 0.6ms | Allocations: 6302)
+
+
+Started GET "/home" for ::1 at 2022-09-03 22:49:09 +0100
+Processing by HomeController#index as HTML
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 14]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3914)
+Completed 200 OK in 20ms (Views: 13.0ms | ActiveRecord: 0.5ms | Allocations: 5986)
+
+
+Started GET "/game" for ::1 at 2022-09-03 22:49:11 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3851)
+Completed 200 OK in 334ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 111288)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 22:49:14 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1539)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 10519)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.4ms | Allocations: 14086)
+
+
+Started GET "/home" for ::1 at 2022-09-03 22:49:16 +0100
+Processing by HomeController#index as HTML
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 14]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3641)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.4ms | Allocations: 5189)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:49:19 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4954)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5417)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:50:11 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 17282)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 17649)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:50:18 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 19588)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms | Allocations: 19954)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:50:39 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 18659)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 19025)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:50:51 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 5462)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 5829)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:51:28 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 15066)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 15432)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:51:34 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5423)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 5790)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:51:42 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 15980)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 16346)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:51:51 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5423)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 5790)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:51:55 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 14188)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 14554)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:52:03 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4994)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 5361)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:53:22 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 15456)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 15822)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:53:41 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5419)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 5786)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:54:45 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 17165)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 18300)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:55:01 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 48543)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms | Allocations: 48910)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:55:04 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 15870)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 16236)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:55:24 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 14110)
+Completed 200 OK in 26ms (Views: 25.2ms | Allocations: 14473)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:55:27 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 15062)
+Completed 200 OK in 26ms (Views: 25.4ms | Allocations: 15425)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:55:32 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 15602)
+Completed 200 OK in 29ms (Views: 28.3ms | Allocations: 15965)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:55:42 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 14540)
+Completed 200 OK in 28ms (Views: 27.4ms | Allocations: 14903)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:55:47 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 15500)
+Completed 200 OK in 26ms (Views: 24.9ms | Allocations: 15863)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:56:10 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 15559)
+Completed 200 OK in 25ms (Views: 24.5ms | Allocations: 15922)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:56:19 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 30999)
+Completed 200 OK in 20ms (Views: 19.4ms | Allocations: 31532)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:56:26 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 17302)
+Completed 200 OK in 30ms (Views: 29.3ms | Allocations: 17665)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:57:09 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 49973)
+Completed 200 OK in 42ms (Views: 39.3ms | Allocations: 51364)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:57:14 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 16425)
+Completed 200 OK in 27ms (Views: 25.7ms | Allocations: 16789)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:57:19 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 15988)
+Completed 200 OK in 33ms (Views: 32.7ms | Allocations: 16351)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:57:23 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 15447)
+Completed 200 OK in 28ms (Views: 27.1ms | Allocations: 15810)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:57:40 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 25042)
+Completed 200 OK in 28ms (Views: 27.6ms | Allocations: 25405)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:57:55 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 41708)
+Completed 200 OK in 27ms (Views: 26.3ms | Allocations: 42323)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:58:32 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 15932)
+Completed 200 OK in 24ms (Views: 23.2ms | Allocations: 16295)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:58:39 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 16781)
+Completed 200 OK in 30ms (Views: 28.6ms | Allocations: 17144)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:59:35 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 16840)
+Completed 200 OK in 27ms (Views: 26.2ms | Allocations: 17203)
+
+
+Started GET "/" for ::1 at 2022-09-03 22:59:46 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 16359)
+Completed 200 OK in 26ms (Views: 25.3ms | Allocations: 16722)
+
+
+Started GET "/sessions/login?code=AQDfZ8692azoMjWBdxMEoQbFlOGhs1x8lHa1nm3KEDKb4Y-BNOm4LmZSM7NS5x86bUNrFGVgD8AiXQFprG1FXxJJABXMxb70PRdrFj4nIxXxtXitrV73n5pSSuiojXyeMciW68mq6OKvPmUu4uM7wept7p0Qs9tFUteYZylhBmYxzsNBxJ2x4qz-vqbGQ3fkpfvc8dLcOGoZ3yOKobscv9z6i7bVFmwYuklog-0vAXEdjwf0" for ::1 at 2022-09-03 22:59:52 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQDfZ8692azoMjWBdxMEoQbFlOGhs1x8lHa1nm3KEDKb4Y-BNOm4LmZSM7NS5x86bUNrFGVgD8AiXQFprG1FXxJJABXMxb70PRdrFj4nIxXxtXitrV73n5pSSuiojXyeMciW68mq6OKvPmUu4uM7wept7p0Qs9tFUteYZylhBmYxzsNBxJ2x4qz-vqbGQ3fkpfvc8dLcOGoZ3yOKobscv9z6i7bVFmwYuklog-0vAXEdjwf0"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demhak123@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/home
+Completed 302 Found in 203ms (ActiveRecord: 14.4ms | Allocations: 9617)
+
+
+Started GET "/home" for ::1 at 2022-09-03 22:59:52 +0100
+Processing by HomeController#index as HTML
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 14]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3910)
+Completed 200 OK in 24ms (Views: 15.9ms | ActiveRecord: 0.7ms | Allocations: 5986)
+
+
+Started GET "/" for ::1 at 2022-09-03 23:00:21 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4950)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 5318)
+
+
+Started GET "/" for ::1 at 2022-09-03 23:00:42 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 16773)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 17140)
+
+
+Started GET "/" for ::1 at 2022-09-03 23:01:05 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 18138)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 18504)
+
+
+Started GET "/" for ::1 at 2022-09-03 23:01:19 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5419)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5786)
+
+
+Started GET "/" for ::1 at 2022-09-03 23:02:38 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 332)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 24239)
+Completed 200 OK in 40ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 28169)
+
+
+Started GET "/sessions/login?code=AQD2jrvP4SrhuI6W2-D5aNyS4g4YLBO1tdBbDafWl4eJf6ZDz2MWBdYQ7GktQ_QYYPmF6FVc7V4Y6aKOe2h3azJiR33385evAoq99M6OtqvKT-Jr_f-YP-lSbA0QExbjYm2q-lVXOjCBH6xFXhXm9a0c-PdDGLwkmloomrP83emHr4RJ19kBusyFYQKCiJKKjoTTPMKhhqoSfvL9pQGVYg_z3bkkUkXB7W-9oVcJZlxmEr5W" for ::1 at 2022-09-03 23:02:42 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQD2jrvP4SrhuI6W2-D5aNyS4g4YLBO1tdBbDafWl4eJf6ZDz2MWBdYQ7GktQ_QYYPmF6FVc7V4Y6aKOe2h3azJiR33385evAoq99M6OtqvKT-Jr_f-YP-lSbA0QExbjYm2q-lVXOjCBH6xFXhXm9a0c-PdDGLwkmloomrP83emHr4RJ19kBusyFYQKCiJKKjoTTPMKhhqoSfvL9pQGVYg_z3bkkUkXB7W-9oVcJZlxmEr5W"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demhak123@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/home
+Completed 302 Found in 189ms (ActiveRecord: 6.3ms | Allocations: 55449)
+
+
+Started GET "/home" for ::1 at 2022-09-03 23:02:42 +0100
+Processing by HomeController#index as HTML
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 14]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3924)
+Completed 200 OK in 18ms (Views: 3.7ms | ActiveRecord: 4.5ms | Allocations: 7682)
+
+
+Started GET "/game" for ::1 at 2022-09-03 23:02:44 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3854)
+Completed 200 OK in 355ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 62045)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 23:02:49 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 4081)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.4ms | Allocations: 6004)
+
+
+Started GET "/home" for ::1 at 2022-09-03 23:02:51 +0100
+Processing by HomeController#index as HTML
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 14]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3639)
+Completed 200 OK in 16ms (Views: 9.2ms | ActiveRecord: 0.6ms | Allocations: 5192)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 23:02:54 +0100
+Processing by ScoreboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3765)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 5118)
+
+
+Started GET "/home" for ::1 at 2022-09-03 23:03:01 +0100
+Processing by HomeController#index as HTML
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."user_id" = $1[0m  [["user_id", 14]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 10659)
+Completed 200 OK in 20ms (Views: 15.6ms | ActiveRecord: 0.3ms | Allocations: 12996)
+
+
+Started GET "/" for ::1 at 2022-09-03 23:03:04 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4950)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 5318)
+
+
+Started GET "/" for ::1 at 2022-09-03 23:03:19 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 16766)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms | Allocations: 17132)
+
+
+Started GET "/" for ::1 at 2022-09-03 23:03:26 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 17306)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms | Allocations: 17672)
+
+
+Started GET "/" for ::1 at 2022-09-03 23:03:33 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5419)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 5786)
+
+
