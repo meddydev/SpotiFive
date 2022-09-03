@@ -695,3 +695,315 @@ Processing by SessionsController#index as HTML
 Completed 200 OK in 54ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 4854)
 
 
+Started GET "/" for ::1 at 2022-09-03 13:04:44 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 17016)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-09-03 13:04:47 +0100
+Processing by SessionsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 867)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-09-03 13:06:18 +0100
+Processing by SessionsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 912)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:3:in `index'
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:06:29 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 256)
+  Rendered layout layouts/application.html.erb (Duration: 167.1ms | Allocations: 41669)
+Completed 200 OK in 288ms (Views: 169.1ms | ActiveRecord: 94.2ms | Allocations: 50126)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:07:56 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 5010)
+Completed 200 OK in 38ms (Views: 12.4ms | ActiveRecord: 11.2ms | Allocations: 11449)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:11:43 +0100
+  
+SyntaxError (/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:13: syntax error, unexpected '.', expecting `end'
+...one_user[:name] => user_object.name,
+...                              ^
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:14: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+      one_user[:total_score] => user_object.total_score,
+                             ^~
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:15: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+      one_user[:num_games] => user_object.num_games
+                           ^~
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:21: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/scoreboard_controller.rb:13: syntax error, unexpected '.', expecting `end'
+app/controllers/scoreboard_controller.rb:14: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/scoreboard_controller.rb:21: syntax error, unexpected `end', expecting end-of-input
+app/controllers/scoreboard_controller.rb:13: syntax error, unexpected '.', expecting `end'
+app/controllers/scoreboard_controller.rb:14: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/scoreboard_controller.rb:21: syntax error, unexpected `end', expecting end-of-input
+app/controllers/scoreboard_controller.rb:13: syntax error, unexpected '.', expecting `end'
+app/controllers/scoreboard_controller.rb:14: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/controllers/scoreboard_controller.rb:21: syntax error, unexpected `end', expecting end-of-input
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:14:09 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 5007)
+Completed 200 OK in 41ms (Views: 14.6ms | ActiveRecord: 7.7ms | Allocations: 11509)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:15:19 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 5007)
+Completed 200 OK in 117ms (Views: 15.9ms | ActiveRecord: 42.4ms | Allocations: 11526)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:17:07 +0100
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (24.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 31.4ms | Allocations: 11290)
+
+
+  
+NameError (undefined local variable or method `users' for #<ScoreboardController:0x0000000001e3e8>
+Did you mean?  @users):
+  
+app/controllers/scoreboard_controller.rb:20:in `index'
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:17:28 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 51.9ms | Allocations: 10295)
+Completed 200 OK in 77ms (Views: 54.4ms | ActiveRecord: 7.8ms | Allocations: 17555)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:18:32 +0100
+  
+SyntaxError (/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:15: syntax error, unexpected string literal, expecting `do' or '{' or '('
+      puts "one_user[:name]", one_user[:n...
+           ^
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:15: syntax error, unexpected ',', expecting `end'
+      puts "one_user[:name]", one_user[:name]
+                            ^
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:23: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected ',', expecting `end'
+app/controllers/scoreboard_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected ',', expecting `end'
+app/controllers/scoreboard_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected ',', expecting `end'
+app/controllers/scoreboard_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:19:09 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 5029)
+Completed 200 OK in 39ms (Views: 20.3ms | ActiveRecord: 3.5ms | Allocations: 11556)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:20:56 +0100
+  [1m[35m (27.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:17: syntax error, unexpected string literal, expecting `do' or '{' or '('
+      puts "one_user[:name]", one_user[:n...
+           ^
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:17: syntax error, unexpected ',', expecting `end'
+      puts "one_user[:name]", one_user[:name]
+                            ^
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:23: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/scoreboard_controller.rb:17: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/controllers/scoreboard_controller.rb:17: syntax error, unexpected ',', expecting `end'
+app/controllers/scoreboard_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+app/controllers/scoreboard_controller.rb:17: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/controllers/scoreboard_controller.rb:17: syntax error, unexpected ',', expecting `end'
+app/controllers/scoreboard_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+app/controllers/scoreboard_controller.rb:17: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/controllers/scoreboard_controller.rb:17: syntax error, unexpected ',', expecting `end'
+app/controllers/scoreboard_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:21:11 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 10296)
+Completed 200 OK in 97ms (Views: 55.9ms | ActiveRecord: 9.7ms | Allocations: 20099)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:23:02 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 467)
+  Rendered layout layouts/application.html.erb (Duration: 170.9ms | Allocations: 11063)
+Completed 200 OK in 257ms (Views: 184.7ms | ActiveRecord: 30.9ms | Allocations: 21625)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:23:46 +0100
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:16: syntax error, unexpected `end'
+    end
+    ^~~
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/scoreboard_controller.rb:16: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:16: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:16: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:24:29 +0100
+  
+SyntaxError (/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:16: syntax error, unexpected `end'
+    end
+    ^~~
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/scoreboard_controller.rb:16: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:16: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:16: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:27:05 +0100
+  
+SyntaxError (/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+    end
+    ^~~
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:27:06 +0100
+  
+SyntaxError (/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+    end
+    ^~~
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:27:19 +0100
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+    end
+    ^~~
+/Users/timothyfisher/makers/final-project/SpotiFive/app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/scoreboard_controller.rb:11: syntax error, unexpected `end'
+app/controllers/scoreboard_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:29:10 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 256)
+  Rendered layout layouts/application.html.erb (Duration: 58.5ms | Allocations: 40368)
+Completed 200 OK in 131ms (Views: 61.2ms | ActiveRecord: 21.1ms | Allocations: 66810)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:29:32 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5321)
+Completed 200 OK in 23ms (Views: 7.8ms | ActiveRecord: 3.7ms | Allocations: 11792)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:30:21 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5031)
+Completed 200 OK in 102ms (Views: 15.3ms | ActiveRecord: 19.4ms | Allocations: 11460)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:30:55 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 5028)
+Completed 200 OK in 132ms (Views: 19.3ms | ActiveRecord: 94.9ms | Allocations: 11464)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:31:22 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 5028)
+Completed 200 OK in 71ms (Views: 19.6ms | ActiveRecord: 33.3ms | Allocations: 16351)
+
+
+Started GET "/scoreboard" for ::1 at 2022-09-03 13:31:36 +0100
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 5026)
+Completed 200 OK in 44ms (Views: 9.7ms | ActiveRecord: 6.5ms | Allocations: 11500)
+
+
