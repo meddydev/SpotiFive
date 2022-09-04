@@ -15,6 +15,8 @@ class ScoreboardController < ApplicationController
       end
       users_dict << one_user
     end
-    puts "USERS:", users_dict, "USERS END"
+    puts users_dict
+    users_sorted_total_score = users_dict.sort_by {|user| -user[:total_score]}
+    puts "START", users_sorted_total_score
   end
 end
