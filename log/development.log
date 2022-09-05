@@ -1283,3 +1283,116 @@ Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms | Allocations: 
 RestClient::Unauthorized (401 Unauthorized):
   
 app/controllers/games_controller.rb:8:in `index'
+Started GET "/scoreboard" for ::1 at 2022-09-05 12:01:54 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScoreboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering scoreboard/index.html.erb within layouts/application
+  Rendered scoreboard/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 446)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 10670)
+Completed 200 OK in 97ms (Views: 67.5ms | ActiveRecord: 7.6ms | Allocations: 21504)
+
+
+Started GET "/game" for ::1 at 2022-09-05 12:01:58 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms | Allocations: 6186)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:8:in `index'
+Started GET "/game" for ::1 at 2022-09-05 12:02:09 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms | Allocations: 3941)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:8:in `index'
+Started GET "/game" for ::1 at 2022-09-05 12:02:36 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms | Allocations: 7436)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:8:in `index'
+Started GET "/game" for ::1 at 2022-09-05 12:03:34 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms | Allocations: 4360)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:8:in `index'
+Started GET "/game" for ::1 at 2022-09-05 12:03:36 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms | Allocations: 4357)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:8:in `index'
+Started GET "/home" for ::1 at 2022-09-05 12:03:42 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 8867)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.0ms | Allocations: 11147)
+
+
+Started GET "/game" for ::1 at 2022-09-05 12:03:46 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms | Allocations: 14428)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2022-09-05 12:04:07 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5063)
+Completed 200 OK in 21ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 7103)
+
+
+Started GET "/sessions/login?code=AQAc3aUje6deGRVuIXGZ02tcAOX--kilUxSoW6H0BNZuhMhctDpIaTEnnJ3wMq4y27nfS_5gVAsfsoVKBLhaKUyTzEzR4QLO-eNuVhMVRyH9PkLn_5r7u850AbvexClBqmroS4ELcdLoijWE1iYw891cFEK0g-5nzXyBJJwHM7IU4U5k_m0ypW1SFo6UxYHY1FZWv1FBxeu6zpdWcOHZaT09eP6oGvBbwSiwQpaNm2XFXY0C" for ::1 at 2022-09-05 12:04:09 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQAc3aUje6deGRVuIXGZ02tcAOX--kilUxSoW6H0BNZuhMhctDpIaTEnnJ3wMq4y27nfS_5gVAsfsoVKBLhaKUyTzEzR4QLO-eNuVhMVRyH9PkLn_5r7u850AbvexClBqmroS4ELcdLoijWE1iYw891cFEK0g-5nzXyBJJwHM7IU4U5k_m0ypW1SFo6UxYHY1FZWv1FBxeu6zpdWcOHZaT09eP6oGvBbwSiwQpaNm2XFXY0C"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yourmarvelloushome@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (64.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "auth_token", "refresh_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "yourmarvelloushome@gmail.com"], ["name", "Irina Soldatenkova"], ["auth_token", "BQDtBvMx4qdawePJHvaQKCOYRFw1Kc1L14uqW_JuTDjpGfqR-eBCYJVAvZgsl_90g8y_h1tVc7iajlxR5G85kW4lBDm1_5ij6Kb1QE2vSFghdQ560vuHHO99vLzGhKhWOND5kthq3NNrc-vDE2AVS8Kluvc4uRDLdXkreWtSDSht_420XH3HB-tetIh3gy4gLuhVQooWvZnkiA"], ["refresh_token", "AQC_fYl8KhFwY5BS7WD8UnaFsjkjyFiroiujqcwGngUJeTfoBzyLIUeu22dtc5fymXylMywm1BTXqZ09v6sWMUUpmZ__UdX1y4VyECCDh7O3o0u4Jh302rWJKVjMnXtsgt8"], ["created_at", "2022-09-05 11:04:09.324012"], ["updated_at", "2022-09-05 11:04:09.324012"]]
+  [1m[36mTRANSACTION (31.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 291ms (ActiveRecord: 101.9ms | Allocations: 15428)
+
+
+Started GET "/home" for ::1 at 2022-09-05 12:04:09 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3645)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 4984)
+
+
+Started GET "/game" for ::1 at 2022-09-05 12:04:11 +0100
+Processing by GamesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3861)
+Completed 200 OK in 379ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 63692)
+
+
