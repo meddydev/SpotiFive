@@ -1238,3 +1238,48 @@ Migrating to CreateGames (20220831135540)
   [1m[36mTRANSACTION (11.0ms)[0m  [1m[35mBEGIN[0m
   [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test"], ["name", "test"], ["created_at", "2022-09-04 10:51:06.164381"], ["updated_at", "2022-09-04 10:51:06.164381"]]
   [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/home" for ::1 at 2022-09-05 12:00:28 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 329)
+  Rendered layout layouts/application.html.erb (Duration: 73.0ms | Allocations: 9099)
+Completed 200 OK in 95ms (Views: 78.9ms | ActiveRecord: 0.0ms | Allocations: 13529)
+
+
+Started GET "/" for ::1 at 2022-09-05 12:00:31 +0100
+Processing by SessionsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5064)
+Completed 200 OK in 21ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 6563)
+
+
+Started GET "/sessions/login?code=AQDpmsZJ2Xr80V-XVwghe-91zpyW4007dOG4Pao0eku4zfI2MgnWfw5KAiPxC-1pJEcQvaVoapIeuFxjtplUO9f09i3IwfFg-pVL6HsVJ3n7IEEH53SrFWvZvymEquN5ZMKRdkEt-8QaEs8EisWbtw4V4suQu6Qv1TBrLmYe4Lli8wh_tfKN5yYU5qEkOURM_JGxmd14kGg_kngDOfsb_IgAtmbfw51B-uYoSM61YlPU_Tb1" for ::1 at 2022-09-05 12:00:33 +0100
+Processing by SessionsController#login as HTML
+  Parameters: {"code"=>"AQDpmsZJ2Xr80V-XVwghe-91zpyW4007dOG4Pao0eku4zfI2MgnWfw5KAiPxC-1pJEcQvaVoapIeuFxjtplUO9f09i3IwfFg-pVL6HsVJ3n7IEEH53SrFWvZvymEquN5ZMKRdkEt-8QaEs8EisWbtw4V4suQu6Qv1TBrLmYe4Lli8wh_tfKN5yYU5qEkOURM_JGxmd14kGg_kngDOfsb_IgAtmbfw51B-uYoSM61YlPU_Tb1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yourmarvelloushome@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/home
+Completed 302 Found in 207ms (ActiveRecord: 8.1ms | Allocations: 16412)
+
+
+Started GET "/home" for ::1 at 2022-09-05 12:00:33 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3646)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 4987)
+
+
+Started GET "/game" for ::1 at 2022-09-05 12:00:35 +0100
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms | Allocations: 4089)
+
+
+  
+RestClient::Unauthorized (401 Unauthorized):
+  
+app/controllers/games_controller.rb:8:in `index'
