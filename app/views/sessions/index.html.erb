@@ -1,7 +1,7 @@
 <div class="center-screen">
-  <h1>SpotiFive</h1>
+  <h1 id="login_title">SpotiFive</h1>
   <br>
-  <a href="https://accounts.spotify.com/authorize?client_id=<%= @client_id %>&amp;response_type=code&amp;redirect_uri=<%= @redirect_uri %>&amp;scope=user-read-recently-played%20user-read-email">
-    Sign in with Spotify
+  <a id="login_a" href="https://accounts.spotify.com/authorize?client_id=<%= @client_id %>&amp;response_type=code&amp;redirect_uri=<%= @redirect_uri %>&amp;scope=user-read-recently-played%20user-read-email">
+    <button class="login_btn">Sign in with Spotify</button>
   </a>
 </div>

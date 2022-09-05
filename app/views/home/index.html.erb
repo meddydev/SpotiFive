@@ -1,5 +1,7 @@
 <h1 >Welcome back <%= @name %> </h1>
 
+<img src=<%= @profile_picture_url %>>
+
 
 <form action="/game">
     <input type="submit" value="Play" />
@@ -11,4 +13,25 @@
 
 
 <h2>Your recent scores</h2>
-<%=  %>
+
+<table class="table table-dark table-striped table-hover">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Date Played</th>
+        <th scope="col">Artist</th>
+        <th scope="col">Score</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @recent_games.each do |game| %>
+                <tr>
+                <th scope="row">1</th>
+                <td><%= game.created_at %></td>
+                <td><%= game.artist_name %></td>
+                <td><%= game.score %></td>
+                </tr>
+        <% end %>
+    </tbody>
+</table>
