@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 2022_08_31_135540) do
     t.string "email"
     t.string "name"
     t.string "image_url"
-    t.integer "total_score"
-    t.integer "num_games"
+    t.integer "total_score", default: 0, null: false
+    t.integer "num_games", default: 0, null: false
     t.string "auth_token"
     t.string "refresh_token"
     t.datetime "created_at", precision: 6, null: false

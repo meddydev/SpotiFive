@@ -13,14 +13,22 @@
                 </tr>
             </thead>
             <tbody>
-                <% @users.each do | user | %>
-                    <% if user.num_games.to_i > 0 %>
+                <% @users_sorted_total_score.each_with_index do | user, index | %>
+                    <% if user[:id] == @logged_in_user_id %>
+                        <tr class="table-info">
+                        <th scope="row"> <%= index + 1 %></th>
+                        <td><%= user[:name] %></td>
+                        <td><%= user[:num_games] %></td>
+                        <td><%= user[:total_score] %></td>
+                        <td><%= user[:av_score] %></td>
+                        </tr>
+                    <% else %>
                         <tr>
-                        <th scope="row">1</th>
-                        <td><%= user.name %></td>
-                        <td><%= user.num_games %></td>
-                        <td><%= user.total_score %></td>
-                        <td><%= user.total_score.to_i/user.num_games.to_i %></td>
+                        <th scope="row"> <%= index + 1 %></th>
+                        <td><%= user[:name] %></td>
+                        <td><%= user[:num_games] %></td>
+                        <td><%= user[:total_score] %></td>
+                        <td><%= user[:av_score] %></td>
                         </tr>
                     <% end %>
                 <% end %>
