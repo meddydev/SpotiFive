@@ -2,7 +2,9 @@
     <h1>Scoreboard</h1>
 
     <div>
-        <table class="table table-dark table-striped table-hover">
+    <a class="logout">Logout</a>
+
+        <table class="table table-light table-striped table-hover">
             <thead>
                 <tr>
                 <th scope="col">#</th>
@@ -40,3 +42,14 @@
 
 
     </div>
+    <script>
+    const button = document.querySelector(".logout")
+    function log_out() {
+        const spotifyLogoutWindow = window.open("/logout", 'popup','width=600,height=600')                                                                                              
+        setTimeout(() => spotifyLogoutWindow.close(), 2000)
+        setTimeout(() => origin.reload(), 3000)
+    }
+
+    button.addEventListener('click', log_out);
+
+    </script>
