@@ -32,6 +32,16 @@ body {
   color: white;
 }
 
+.center-screen-home {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  /* font-size: xxx-large; */
+  color: white;
+}
+
 #login_title {
     font-size: 600%;
 }
@@ -66,4 +76,62 @@ body {
 #login_a {
     padding-left: 12%;;
     font-size: 16px;
+}
+
+.play_btn {
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border-width: 0;
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: all 0.2s ease-in-out;
+  outline: 0;
+  width: 300px
+}
+
+#play_a {
+    padding-left: 12%;;
+    font-size: 16px;
+}
+
+.scoreboard_btn {
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border-width: 0;
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: all 0.2s ease-in-out;
+  outline: 0;
+  width: 300px;
+  position: absolute;
+  right: 100px;
+  margin-top: 27px;
+}
+
+#scoreboard_a {
+    font-size: 16px;
+}
+
+#homepage_title {
+  font-size: 600%;
+  padding: 50px
+}
+
+img {
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: grey;
+  text-decoration: none
 }
