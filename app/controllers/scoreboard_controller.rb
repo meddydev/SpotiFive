@@ -1,7 +1,6 @@
 class ScoreboardController < ApplicationController
   def index
     if session[:user]
-      puts "SESSION:", session[:user]
       @users = User.all
       users_dict = []
       @users.each do | user_object | 
