@@ -15,10 +15,10 @@ class SessionsController < ApplicationController
     user_data_json = JSON.parse(user_data)
     user_name = user_data_json["display_name"]
     user_email = user_data_json["email"]
-    if user_data_json["images"][0]["url"] != nil
-      user_img_url = user_data_json["images"][0]["url"]
-    else
+    if user_data_json["images"] == []
       user_img_url = "../../assets/stock_pp.jpeg"
+    else
+      user_img_url = user_data_json["images"][0]["url"]
     end
     user = User.find_by(email: user_email)
     if !user
