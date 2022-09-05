@@ -1,20 +1,24 @@
-<h1 >Welcome back <%= @name %> </h1>
+<div class="center-screen-home">
 
-<img src=<%= @profile_picture_url %>>
+<h1 id="homepage_title">Welcome <%= @name %>!</h1>
 
-
-<form action="/game">
-    <input type="submit" value="Play" />
-</form>
-
-<form action="/scoreboard">
-    <input type="submit" value="Scoreboard" />
-</form>
+<img src=<%= @profile_picture_url %> width="110" height="110">
 
 
-<h2>Your recent scores</h2>
+  <a id="play_a" href="/game">
+    <button class="play_btn">Play</button>
+  </a>
 
-<table class="table table-dark table-striped table-hover">
+
+
+
+  <a id="scoreboard_a" href="/scoreboard">
+    <button class="scoreboard_btn">Scoreboard</button>
+  </a>
+
+<br>
+<br>
+<table class="table table-light table-striped table-hover">
     <thead>
         <tr>
         <th scope="col">#</th>
@@ -35,3 +39,4 @@
         <% end %>
     </tbody>
 </table>
+</div>
