@@ -79,7 +79,6 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: spotifive_production
-  username: spotifive
-  password: <%= ENV['SPOTIFIVE_DATABASE_PASSWORD'] %>
+  database: pgapp_production
+  username: pgapp
+  password: <%= ENV['PGAPP_DATABASE_PASSWORD'] %>
