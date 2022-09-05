@@ -11,7 +11,7 @@ class GamesController < ApplicationController
     artists = data["tracks"]["items"]
     artists.map! { |artist| { name: artist["track"]["album"]["artists"][0]["name"], id: artist["track"]["album"]["artists"][0]["id"] } }
     random_artist = artists.sample
-    @artist_name = random_artist[:name]
+    @artist = random_artist
     top_tracks_data = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{random_artist[:id]}/top-tracks?market=GB", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))["tracks"]
     @top_five_tracks = top_tracks_data[0,5].map{|track| track["name"]}
   end

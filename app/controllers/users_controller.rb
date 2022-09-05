@@ -21,6 +21,7 @@ class UsersController < ApplicationController
 
   # POST /users or /users.json
   def create
+    print "hello"
     @user = User.new(user_params)
 
     respond_to do |format|

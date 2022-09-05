@@ -1,0 +1,28 @@
+<h1>Results</h1>
+
+<div>
+
+<table class="table table-dark table-striped table-hover">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Guess</th>
+        <th scope="col">Actual</th>
+        <th scope="col">Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @results.each do | result | %>
+            <tr>
+            <th scope="row">1</th>
+            <td><%= result[:guess] %></td>
+            <td><%= result[:actual] %></td>
+            <td><%= result[:score] %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+<a class="btn btn-dark" role="button" href='/home' >Return to Home Page</a>
+
+
+</div>
