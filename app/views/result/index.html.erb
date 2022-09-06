@@ -24,5 +24,17 @@
 </table>
 <a class="btn btn-dark" role="button" href='/home' >Return to Home Page</a>
 <a class="btn btn-dark" role="button" href='/game' >Play Again</a>
-
+<a id="logout"><button class="play_btn">Logout </button></a>
 </div>
+<script>
+    const button = document.querySelector("#logout")
+    const origin = window.location;
+    function logout() {
+        const spotifyLogoutWindow = window.open("/logout", 'popup','width=600,height=600')                                                                                              
+        setTimeout(() => spotifyLogoutWindow.close(), 2000)
+        setTimeout(() => origin.reload(), 3000)
+    }
+
+    button.addEventListener('click', logout)
+
+    </script>
