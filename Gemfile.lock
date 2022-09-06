@@ -62,7 +62,13 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    autoprefixer-rails (10.4.7.0)
+      execjs (~> 2)
     bindex (0.8.1)
+    bootstrap (5.2.0)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 2.11.5, < 3)
+      sassc-rails (>= 2.0.0)
     builder (3.2.4)
     byebug (11.1.3)
     capybara (2.18.0)
@@ -79,6 +85,7 @@ GEM
       puma (>= 3.8.0)
       railties (>= 5.2.0)
     diff-lcs (1.5.0)
+    docile (1.4.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.11.0)
@@ -117,6 +124,7 @@ GEM
     nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     pg (1.4.3)
+    popper_js (2.11.5)
     public_suffix (5.0.0)
     puma (3.12.6)
     racc (1.6.0)
@@ -194,6 +202,12 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     similar_text (0.0.4)
+    simplecov (0.21.2)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.4)
     sprockets (4.1.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -225,10 +239,10 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
-  arm64-darwin-21
   x86_64-darwin-20
 
 DEPENDENCIES
+  bootstrap
   byebug
   capybara (~> 2.13)
   cypress-rails
@@ -236,6 +250,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg
+  popper_js (~> 2.11.5)
   puma (~> 3.12.6)
   rails (~> 6.1)
   rest-client (~> 2.1)
@@ -244,6 +259,7 @@ DEPENDENCIES
   sass-rails (~> 6.0)
   selenium-webdriver
   similar_text (~> 0.0.4)
+  simplecov
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)

@@ -5,6 +5,7 @@ class ResultController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
+    refresh_tokens(session[:user]["refresh_token"])
     user_auth_token = session[:user]["auth_token"]
     artist_id = params[:artist_id]
     guesses = [params[:guess_1], params[:guess_2], params[:guess_3], params[:guess_4], params[:guess_5]]
