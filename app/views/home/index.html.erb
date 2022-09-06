@@ -5,20 +5,25 @@
 
   </div>
   <div class="row">
+    <div class="col">
       <img src=<%= @profile_picture_url %> width="110" height="110">
-
-
+    </div>
+    <div class="col">
         <a id="play_a" href="/game">
           <button class="play_btn">Play</button>
         </a>
+    </div>
 
-
-
-
+    <div class="col">
+      <a id="logout"><button class="play_btn">Logout </button></a>
+    </div>
+    
+    <div class="col">
         <a id="scoreboard_a" href="/scoreboard">
           <button class="scoreboard_btn">Scoreboard</button>
         </a>
-      
+    </div>  
+
   </div>
     <br>
     <br>
@@ -44,3 +49,15 @@
         </tbody>
     </table>
 </div>
+<script>
+    const button = document.querySelector("#logout")
+    const origin = window.location;
+    function logout() {
+        const spotifyLogoutWindow = window.open("/logout", 'popup','width=600,height=600')                                                                                              
+        setTimeout(() => spotifyLogoutWindow.close(), 2000)
+        setTimeout(() => origin.reload(), 3000)
+    }
+
+    button.addEventListener('click', logout)
+
+    </script>
