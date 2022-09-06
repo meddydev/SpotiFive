@@ -50,3 +50,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "rest-client", "~> 2.1"
 
+
+gem "fuzzy_match", "~> 2.1"
+
+gem "similar_text", "~> 0.0.4"
+
+gem "ruby_deep_clone", "~> 0.8.0"

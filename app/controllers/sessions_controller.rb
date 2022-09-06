@@ -32,9 +32,6 @@ class SessionsController < ApplicationController
     redirect_to "/home"
   end
 
-  def session_check
-    print session[:user]
-  end
 
   def logout
     reset_session
