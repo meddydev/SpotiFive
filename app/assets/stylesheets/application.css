@@ -14,12 +14,15 @@
  *= require_self
  */
 
-body {
-  font-family: "Open Sans", sans-serif;
-  background: linear-gradient(-45deg, #8bedae, #8bedde, #9aed8b);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
+
+ body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(-45deg,  #BB9EF0, #9EF0BB, #BB9EF0);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+
+
 }
 
 .center-screen {
@@ -43,16 +46,18 @@ body {
 }
 
 #login_title {
-    font-size: 600%;
+  font-size: 600%;
 }
 
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -74,8 +79,9 @@ body {
 }
 
 #login_a {
-    padding-left: 12%;;
-    font-size: 16px;
+  padding-left: 12%;
+  ;
+  font-size: 16px;
 }
 
 .play_btn {
@@ -95,8 +101,9 @@ body {
 }
 
 #play_a {
-    padding-left: 12%;;
-    font-size: 16px;
+  padding-left: 12%;
+  ;
+  font-size: 16px;
 }
 
 .scoreboard_btn {
@@ -119,10 +126,10 @@ body {
 }
 
 #scoreboard_a {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-#homepage_title {
+.homepage_title {
   font-size: 600%;
   padding: 50px
 }
@@ -134,4 +141,23 @@ img {
 button:hover {
   background-color: grey;
   text-decoration: none
+}
+
+.logged-in-user-row {
+  background: #67b583;
+}
+
+.scoreboard-title {
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.table-top-left-corner {
+  border-radius: 15px 0 0 0;
+}
+
+.table-top-right-corner {
+  border-radius: 0 15px 0 0;
 }
