@@ -27,10 +27,12 @@ class ResultController < ApplicationController
 
   def create_game(user_id, artist_id, artist_name, score)
     last_game = Game.where("user_id = ? AND artist_id = ?", user_id, artist_id)
-    if last_game.length == 0
+    if (last_game.length == 0 || (Time.zone.now-last_game.last[:created_at]).seconds/1.months>1)
       Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score )
-    elsif (Time.zone.now-last_game.last[:created_at]).seconds/1.months>1
-      Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score )
+      user = User.find_by(id: session[:user]["id"])
+      user["total_score"]+=score
+      user["num_games"]+=1
+      user.save()
     end 
   end 
 
