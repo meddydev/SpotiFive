@@ -26,6 +26,7 @@ gem "jbuilder", "~> 2.5"
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap'
 gem 'popper_js', '~> 2.11.5'
+gem 'simplecov'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

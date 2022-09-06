@@ -2,7 +2,6 @@
     <h1>Scoreboard</h1>
 
     <div>
-    <a class="logout">Logout</a>
 
         <table class="table table-light table-striped table-hover">
             <thead>
@@ -17,7 +16,7 @@
             <tbody>
                 <% @users_sorted_total_score.each_with_index do | user, index | %>
                     <% if user[:id] == @logged_in_user_id %>
-                        <tr class="table-info">
+                        <tr class="logged-in-user-row">
                         <th scope="row"> <%= index + 1 %></th>
                         <td><%= user[:name] %></td>
                         <td><%= user[:num_games] %></td>
@@ -39,7 +38,7 @@
     </div>
     <div>
         <a role="button" href='/home' ><button class="play_btn">Return to Home Page</button></a>
-
+        <a class="logout"><button class="play_btn">Logout </button></a>
 
     </div>
     <script>

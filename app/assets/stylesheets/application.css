@@ -43,16 +43,18 @@ body {
 }
 
 #login_title {
-    font-size: 600%;
+  font-size: 600%;
 }
 
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -74,8 +76,9 @@ body {
 }
 
 #login_a {
-    padding-left: 12%;;
-    font-size: 16px;
+  padding-left: 12%;
+  ;
+  font-size: 16px;
 }
 
 .play_btn {
@@ -95,8 +98,9 @@ body {
 }
 
 #play_a {
-    padding-left: 12%;;
-    font-size: 16px;
+  padding-left: 12%;
+  ;
+  font-size: 16px;
 }
 
 .scoreboard_btn {
@@ -119,7 +123,7 @@ body {
 }
 
 #scoreboard_a {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #homepage_title {
@@ -134,4 +138,8 @@ img {
 button:hover {
   background-color: grey;
   text-decoration: none
+}
+
+.logged-in-user-row {
+  background: #67b583;
 }
