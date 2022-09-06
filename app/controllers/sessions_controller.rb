@@ -32,10 +32,9 @@ class SessionsController < ApplicationController
     redirect_to "/home"
   end
 
-
   def logout
-    reset_session
     redirect_to "https://accounts.spotify.com/logout"
+    reset_session
   end
 
   # def refresh_tokens(refresh_token)
