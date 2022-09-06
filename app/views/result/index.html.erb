@@ -1,4 +1,4 @@
-<h1>Results for <%=@artist_name%></h1>
+<h1>Results for <%= @artist_name %></h1>
 
 <div>
 
@@ -12,7 +12,7 @@
         </tr>
     </thead>
     <tbody>
-        <% @results.each do | result | %>
+        <% @results.each do |result| %>
             <tr>
             <th scope="row">1</th>
             <td><%= result[:guess] %></td>
@@ -24,5 +24,21 @@
 </table>
 <a class="btn btn-dark" role="button" href='/home' >Return to Home Page</a>
 <a class="btn btn-dark" role="button" href='/game' >Play Again</a>
+<script type="text/javascript" src="../../app/assets/javascript/confetti.js"></script>
+    <script>
 
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000);
+        };
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000);
+        };
+
+        start();
+        stop();
+    </script>
 </div>
