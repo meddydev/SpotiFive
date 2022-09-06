@@ -1,21 +1,22 @@
-
-    <h1>Scoreboard</h1>
-
-    <div>
-        <table class="table table-dark table-striped table-hover">
+<div class="container">
+    <div class="row">
+        <h1 class='scoreboard-title'>Scoreboard</h1>
+    </div>
+    <div class="row">
+        <table class="table table-light table-striped table-hover">
             <thead>
                 <tr>
-                <th scope="col">#</th>
+                <th scope="col" class='table-top-left-corner'>#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Number of Games</th>
                 <th scope="col">Total Score</th>
-                <th scope="col">Average Score</th>
+                <th scope="col" class='table-top-right-corner'>Average Score</th>
                 </tr>
             </thead>
             <tbody>
                 <% @users_sorted_total_score.each_with_index do | user, index | %>
                     <% if user[:id] == @logged_in_user_id %>
-                        <tr class="table-info">
+                        <tr class="logged-in-user-row">
                         <th scope="row"> <%= index + 1 %></th>
                         <td><%= user[:name] %></td>
                         <td><%= user[:num_games] %></td>
@@ -35,8 +36,25 @@
             </tbody>
         </table>
     </div>
-    <div>
-        <a class="btn btn-dark" role="button" href='/home' >Return to Home Page</a>
-
-
+    <div class="row justify-content-center">
+        <div class="col">
+            <a role="button" href='/home' ><button class="play_btn">Return to Home Page</button></a>
+        </div>
+        <div class="col">
+            <a id="logout"><button class="play_btn">Logout </button></a>
+        </div>
     </div>
+</div>
+
+    <script>
+    const button = document.querySelector("#logout")
+    const origin = window.location;
+    function logout() {
+        const spotifyLogoutWindow = window.open("/logout", 'popup','width=600,height=600')                                                                                              
+        setTimeout(() => spotifyLogoutWindow.close(), 2000)
+        setTimeout(() => origin.reload(), 3000)
+    }
+
+    button.addEventListener('click', logout)
+
+    </script>
