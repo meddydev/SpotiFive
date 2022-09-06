@@ -1,14 +1,42 @@
-<h1 >Welcome back <%= @name %> </h1>
+<div class="center-screen-home">
+
+<h1 id="homepage_title">Welcome <%= @name %>!</h1>
+
+<img src=<%= @profile_picture_url %> width="110" height="110">
 
 
-<form action="/game">
-    <input type="submit" value="Play" />
-</form>
-
-<form action="/scoreboard">
-    <input type="submit" value="Scoreboard" />
-</form>
+  <a id="play_a" href="/game">
+    <button class="play_btn">Play</button>
+  </a>
 
 
-<h2>Your recent scores</h2>
-<%=  %>
+
+
+  <a id="scoreboard_a" href="/scoreboard">
+    <button class="scoreboard_btn">Scoreboard</button>
+  </a>
+
+<br>
+<br>
+<table class="table table-light table-striped table-hover">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Date Played</th>
+        <th scope="col">Artist</th>
+        <th scope="col">Score</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @recent_games.each do |game| %>
+                <tr>
+                <th scope="row">1</th>
+                <td><%= game.created_at %></td>
+                <td><%= game.artist_name %></td>
+                <td><%= game.score %></td>
+                </tr>
+        <% end %>
+    </tbody>
+</table>
+</div>
