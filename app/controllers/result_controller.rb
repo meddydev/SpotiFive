@@ -16,15 +16,33 @@ class ResultController < ApplicationController
       guesses_hash[index] = guesses_and_actuals[0]
       actuals_hash[index] = guesses_and_actuals[1]
     end 
-    @results =self.get_score(guesses, actuals, guesses_hash, actuals_hash)
-    @artist =JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))["name"]
+    @results =self.get_results(guesses, actuals, guesses_hash, actuals_hash)
+    @artist_name =JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))["name"]
+    score = self.get_score(@results)
+    self.create_game(session[:user]["id"], artist_id, @artist_name, score)
 
   end 
 
   private
 
+  def create_game(user_id, artist_id, artist_name, score)
+    last_game = Game.where("user_id = ? AND artist_id = ?", user_id, artist_id)
+    if last_game.length == 0
+      Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score )
+    elsif (Time.zone.now-last_game.last[:created_at]).seconds/1.months>1
+      Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score )
+    end 
+  end 
 
-  def get_score(guesses, actuals, guesses_hash, actuals_hash)
+  def get_score(results)
+    score = 0
+    results.each{|result| score+=result[:score]}
+    return score
+  end 
+
+
+
+  def get_results(guesses, actuals, guesses_hash, actuals_hash)
     scores = Hash.new
     self.get_perfect_match(guesses_hash,actuals_hash, scores)
     self.get_close_match(guesses_hash,actuals_hash, scores)
@@ -69,11 +87,9 @@ class ResultController < ApplicationController
   def song_name_formatter(song)
     song_downcase = song.downcase
     song_delatinised = ActiveSupport::Inflector.transliterate(song_downcase).to_s
-
     song_removed_hyphen = song_delatinised.sub /-.+/ ,""
     song_removed_brackets = song_removed_hyphen.sub /\(.+/ , ""
     song_formatted = song_removed_brackets.strip
-
     return song_formatted
 
   end 
@@ -89,8 +105,6 @@ class ResultController < ApplicationController
     song_similarity = self.song_name_formatter(song1).similar(self.song_name_formatter(song2))
     return song_similarity
   end
-
-
 
 end
 
