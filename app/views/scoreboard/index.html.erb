@@ -44,12 +44,13 @@
     </div>
     <script>
     const button = document.querySelector(".logout")
-    function log_out() {
+    const origin = window.location;
+    function logout() {
         const spotifyLogoutWindow = window.open("/logout", 'popup','width=600,height=600')                                                                                              
         setTimeout(() => spotifyLogoutWindow.close(), 2000)
         setTimeout(() => origin.reload(), 3000)
     }
 
-    button.addEventListener('click', log_out);
+    button.addEventListener('click', logout)
 
     </script>
