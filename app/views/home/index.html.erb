@@ -1,42 +1,46 @@
-<div class="center-screen-home">
+<div class="container">
+  <div class="row">
 
-<h1 id="homepage_title">Welcome <%= @name %>!</h1>
+      <h1 class="homepage_title">Welcome <%= @name %>!</h1>
 
-<img src=<%= @profile_picture_url %> width="110" height="110">
-
-
-  <a id="play_a" href="/game">
-    <button class="play_btn">Play</button>
-  </a>
+  </div>
+  <div class="row">
+      <img src=<%= @profile_picture_url %> width="110" height="110">
 
 
+        <a id="play_a" href="/game">
+          <button class="play_btn">Play</button>
+        </a>
 
 
-  <a id="scoreboard_a" href="/scoreboard">
-    <button class="scoreboard_btn">Scoreboard</button>
-  </a>
 
-<br>
-<br>
-<table class="table table-light table-striped table-hover">
-    <thead>
-        <tr>
-        <th scope="col">#</th>
-        <th scope="col">Date Played</th>
-        <th scope="col">Artist</th>
-        <th scope="col">Score</th>
-        </tr>
-    </thead>
 
-    <tbody>
-        <% @recent_games.each do |game| %>
-                <tr>
-                <th scope="row">1</th>
-                <td><%= game.created_at %></td>
-                <td><%= game.artist_name %></td>
-                <td><%= game.score %></td>
-                </tr>
-        <% end %>
-    </tbody>
-</table>
+        <a id="scoreboard_a" href="/scoreboard">
+          <button class="scoreboard_btn">Scoreboard</button>
+        </a>
+      
+  </div>
+    <br>
+    <br>
+    <table class="table table-light table-striped table-hover">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date Played</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Score</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @recent_games.each do |game| %>
+                    <tr>
+                    <th scope="row">1</th>
+                    <td><%= game.created_at %></td>
+                    <td><%= game.artist_name %></td>
+                    <td><%= game.score %></td>
+                    </tr>
+            <% end %>
+        </tbody>
+    </table>
 </div>
