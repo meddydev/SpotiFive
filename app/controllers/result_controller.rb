@@ -69,13 +69,11 @@ class ResultController < ApplicationController
   def song_name_formatter(song)
     song_downcase = song.downcase
     song_delatinised = ActiveSupport::Inflector.transliterate(song_downcase).to_s
-    # if song_delatinised.include?("remix")
-    #   song_formatted = song_delatinised.strip
-    # else 
-      song_removed_hyphen = song_delatinised.sub /-.+/ ,""
-      song_removed_brackets = song_removed_hyphen.sub /\(.+/ , ""
-      song_formatted = song_removed_brackets.strip
-    # end 
+
+    song_removed_hyphen = song_delatinised.sub /-.+/ ,""
+    song_removed_brackets = song_removed_hyphen.sub /\(.+/ , ""
+    song_formatted = song_removed_brackets.strip
+
     return song_formatted
 
   end 
