@@ -1,5 +1,5 @@
 SONG_GUESS_SIMILARITY_THRESHOLD = 50
-CONFETTI_THRESHOLD = 75
+CONFETTI_THRESHOLD = 20
 
 class ResultController < ApplicationController
   skip_before_action :verify_authenticity_token
