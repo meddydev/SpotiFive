@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2022_08_31_135540) do
     t.string "artist_id"
     t.string "artist_name"
     t.integer "score"
+    t.boolean "hard"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_games_on_user_id"
@@ -29,8 +30,10 @@ ActiveRecord::Schema.define(version: 2022_08_31_135540) do
     t.string "email"
     t.string "name"
     t.string "image_url"
-    t.integer "total_score", default: 0, null: false
-    t.integer "num_games", default: 0, null: false
+    t.integer "total_score_hard", default: 0, null: false
+    t.integer "total_score_easy", default: 0, null: false
+    t.integer "num_games_hard", default: 0, null: false
+    t.integer "num_games_easy", default: 0, null: false
     t.string "auth_token"
     t.string "refresh_token"
     t.datetime "created_at", precision: 6, null: false

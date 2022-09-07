@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#logout'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get 'game', to: 'games#index'
+  get 'guess-songs', to: 'games#guess_the_songs'
   get 'home', to: 'home#index'
-  get 'result', to: 'result#index'
+  get 'guess-songs/results', to: 'result#guess_the_songs_results'
+  get 'guess-artist/results', to: 'result#guess_the_artist_results'
+  get 'guess-artist', to: 'games#guess_the_artist'
 end
