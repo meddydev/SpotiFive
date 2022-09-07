@@ -3,10 +3,13 @@ CONFETTI_THRESHOLD = 20
 
 class ResultController < ApplicationController
 
+
   def guess_the_songs_results()
-    if session[:user]
-      refresh_tokens(session[:user]["refresh_token"])
-      user_auth_token = session[:user]["auth_token"]
+    if session[:id]
+      user = User.find_by(id: session[:id])
+      refresh_tokens(user.refresh_token)
+      user = User.find_by(id: session[:id])
+      user_auth_token = user.auth_token
       artist_id = params[:artist_id]
       guesses = [params[:guess_1], params[:guess_2], params[:guess_3], params[:guess_4], params[:guess_5]]
       guesses.map! { |input| self.input_formatter(input) }
@@ -20,7 +23,6 @@ class ResultController < ApplicationController
         actuals_hash[index] = guesses_and_actuals[1]
       end
       @results = self.gts_get_results(guesses, actuals, guesses_hash, actuals_hash)
-
       artist_data = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))
       @artist_name = artist_data["name"]
       @artist_img_url = artist_data["images"][0]["url"]
@@ -32,10 +34,13 @@ class ResultController < ApplicationController
     end
   end
 
+
   def guess_the_artist_results()
-    if session[:user]
-      refresh_tokens(session[:user]["refresh_token"])
-      user_auth_token = session[:user]["auth_token"]
+    if session[:id]
+      user = User.find_by(id: session[:id])
+      refresh_tokens(user.refresh_token)
+      user = User.find_by(id: session[:id])
+      user_auth_token = user.auth_token
       @guess = params[:guess]
       artist_id = params[:artist_id]
       artist_data = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))

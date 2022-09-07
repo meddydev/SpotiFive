@@ -23,9 +23,9 @@ class SessionsController < ApplicationController
     user = User.find_by(email: user_email)
     if !user
       user = User.create(email: user_email, name: user_name, image_url: user_img_url, auth_token: auth_token, refresh_token: refresh_token)
-      session[:user] = user
+      session[:id] = user.id
     else
-      session[:user] = user
+      session[:id] = user.id
       refresh_tokens(refresh_token)
     end
 
