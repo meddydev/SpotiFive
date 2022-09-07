@@ -1,4 +1,4 @@
-<h1>Results for <%=@artist_name%></h1>
+<h1>Results for <%= @artist_name %></h1>
 
 <div>
 
@@ -24,6 +24,28 @@
 </table>
 <a class="btn btn-dark" role="button" href='/home' >Return to Home Page</a>
 <a class="btn btn-dark" role="button" href='/game' >Play Again</a>
+
+<% if @confetti %>
+<script type="text/javascript" src="../../app/assets/javascript/confetti.js"></script>
+    <script>
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000);
+        };
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000);
+        };
+
+        start();
+        stop();
+    </script>
+<% end %>
+</div>
+
 <a id="logout"><button class="play_btn">Logout </button></a>
 </div>
 <script>
@@ -38,3 +60,4 @@
     button.addEventListener('click', logout)
 
     </script>
+
