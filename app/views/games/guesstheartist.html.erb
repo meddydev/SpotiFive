@@ -1,0 +1,14 @@
+
+<h1>Guess the Artist</h1>
+
+<form method="get", action="/result">
+<input type="hidden" value= <%=@artist[:id]%> name ="artist_id" >
+  <ol>
+  <lh> Guess the Artist  </lh>
+    <% @top_five_tracks.each do |track| %>
+    <li> <%=track%> </li>
+    <% end %>
+  </ol>
+  <input type= "text" >
+  <input type ="submit" action= ""> 
+</form>
