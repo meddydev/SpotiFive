@@ -3,38 +3,67 @@
         <h1 class='scoreboard-title'>Scoreboard</h1>
     </div>
     <div class="row">
-        <table class="table table-light table-striped table-hover">
-            <thead>
-                <tr>
-                <th scope="col" class='table-top-left-corner'>#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Number of Games</th>
-                <th scope="col">Total Score</th>
-                <th scope="col" class='table-top-right-corner'>Average Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% @users_sorted_total_score.each_with_index do | user, index | %>
-                    <% if user[:id] == @logged_in_user_id %>
-                        <tr class="logged-in-user-row">
-                        <th scope="row"> <%= index + 1 %></th>
-                        <td><%= user[:name] %></td>
-                        <td><%= user[:num_games] %></td>
-                        <td><%= user[:total_score] %></td>
-                        <td><%= user[:av_score] %></td>
-                        </tr>
-                    <% else %>
-                        <tr>
-                        <th scope="row"> <%= index + 1 %></th>
-                        <td><%= user[:name] %></td>
-                        <td><%= user[:num_games] %></td>
-                        <td><%= user[:total_score] %></td>
-                        <td><%= user[:av_score] %></td>
-                        </tr>
+        <div class="col">
+            <h2>Guess the songs</h2>
+            <table class="table table-light table-striped table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col" class='table-top-left-corner'>#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Number of Games</th>
+                    <th scope="col">Total Score</th>
+                    <th scope="col" class='table-top-right-corner'>Average Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% @games_sorted_total_scores.each_with_index do | user, index | %>
+                        <% if user[:id] == @logged_in_user_id %>
+                            <tr class="logged-in-user-row">
+                            <th scope="row"> <%= index + 1 %></th>
+                            <td><%= user[:name] %></td>
+                            <td><%= user[:num_games_hard] %></td>
+                            <td><%= user[:total_score_hard] %></td>
+                            <td><%= user[:av_score] %></td>
+                            </tr>
+                        <% else %>
+                            <tr>
+                            <th scope="row"> <%= index + 1 %></th>
+                            <td><%= user[:name] %></td>
+                            <td><%= user[:num_games_hard] %></td>
+                            <td><%= user[:total_score_hard] %></td>
+                            <td><%= user[:av_score] %></td>
+                            </tr>
+                        <% end %>
                     <% end %>
-                <% end %>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col">
+            <h2>Guess the artist</h2>
+            <table class="table table-light table-striped table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col" class='table-top-left-corner'>#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Number of Games</th>
+                    <th scope="col">Number of Wins</th>
+                    <th scope="col" class='table-top-right-corner'>% of Wins</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% @games_sorted_percentage.each_with_index do | user, index | %>
+                            <tr>
+                            <th scope="row"> <%= index + 1 %></th>
+                            <td><%= user[:name] %></td>
+                            <td><%= user[:num_games_easy] %></td>
+                            <td><%= user[:easy_game_wins] %></td>
+                            <td><%= user[:win_percentage] %>%</td>
+                            </tr>
+                    <% end %>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="row justify-content-center">
         <div class="col">
