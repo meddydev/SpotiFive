@@ -27,7 +27,7 @@ class ResultController < ApplicationController
       @artist_name = artist_data["name"]
       @artist_img_url = artist_data["images"][0]["url"]
       score = self.gts_get_score(@results)
-      self.gts_create_game(session[:user]["id"], artist_id, @artist_name, score)
+      self.gts_create_game(session[:id], artist_id, @artist_name, score)
       @confetti = score > CONFETTI_THRESHOLD
     else
       redirect_to "/"
@@ -47,7 +47,7 @@ class ResultController < ApplicationController
       @artist_name = artist_data["name"]
       @artist_img_url = artist_data["images"][0]["url"]
       @score = self.get_text_similarity(@artist_name, @guess) >50 ? 25 : 0
-      self.gta_create_game(session[:user]["id"], artist_id, @artist_name, @score)
+      self.gta_create_game(session[:id], artist_id, @artist_name, @score)
       @confetti = @score > CONFETTI_THRESHOLD
     else
       redirect_to "/"
@@ -58,8 +58,8 @@ class ResultController < ApplicationController
   def gts_create_game(user_id, artist_id, artist_name, score)
     last_game = Game.where("user_id = ? AND artist_id = ? AND hard = 'true'", user_id, artist_id)
     if (last_game.length == 0 || (Time.zone.now - last_game.last[:created_at]).seconds / 1.months > 1)
-      Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score, hard: true)
-      user = User.find_by(id: session[:user]["id"])
+      Game.create(user_id: session[:id], artist_id: artist_id, artist_name: artist_name, score: score, hard: true)
+      user = User.find_by(id: session[:id])
       user["total_score_hard"] += score
       user["num_games_hard"] += 1
       user.save()
@@ -69,8 +69,8 @@ class ResultController < ApplicationController
   def gta_create_game(user_id, artist_id, artist_name, score)
     last_game = Game.where("user_id = ? AND artist_id = ? AND hard = 'false'", user_id, artist_id)
     if (last_game.length == 0 || (Time.zone.now - last_game.last[:created_at]).seconds / 1.months > 1)
-      Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score, hard: false)
-      user = User.find_by(id: session[:user]["id"])
+      Game.create(user_id: session[:id], artist_id: artist_id, artist_name: artist_name, score: score, hard: false)
+      user = User.find_by(id: session[:id])
       user["total_score_easy"] += score
       user["num_games_easy"] += 1
       user.save()
