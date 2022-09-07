@@ -5,9 +5,11 @@ class ResultController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    if session[:user]
-      refresh_tokens(session[:user]["refresh_token"])
-      user_auth_token = session[:user]["auth_token"]
+    if session[:id]
+      user = User.find_by(id: session[:id])
+      refresh_tokens(user.refresh_token)
+      user = User.find_by(id: session[:id])
+      user_auth_token = user.auth_token
       artist_id = params[:artist_id]
       guesses = [params[:guess_1], params[:guess_2], params[:guess_3], params[:guess_4], params[:guess_5]]
       guesses.map! { |input| self.input_formatter(input) }
@@ -23,20 +25,21 @@ class ResultController < ApplicationController
       @results = self.get_results(guesses, actuals, guesses_hash, actuals_hash)
       @artist_name = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))["name"]
       score = self.get_score(@results)
-      self.create_game(session[:user]["id"], artist_id, @artist_name, score)
+      self.create_game(user.id, artist_id, @artist_name, score)
       @confetti = score > CONFETTI_THRESHOLD
     else
       redirect_to "/"
     end
   end
 
-  private
+  # private
 
   def create_game(user_id, artist_id, artist_name, score)
+    user = User.find_by(id: session[:id])
     last_game = Game.where("user_id = ? AND artist_id = ?", user_id, artist_id)
     if (last_game.length == 0 || (Time.zone.now - last_game.last[:created_at]).seconds / 1.months > 1)
-      Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score)
-      user = User.find_by(id: session[:user]["id"])
+      Game.create(user_id: user.id, artist_id: artist_id, artist_name: artist_name, score: score)
+      user = User.find_by(id: user.id)
       user["total_score"] += score
       user["num_games"] += 1
       user.save()
