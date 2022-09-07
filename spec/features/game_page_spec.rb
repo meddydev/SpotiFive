@@ -11,29 +11,25 @@ RSpec.describe "Playing Game", type: :feature do
 
   scenario "end game abruptly" do
     visit "/game"
-    fill_in "", with: ""
+
     click_on "home"
     visit "/home"
     expect(page).to have_content("")
   end
 
-  # end
+  scenario "checks on personal scoreboard" do
+    visit "/game"
 
-  # scenario "use fields to input game data" do
-  #   visit "/game"
+    click_on "scoreboard"
+    visit "/scoreboard"
+    expect(page).to have_content("")
+  end
 
-  #   expect(page).has_field? ("1").to equal (true)
-  # end
+  scenario "user wants to end session" do
+    visit "/game"
 
-  # scenario "has name in field" do
-  #   visit "/game"
-
-  #   expect(page).has_field?("Name", with: "Drake")
-  # end
-
-  # scenario "Can submit button directing to results" do
-  #   visit "/game"
-
-  #   expect(page).has_button?("Submit")
-  # end
+    click_on "logout"
+    visit ""
+    expect(page).to have_content("")
+  end
 end
