@@ -15,12 +15,12 @@
  */
 
 
- body {
-    font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(-45deg,  #BB9EF0, #9EF0BB, #BB9EF0);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(-45deg, #BB9EF0, #9EF0BB, #BB9EF0);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
 
 
 }
@@ -150,7 +150,6 @@ button:hover {
 .scoreboard-title {
   color: white;
   text-align: center;
-  margin-top: 70px;
   margin-bottom: 40px;
 }
 

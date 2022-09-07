@@ -27,6 +27,7 @@ gem "jbuilder", "~> 2.5"
 gem 'bootstrap'
 gem 'popper_js', '~> 2.11.5'
 gem 'simplecov'
+gem 'rails-controller-testing'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
