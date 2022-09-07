@@ -5,25 +5,29 @@ class ResultController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    refresh_tokens(session[:user]["refresh_token"])
-    user_auth_token = session[:user]["auth_token"]
-    artist_id = params[:artist_id]
-    guesses = [params[:guess_1], params[:guess_2], params[:guess_3], params[:guess_4], params[:guess_5]]
-    guesses.map! { |input| self.input_formatter(input) }
-    top_tracks_data = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}/top-tracks?market=GB", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))["tracks"]
-    actuals = top_tracks_data[0, 5].map { |track| track["name"] }
+    if session[:user]
+      refresh_tokens(session[:user]["refresh_token"])
+      user_auth_token = session[:user]["auth_token"]
+      artist_id = params[:artist_id]
+      guesses = [params[:guess_1], params[:guess_2], params[:guess_3], params[:guess_4], params[:guess_5]]
+      guesses.map! { |input| self.input_formatter(input) }
+      top_tracks_data = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}/top-tracks?market=GB", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))["tracks"]
+      actuals = top_tracks_data[0, 5].map { |track| track["name"] }
 
-    guesses_hash = Hash.new
-    actuals_hash = Hash.new
-    guesses.zip(actuals).each_with_index do |guesses_and_actuals, index|
-      guesses_hash[index] = guesses_and_actuals[0]
-      actuals_hash[index] = guesses_and_actuals[1]
+      guesses_hash = Hash.new
+      actuals_hash = Hash.new
+      guesses.zip(actuals).each_with_index do |guesses_and_actuals, index|
+        guesses_hash[index] = guesses_and_actuals[0]
+        actuals_hash[index] = guesses_and_actuals[1]
+      end
+      @results = self.get_results(guesses, actuals, guesses_hash, actuals_hash)
+      @artist_name = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))["name"]
+      score = self.get_score(@results)
+      self.create_game(session[:user]["id"], artist_id, @artist_name, score)
+      @confetti = score > CONFETTI_THRESHOLD
+    else
+      redirect_to "/"
     end
-    @results = self.get_results(guesses, actuals, guesses_hash, actuals_hash)
-    @artist_name = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))["name"]
-    score = self.get_score(@results)
-    self.create_game(session[:user]["id"], artist_id, @artist_name, score)
-    @confetti = score > CONFETTI_THRESHOLD
   end
 
   private
