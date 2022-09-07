@@ -22,6 +22,26 @@
 
 <img src=<%=@artist_img_url %>>
 
+  <div class="row">
+      <div class="col">
+          <a href="/home">
+            <button class="play_btn">Home</button>
+          </a>
+      </div>
+      
+      <div class="col">
+          <a href="/scoreboard">
+            <button class="play_btn">Scoreboard</button>
+          </a>
+      </div>  
+
+      <div class="col">
+        <a id="logout"><button class="play_btn">Logout </button></a>
+      </div>
+
+    </div>
+</div>
+
 <% if @confetti %>
 <script type="text/javascript" src="../../app/assets/javascript/confetti.js"></script>
     <script>
