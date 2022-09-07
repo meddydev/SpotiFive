@@ -9,13 +9,13 @@ RSpec.describe "Playing Game", type: :feature do
     expect(page).to have_content("")
   end
 
-  #   scenario "end game abruptly" do
-  #     visit "/game"
-  #     fill_in "", with: ""
-  #     click_on "home"
-  #     visit "/home"
-  #     expect(page).to have_content("")
-  #   end
+  scenario "end game abruptly" do
+    visit "/game"
+    fill_in "", with: ""
+    click_on "home"
+    visit "/home"
+    expect(page).to have_content("")
+  end
 
   # end
 
