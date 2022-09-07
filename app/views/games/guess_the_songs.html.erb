@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <h1>Guess song by <%=@artist[:name]%>  </h1>
+  </div>
+  <img src=<%=@artist_img_url %>
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+      <form method="get", action="/guess-songs/results" class="form-group">
+      <input type="hidden" value= <%=@artist[:id]%> name ="artist_id" >
+        <ol>
+        <lh> Guess song by <%=@artist[:name]%>  </lh>
+          <li> <input type="text" name="guess_1" class="form-control"> </li>
+          <li> <input type="text" name="guess_2" class="form-control"> </li>
+          <li> <input type="text" name="guess_3" class="form-control"> </li>
+          <li> <input type="text" name="guess_4" class="form-control"> </li>
+          <li> <input type="text" name="guess_5" class="form-control"> </li>
+        </ol>
+        <input type="submit" class="play_btn"> 
+      </form>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+  <% @top_five_tracks.each do |tracks| %>
+    <p> <%=tracks%> </p>
+  <% end %>
+
+  <div class="row">
+      <div class="col">
+          <!-- <a id="play_a" href="/game">
+            <button class="play_btn">Play</button>
+          </a> -->
+          <a href="/game">
+            <button class="play_btn">Home</button>
+          </a>
+      </div>
+      
+      <div class="col">
+      <!--         <a id="scoreboard_a" href="/scoreboard">
+            <button class="scoreboard_btn">Scoreboard</button>
+          </a> -->
+          <a href="/scoreboard">
+            <button class="play_btn">Scoreboard</button>
+          </a>
+      </div>  
+
+      <div class="col">
+        <a id="logout"><button class="play_btn">Logout </button></a>
+      </div>
+
+    </div>
+</div>
+
+  <script>
+    const button = document.querySelector("#logout")
+    const origin = window.location;
+    function logout() {
+        const spotifyLogoutWindow = window.open("/logout", 'popup','width=600,height=600')                                                                                              
+        setTimeout(() => spotifyLogoutWindow.close(), 2000)
+        setTimeout(() => origin.reload(), 3000)
+    }
+
+    button.addEventListener('click', logout)
+
+    </script>
