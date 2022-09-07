@@ -51,7 +51,7 @@
             <% @recent_games.each do |game| %>
                     <tr>
                     <th scope="row">1</th>
-                    <td><%= game.created_at %></td>
+                    <td><%= Time.parse(game.created_at.to_s).strftime("%m/%d/%Y %H:%M") %></td>
                     <td><%= game.artist_name %></td>
                     <td><%= game.score %></td>
                     </tr>
