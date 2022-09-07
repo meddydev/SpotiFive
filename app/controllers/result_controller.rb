@@ -41,10 +41,9 @@ class ResultController < ApplicationController
       artist_data = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))
       @artist_name = artist_data["name"]
       @artist_img_url = artist_data["images"][0]["url"]
-      print @artist_img_url
-      @score = self.get_text_similarity(@artist_name, @guess) >50 ? 20 : 0
-      Game.create!(user_id: session[:user]["id"], artist_id: artist_id, artist_name:  )
-
+      @score = self.get_text_similarity(@artist_name, @guess) >50 ? 25 : 0
+      self.gta_create_game(session[:user]["id"], artist_id, @artist_name, @score)
+      @confetti = @score > CONFETTI_THRESHOLD
     else
       redirect_to "/"
     end
@@ -52,12 +51,23 @@ class ResultController < ApplicationController
   private
 
   def gts_create_game(user_id, artist_id, artist_name, score)
-    last_game = Game.where("user_id = ? AND artist_id = ?", user_id, artist_id)
+    last_game = Game.where("user_id = ? AND artist_id = ? AND hard = 'true'", user_id, artist_id)
     if (last_game.length == 0 || (Time.zone.now - last_game.last[:created_at]).seconds / 1.months > 1)
-      Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score)
+      Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score, hard: true)
       user = User.find_by(id: session[:user]["id"])
-      user["total_score"] += score
-      user["num_games"] += 1
+      user["total_score_hard"] += score
+      user["num_games_hard"] += 1
+      user.save()
+    end
+  end
+
+  def gta_create_game(user_id, artist_id, artist_name, score)
+    last_game = Game.where("user_id = ? AND artist_id = ? AND hard = 'false'", user_id, artist_id)
+    if (last_game.length == 0 || (Time.zone.now - last_game.last[:created_at]).seconds / 1.months > 1)
+      Game.create(user_id: session[:user]["id"], artist_id: artist_id, artist_name: artist_name, score: score, hard: false)
+      user = User.find_by(id: session[:user]["id"])
+      user["total_score_easy"] += score
+      user["num_games_easy"] += 1
       user.save()
     end
   end
