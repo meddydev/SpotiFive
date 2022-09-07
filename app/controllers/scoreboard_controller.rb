@@ -1,6 +1,7 @@
 class ScoreboardController < ApplicationController
   def index
-    if session[:user]
+    if session[:id]
+      user = User.find_by(id: session[:id])
       @users = User.all
       users_dict = []
       @users.each do | user_object | 
@@ -17,7 +18,7 @@ class ScoreboardController < ApplicationController
         users_dict << one_user
       end
       @users_sorted_total_score = users_dict.sort_by {|user| -user[:total_score]}
-      @logged_in_user_id = session[:user]["id"]
+      @logged_in_user_id = user.id
     else
       redirect_to "/"
     end
