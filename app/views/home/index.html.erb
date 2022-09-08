@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
 
-      <h1 class="homepage_title">Welcome <%= @name %>!</h1>
+      <h1 class="homepage_title" style="color: white;">Welcome <%= @name %>!</h1>
 
   </div>
   <div class="row">
@@ -22,16 +22,13 @@
     </div>
     
     <div class="col">
-    <!--         <a id="scoreboard_a" href="/scoreboard">
-          <button class="scoreboard_btn">Scoreboard</button>
-        </a> -->
         <a href="/scoreboard">
           <button class="play_btn">Scoreboard</button>
         </a>
     </div>  
 
     <div class="col">
-      <a id="logout"><button class="play_btn">Logout </button></a>
+      <a id="logout"><button class="play_btn">Logout     </button></a>
     </div>
 
   </div>
@@ -40,11 +37,11 @@
     <table class="table table-light table-striped table-hover">
         <thead>
             <tr>
-            <th scope="col">#</th>
+            <th scope="col" class='table-top-left-corner'>#</th>
             <th scope="col">Date Played</th>
             <th scope="col">Artist</th>
             <th scope="col">Mode</th>
-            <th scope="col">Score</th>
+            <th scope="col" class='table-top-right-corner'>Score</th>
             </tr>
         </thead>
 
