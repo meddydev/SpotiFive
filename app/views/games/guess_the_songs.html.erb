@@ -1,8 +1,30 @@
 <div class="container">
+
   <div class="row">
-    <h1>Guess song by <%=@artist[:name]%>  </h1>
+      <div class="col">
+      </div>
+
+      <div class="col">
+        <img src=<%=@artist_img_url %> class="artist-image">
+      </div>
+
+      <div class="col">
+      </div>
   </div>
-  <img src=<%=@artist_img_url %>
+
+  <div class="row">
+      <div class="col">
+      </div>
+
+      <div class="col">
+        <h2 class="game-title">Guess top 5 songs by <%=@artist[:name]%>  </h2>
+      </div>
+
+      <div class="col">
+      </div>
+  </div>
+
+
   <div class="row">
     <div class="col">
     </div>
@@ -10,7 +32,6 @@
       <form method="get", action="/guess-songs/results" class="form-group">
       <input type="hidden" value= <%=@artist[:id]%> name ="artist_id" >
         <ol>
-        <lh> Guess song by <%=@artist[:name]%>  </lh>
           <li> <input type="text" name="guess_1" class="form-control"> </li>
           <li> <input type="text" name="guess_2" class="form-control"> </li>
           <li> <input type="text" name="guess_3" class="form-control"> </li>
@@ -23,24 +44,15 @@
     <div class="col">
     </div>
   </div>
-  <% @top_five_tracks.each do |tracks| %>
-    <p> <%=tracks%> </p>
-  <% end %>
 
   <div class="row">
       <div class="col">
-          <!-- <a id="play_a" href="/game">
-            <button class="play_btn">Play</button>
-          </a> -->
           <a href="/home">
             <button class="play_btn">Home</button>
           </a>
       </div>
       
       <div class="col">
-      <!--         <a id="scoreboard_a" href="/scoreboard">
-            <button class="scoreboard_btn">Scoreboard</button>
-          </a> -->
           <a href="/scoreboard">
             <button class="play_btn">Scoreboard</button>
           </a>
