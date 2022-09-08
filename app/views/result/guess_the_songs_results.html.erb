@@ -25,7 +25,18 @@
         </div>
 
     </div>
+    <div class="row">
+        <div class="col">
+        </div>
 
+        <div class="col">
+            <h2 class="game-title">Total Score: <%= @total_score %></h2>
+        </div>
+
+        <div class="col">
+        </div>
+
+    </div>
 
         
         <div class="row">
@@ -33,10 +44,10 @@
             <table class="table table-light table-striped table-hover">
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
+                    <th scope="col" class="table-top-left-corner">#</th>
                     <th scope="col">Guess</th>
                     <th scope="col">Actual</th>
-                    <th scope="col">Score</th>
+                    <th scope="col" class="table-top-right-corner">Score</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -56,18 +67,18 @@
 
             <div class="col">
                 <a href="/home">
-                    <button class="play_btn">Home</button>
+                    <button class="buttons-game">Home</button>
                 </a>
             </div>
             
             <div class="col">
                 <a href="/scoreboard">
-                    <button class="play_btn">Scoreboard</button>
+                    <button class="buttons-game">Scoreboard</button>
                 </a>
             </div>  
 
             <div class="col">
-                <a id="logout"><button class="play_btn">Logout </button></a>
+                <a id="logout"><button class="buttons-game">Logout </button></a>
             </div>
 
             </div>
@@ -108,5 +119,5 @@
 
             button.addEventListener('click', logout)
 
-            </script>
+        </script>
 </div>
