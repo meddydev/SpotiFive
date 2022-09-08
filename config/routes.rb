@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get 'guess-songs/results', to: 'result#guess_the_songs_results'
   get 'guess-artist/results', to: 'result#guess_the_artist_results'
   get 'guess-artist', to: 'games#guess_the_artist'
+  get 'test', to: 'home#test'
 end
