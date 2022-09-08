@@ -11,13 +11,13 @@
 
     <div class="col">
       <a href="/guess-songs">
-        <button class="play_btn">Play Hard</button>
+        <button class="play_btn">Play Guess the Songs</button>
       </a>
     </div>
 
     <div class="col">
         <a href="/guess-artist">
-          <button class="play_btn">Play Easy</button>
+          <button class="play_btn">Play Guess the Artist</button>
         </a>
     </div>
     
@@ -43,6 +43,7 @@
             <th scope="col">#</th>
             <th scope="col">Date Played</th>
             <th scope="col">Artist</th>
+            <th scope="col">Mode</th>
             <th scope="col">Score</th>
             </tr>
         </thead>
@@ -53,6 +54,7 @@
                     <th scope="row"><%= index + 1 %></th>
                     <td><%= Time.parse(game.created_at.to_s).strftime("%m/%d/%Y %H:%M") %></td>
                     <td><%= game.artist_name %></td>
+                    <td><%= game.hard ? "Guess The Songs" : "Guess The Artist" %></td>
                     <td><%= game.score %></td>
                     </tr>
             <% end %>
