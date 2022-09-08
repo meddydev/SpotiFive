@@ -1,6 +1,6 @@
+<div class="fade_in">
 <h1>Results for <%= @artist_name %></h1>
-<img src=<%=@artist_img_url %>
-<div>
+<img src=<%=@artist_img_url %>>
 
 <table class="table table-light table-striped table-hover">
     <thead>
@@ -43,6 +43,7 @@
 
     </div>
 </div>
+<div>
 
 
 <% if @confetti %>
@@ -80,4 +81,3 @@
     button.addEventListener('click', logout)
 
     </script>
-
