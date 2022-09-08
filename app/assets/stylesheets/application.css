@@ -84,7 +84,7 @@ body {
   font-size: 16px;
 }
 
-.play_btn {
+.buttons-game {
   font-family: "Open Sans", sans-serif;
   padding: 15px 30px;
   background-color: #ffffff;
@@ -100,6 +100,21 @@ body {
   width: 50%;
   margin-left: 27%;
   margin-right: 22%;
+}
+
+.play-btn {
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border-width: 0;
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: all 0.2s ease-in-out;
+  outline: 0;
 }
 
 #play_a {
