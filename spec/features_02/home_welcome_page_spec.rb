@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "home", type: :feature do
+RSpec.describe "home", type: :feature do
   scenario "Correct homepage scaffold is displayed" do
     visit "/home"
 
