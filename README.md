@@ -28,24 +28,13 @@ Here is our third group project for the Makers Academy bootcamp where we decided
 - [ESLint](https://eslint.org) for linting.
 - [Capybara](https://teamcapybara.github.io/capybara/) for testing.
 - [RSpec](hhttps://rspec.info//) for end-to-end testing.
-- [Heroku](www.heroku.com) for hosting the app remotely.
+<!-- - [Heroku](www.heroku.com) for hosting the app remotely. -->
 
 ## Card wall
 
-https://trello.com/b/9jnW7ESu/spotifive
-
-REQUIRED INSTRUCTIONS:
-
-1. Fork this repository to `acebook-teamname` and customize
-   the below\*\*
+[You can find the planning board here] (https://trello.com/b/9jnW7ESu/spotifive)
 
 [You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
-
-2. The card wall is here: <please update>
-
-## How to contribute to this project
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Quickstart
 
