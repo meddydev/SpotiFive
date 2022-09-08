@@ -38,24 +38,48 @@
         </div>
     </div>
 
-        <% if @confetti %>
-        <script type="text/javascript" src="../../app/assets/javascript/confetti.js"></script>
-            <script>
 
-                const start = () => {
-                    setTimeout(function() {
-                        confetti.start()
-                    }, 1000);
-                };
-                const stop = () => {
-                    setTimeout(function() {
-                        confetti.stop()
-                    }, 5000);
-                };
 
-                start();
-                stop();
-            </script>
-        <% end %>
+
+  <div class="row">
+      <div class="col">
+          <a href="/home">
+            <button class="play_btn">Home</button>
+          </a>
+      </div>
+      
+      <div class="col">
+          <a href="/scoreboard">
+            <button class="play_btn">Scoreboard</button>
+          </a>
+      </div>  
+
+      <div class="col">
+        <a id="logout"><button class="play_btn">Logout </button></a>
+      </div>
+
+    </div>
+</div>
+
+<% if @confetti %>
+<script type="text/javascript" src="../../app/assets/javascript/confetti.js"></script>
+    <script>
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000);
+        };
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000);
+        };
+
+        start();
+        stop();
+    </script>
+<% end %>
+
 
 </div>
