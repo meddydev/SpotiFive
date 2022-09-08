@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
 
-      <h1 class="homepage_title">Welcome <%= @name %>!</h1>
+      <h1 class="homepage_title" style="color: white;">Welcome <%= @name %>!</h1>
 
   </div>
   <div class="row">
@@ -11,27 +11,24 @@
 
     <div class="col">
       <a href="/guess-songs">
-        <button class="play_btn">Play Hard</button>
+        <button class="play_btn">Play Guess the Songs</button>
       </a>
     </div>
 
     <div class="col">
         <a href="/guess-artist">
-          <button class="play_btn">Play Easy</button>
+          <button class="play_btn">Play Guess the Artist</button>
         </a>
     </div>
     
     <div class="col">
-    <!--         <a id="scoreboard_a" href="/scoreboard">
-          <button class="scoreboard_btn">Scoreboard</button>
-        </a> -->
         <a href="/scoreboard">
           <button class="play_btn">Scoreboard</button>
         </a>
     </div>  
 
     <div class="col">
-      <a id="logout"><button class="play_btn">Logout </button></a>
+      <a id="logout"><button class="play_btn">Logout     </button></a>
     </div>
 
   </div>
@@ -40,10 +37,11 @@
     <table class="table table-light table-striped table-hover">
         <thead>
             <tr>
-            <th scope="col">#</th>
+            <th scope="col" class='table-top-left-corner'>#</th>
             <th scope="col">Date Played</th>
             <th scope="col">Artist</th>
-            <th scope="col">Score</th>
+            <th scope="col">Mode</th>
+            <th scope="col" class='table-top-right-corner'>Score</th>
             </tr>
         </thead>
 
@@ -53,7 +51,8 @@
                     <th scope="row"><%= index + 1 %></th>
                     <td><%= Time.parse(game.created_at.to_s).strftime("%m/%d/%Y %H:%M") %></td>
                     <td><%= game.artist_name %></td>
-                    <td><%= game.score %></td>
+                    <td><%= game.hard ? "Guess The Songs" : "Guess The Artist" %></td>
+                    <td><%= game.hard ? game.score : game.score >0 ? "Win" : "Lose" %></td>
                     </tr>
             <% end %>
         </tbody>

@@ -84,10 +84,10 @@ body {
   font-size: 16px;
 }
 
-.play_btn {
+.buttons-game {
   font-family: "Open Sans", sans-serif;
   padding: 15px 30px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 40px;
   border-width: 0;
   margin: 20px;
@@ -97,7 +97,24 @@ body {
   font-weight: 800;
   transition: all 0.2s ease-in-out;
   outline: 0;
-  width: 300px
+  width: 50%;
+  margin-left: 27%;
+  margin-right: 22%;
+}
+
+.play_btn {
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 30px;
+  background-color: white;
+  border-radius: 40px;
+  border-width: 0;
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: all 0.2s ease-in-out;
+  outline: 0;
 }
 
 #play_a {
@@ -169,6 +186,23 @@ button:hover {
 .artist-image {
   width: 300px;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.game-title {
+  text-align: center;
+  color: white !important;
+  margin-bottom: 20px;
+  font-size: 2 rem !important;
+}
+
+.form-control {
+  margin-bottom: 5px;
 }
 
 .fade_in { animation: fadeIn 2s; }

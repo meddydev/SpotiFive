@@ -1,34 +1,6 @@
 <div class="fade_in">
-<div class="container">   
-   <div class="row">
-        <div class="col">
-        </div>
-        <div class="col">
-            <h1>Your score: <%= @score %></h1>
-        </div>
-        <div class="col">
-        </div>
-    </div>
+<div class="container">
 
-    <div class="row">
-        <div class="col">
-        </div>
-        <div class="col">
-            <h2>Guess: <%= @guess %></h2>
-        </div>
-        <div class="col">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-        </div>
-        <div class="col">
-            <h2>Answer: <%= @artist_name %></h2>
-        </div>
-        <div class="col">
-        </div>
-    </div>
     <div class="row">
         <div class="col">
         </div>
@@ -39,24 +11,48 @@
         </div>
     </div>
 
+   <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+            
+            <% if @score==0 %>
+                <h1 class="game-title">You lost! </h1>
+            <% else %>
+                <h1 class="game-title">You won! </h1>
+            <% end %>
+            
+        </div>
+        <div class="col">
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+            <h3 class="game-title">The correct answer was <br><%= @artist_name %></h3>
+        </div>
+        <div class="col">
+        </div>
+    </div>
 
 
   <div class="row">
       <div class="col">
           <a href="/home">
-            <button class="play_btn">Home</button>
+            <button class="buttons-game">Home</button>
           </a>
       </div>
       
       <div class="col">
           <a href="/scoreboard">
-            <button class="play_btn">Scoreboard</button>
+            <button class="buttons-game">Scoreboard</button>
           </a>
       </div>  
 
       <div class="col">
-        <a id="logout"><button class="play_btn">Logout </button></a>
+        <a id="logout"><button class="buttons-game">Logout </button></a>
       </div>
 
     </div>
