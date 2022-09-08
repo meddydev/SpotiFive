@@ -55,7 +55,7 @@
                     <td><%= Time.parse(game.created_at.to_s).strftime("%m/%d/%Y %H:%M") %></td>
                     <td><%= game.artist_name %></td>
                     <td><%= game.hard ? "Guess The Songs" : "Guess The Artist" %></td>
-                    <td><%= game.score %></td>
+                    <td><%= game.hard ? game.score : game.score >0 ? "Win" : "Lose" %></td>
                     </tr>
             <% end %>
         </tbody>

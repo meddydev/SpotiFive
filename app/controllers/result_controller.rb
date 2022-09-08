@@ -26,9 +26,9 @@ class ResultController < ApplicationController
       artist_data = JSON.parse(RestClient.get("https://api.spotify.com/v1/artists/#{artist_id}", { 'Authorization': "Bearer #{user_auth_token}", "Content-Type": "application/json", "Accept": "application/json" }))
       @artist_name = artist_data["name"]
       @artist_img_url = artist_data["images"][0]["url"]
-      score = self.gts_get_score(@results)
-      self.gts_create_game(session[:id], artist_id, @artist_name, score)
-      @confetti = score > CONFETTI_THRESHOLD
+      @total_score = self.gts_get_score(@results)
+      self.gts_create_game(session[:id], artist_id, @artist_name, @total_score)
+      @confetti = @total_score > CONFETTI_THRESHOLD
     else
       redirect_to "/"
     end

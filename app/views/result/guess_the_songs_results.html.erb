@@ -1,47 +1,83 @@
-<h1>Results for <%= @artist_name %></h1>
-<img src=<%=@artist_img_url %>
-<div>
 
-<table class="table table-light table-striped table-hover">
-    <thead>
-        <tr>
-        <th scope="col">#</th>
-        <th scope="col">Guess</th>
-        <th scope="col">Actual</th>
-        <th scope="col">Score</th>
-        </tr>
-    </thead>
-    <tbody>
-        <% @results.each_with_index do | result,index | %>
-            <tr>
-            <th scope="row"><%= index + 1%></th>
-            <td><%= result[:guess] %></td>
-            <td><%= result[:actual] %></td>
-            <td><%= result[:score] %></td>
-            </tr>
-        <% end %>
-    </tbody>
-</table>
 
-  <div class="row">
+<div class="container">  
+    <div class="row">
+        <div class="col">
+        </div>
+            <div class="col">
+                <h1>Results for <%= @artist_name %></h1>
+            </div>
+        <div class="col">
+        </div>
+    </div>
 
-      <div class="col">
-          <a href="/home">
-            <button class="play_btn">Home</button>
-          </a>
-      </div>
-      
-      <div class="col">
-          <a href="/scoreboard">
-            <button class="play_btn">Scoreboard</button>
-          </a>
-      </div>  
+    <div class="row">
+        <div class="col">
+        </div>
+            <div class="col">
+                <img src=<%=@artist_img_url %>>
+            </div>
+        <div class="col">
+        </div>
+    </div>
 
-      <div class="col">
-        <a id="logout"><button class="play_btn">Logout </button></a>
-      </div>
+    <div class="row">
+        <div class="col">
+        </div>
+            <div class="col">
+                <h1>Your score: <%= @total_score %></h1>
+            </div>
+        <div class="col">
+        </div>
+    </div>
+
+    <div>
+        <table class="table table-light table-striped table-hover">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Guess</th>
+                <th scope="col">Actual</th>
+                <th scope="col">Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @results.each_with_index do | result,index | %>
+                    <tr>
+                    <th scope="row"><%= index + 1%></th>
+                    <td><%= result[:guess] %></td>
+                    <td><%= result[:actual] %></td>
+                    <td><%= result[:score] %></td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+
+    <div class="row">
+
+        <div class="col">
+            <a href="/home">
+                <button class="play_btn">Home</button>
+            </a>
+        </div>
+        
+        <div class="col">
+            <a href="/scoreboard">
+                <button class="play_btn">Scoreboard</button>
+            </a>
+        </div>  
+
+        <div class="col">
+            <a id="logout"><button class="play_btn">Logout </button></a>
+        </div>
 
     </div>
+
+
+
+
+
+
 </div>
 
 
@@ -64,10 +100,6 @@
         stop();
     </script>
 <% end %>
-</div>
-
-
-</div>
 <script>
     const button = document.querySelector("#logout")
     const origin = window.location;
