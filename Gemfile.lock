@@ -91,7 +91,6 @@ GEM
     erubi (1.11.0)
     execjs (2.8.1)
     ffi (1.15.5)
-    fuzzy_match (2.1.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     http-accept (1.7.0)
@@ -116,9 +115,13 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2022.0105)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.16.3)
     netrc (0.11.0)
     nio4r (2.5.8)
+    nokogiri (1.13.8)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.13.8-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.13.8-x86_64-darwin)
@@ -188,7 +191,6 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.11.0)
-    ruby_deep_clone (0.8.0)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -244,6 +246,7 @@ GEM
 PLATFORMS
   arm64-darwin-20
   arm64-darwin-21
+  ruby
   x86_64-darwin-20
 
 DEPENDENCIES
@@ -251,9 +254,9 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   cypress-rails
-  fuzzy_match (~> 2.1)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  nokogiri (~> 1.13)
   pg
   popper_js (~> 2.11.5)
   puma (~> 3.12.6)
@@ -261,7 +264,6 @@ DEPENDENCIES
   rails-controller-testing
   rest-client (~> 2.1)
   rspec-rails (~> 4)
-  ruby_deep_clone (~> 0.8.0)
   sass-rails (~> 6.0)
   selenium-webdriver
   similar_text (~> 0.0.4)
