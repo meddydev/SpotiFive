@@ -29,7 +29,7 @@ class ScoreboardController < ApplicationController
 
         if @easy_games[one_user[:id].to_i] != nil
           one_user[:easy_game_wins] = @easy_games[one_user[:id].to_i]
-          one_user[:win_percentage] = ((one_user[:easy_game_wins].to_f/one_user[:num_games_easy].to_f)*100).to_i
+          one_user[:win_percentage] = one_user[:num_games_easy].to_f==0 ? 0 : ((one_user[:easy_game_wins].to_f/one_user[:num_games_easy].to_f)*100).to_i
           puts "easy:", @easy_games[one_user[:id].to_i]
         else
           one_user[:easy_game_wins] = 0
